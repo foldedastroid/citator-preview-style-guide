@@ -12,7 +12,7 @@ keywords: cta callout view citing references link animation
 {% set ex = "cite-callout" %}{% set exTitle = "Hover, focus or press it" %}{% include "guide/example.njk" %}
 
 <h2 class="g-h2" id="behaviour">Behaviour</h2>
-<div class="g-prose"><p>It is one link with one label; the white copy of the label and the arrows sit in an <code>aria-hidden</code> veil that a <code>clip-path</code> reveals from the square outwards. Leaving plays the motion back. A mouse uses <code>:hover</code> and <code>:active</code>; a touch press is held for the full motion by <code>cite_cta.js</code> (<code>data-held</code>), so a quick tap is still seen. With reduced motion every state change is instant.</p></div>
+<div class="g-prose"><p>It is one link with one label; the white copy of the label and the arrows sit in an <code>aria-hidden</code> veil that a <code>clip-path</code> reveals from the square outwards. The resting outline is an inset stroke, so the animated veil reaches the same outer bounds as the control without an inner border gap or a delayed background change. Leaving plays the motion back. A mouse uses <code>:hover</code> and <code>:active</code>; a touch press is held for the full motion by <code>cite_cta.js</code> (<code>data-held</code>), so a quick tap is still seen. With reduced motion every state change is instant.</p></div>
 {{ table(["Custom property", "Sets"], [
   ["<code>--cta-square</code>", "The square's size at rest"],
   ["<code>--cta-span</code>", "The motion's length, also how long a touch press is held"],
