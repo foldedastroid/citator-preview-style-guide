@@ -32,6 +32,11 @@ keywords: opinion page tabs panel summary why reader
 {{ files([
   ["src/opinion.njk", "One page per record in <code>allOpinions</code>."],
   ["_includes/partials/opinion-page.njk", "The page's markup."],
-  ["assets/js/alpine/components/opinion_tabs.js", "Tabs, hashes, the reading tools."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Reader assembly, tab/hash navigation and panel state."],
+  ["assets/js/alpine/composables/reader_support.js", "Shared composition, lifecycle and reader helpers."],
+  ["assets/js/alpine/composables/reader_find.js", "In-place Find, excerpts and match navigation."],
+  ["assets/js/alpine/composables/reader_citations.js", "Citation occurrence navigation."],
+  ["assets/js/alpine/composables/reader_popovers.js", "Footnotes and Why dialogs."],
+  ["assets/js/alpine/composables/reader_selection.js", "Text-selection actions and passage tools."],
   ["_data/opinions/&lt;id&gt;.json", "The frozen record copied from the app by <code>npm run sync</code>."]
 ]) }}

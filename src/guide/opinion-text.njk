@@ -32,6 +32,9 @@ keywords: opinion body reading text footnotes citations
 {{ files([
   ["_data/opinions/&lt;id&gt;.json", "Frozen <code>document.body_html</code> and available Authorities records."],
   ["_includes/partials/opinion-page.njk", "The real reader and bottom occurrence panel."],
-  ["assets/css/styles.css", "<code>.opinion-body</code> and everything inside it."],
-  ["assets/js/alpine/components/opinion_tabs.js", "The reading tools, on the opinion page."]
+  ["assets/css/components/opinion.css, assets/css/components/markers-footnotes.css, assets/css/components/reader.css", "<code>.opinion-body</code> and everything inside it."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Reader assembly and navigation; canonical script order comes from <code>src/opinion.njk</code>."],
+  ["assets/js/alpine/composables/reader_citations.js", "Pinned and hover citation occurrence navigation."],
+  ["assets/js/alpine/composables/reader_popovers.js", "Footnote and Why dialogs."],
+  ["assets/js/alpine/composables/reader_selection.js", "Selection copy and passage tools."]
 ]) }}

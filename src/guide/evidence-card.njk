@@ -44,6 +44,7 @@ keywords: evidenceCard quote rationale passage check
 {{ files([
   ["_includes/macros/evidence.njk", "<code>evidenceCard</code>."],
   ["_includes/macros/treatment.njk", "The pill."],
-  ["assets/css/styles.css", "<code>.evidence-card</code>, <code>.quote-status</code>."],
-  ["assets/js/alpine/components/opinion_tabs.js", "<code>readQuote</code>, on the opinion page."]
+  ["assets/css/components/treatments.css", "<code>.evidence-card</code>, <code>.quote-status</code>."],
+  ["assets/js/alpine/composables/reader_selection.js", "<code>readQuote</code> and passage highlighting, composed into the opinion reader."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Reader assembly; preserve the script order in <code>src/opinion.njk</code>."]
 ]) }}

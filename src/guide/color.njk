@@ -80,6 +80,6 @@ keywords: colour palette signal greyscale primary state tokens
 
 <h2 class="g-h2" id="in-code">In code</h2>
 <div class="g-prose">
-  <p>Use the token through Tailwind: <code>text-signal-stop-ink</code>, <code>bg-signal-caution-wash</code>, <code>border-line</code>, or <code>theme('colors.signal.stop')</code> inside <code>styles.css</code>. Never write the hex value in a template; a tier change then reaches every page on the next build.</p>
+  <p>Use the token through Tailwind: <code>text-signal-stop-ink</code>, <code>bg-signal-caution-wash</code>, <code>border-line</code>, or <code>theme('colors.signal.stop')</code> inside a feature stylesheet imported by <code>styles.css</code>. Never write the hex value in a template; a tier change then reaches every page on the next build.</p>
 </div>
 {{ note("Every value on this page is read from <code>tailwind.config.js</code> when the guide builds. <a href=\"/foundations/design-tokens/\">Design tokens</a> lists each one with where it comes from.") }}

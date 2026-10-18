@@ -2,7 +2,7 @@
 {% set cite = "Callahan v. Millard County, 494 F.3d 891 (10th Cir. 2007)" %}
 <div class="case-head__actions flex justify-end" x-data="caseActions" x-on:keydown="onMenuKeydown">
   <div class="split" x-on:click.outside="menuClickOutside">
-    <button type="button" class="doc-action doc-action--main" data-cite="{{ cite }}" x-on:click="copyCitation" title="Copy citation: {{ cite }}">
+    <button type="button" class="doc-action doc-action--main" data-copy="{{ cite }}" data-done="Citation copied" x-on:click="copyFormat" title="Copy citation: {{ cite }}">
       {{ icon("document", "w-3.5 h-3.5") }}<span class="doc-action__label">Copy citation</span>
     </button>
     <button type="button" class="doc-action doc-action--caret" x-ref="menuButton" aria-haspopup="menu" aria-controls="guide-cite-menu" aria-expanded="false"

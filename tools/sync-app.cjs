@@ -21,6 +21,7 @@ const SHARED = [
   '_includes/layouts',
   '_includes/macros',
   '_includes/partials',
+  // Keep these roots recursive: nested reader modules and CSS imports must travel with their entry points.
   'assets/css',
   'assets/js',
   'assets/fonts',

@@ -27,6 +27,12 @@ Record-backed exports explicitly select a preview id from `allOpinions`; choose 
 
 `src/guide/` contains the guide pages, `_includes/examples/` the copyable examples and `assets/guide/` the guide shell. The app's own templates, macros, controllers, styles and fonts are included alongside them. `tailwind.config.js` is the theme source; `design/tokens.json` records explicit values and their pinned CourtListener comparison. The guide's red accent CSS is generated from those primary theme values.
 
+## Shared source structure
+
+`src/opinion.njk` declares the reader's scripts in loading order. The guide exporter reads that list directly, so copied reader pages load the same composables and controller entry point. The five `assets/js/alpine/composables/reader_*.js` files hold shared support, Find, citation occurrences, popovers and selection tools; `opinion_tabs.js` composes them with tab, hash and panel state. Keep the composables before the controller and all page scripts before Alpine.
+
+`assets/css/styles.css` is the CSS entry point. Feature styles live under `assets/css/components/`; its ordered imports preserve the original cascade, including late cross-feature rules in `adaptive-overrides.css` and panel, toolbar and pager rules in `layout-overrides.css`. Copy the entry point with its imports, fonts and theme rather than copying an import alone. Keep the import order when editing a feature.
+
 ## Keep shared source aligned
 
 I edit the shared interface in the app, then sync it into the guide. With the app cloned beside this repository as `citator-demo`, build its fixture data first:

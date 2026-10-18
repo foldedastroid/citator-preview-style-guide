@@ -22,8 +22,8 @@ keywords: button link doc-action start-panel primary action
 <h2 class="g-h2" id="accessibility">Accessibility</h2>
 <div class="g-prose">
   <p>Use <code>&lt;button type="button"&gt;</code> for an action and <code>&lt;a href&gt;</code> for navigation; never a link without an <code>href</code>. A button with only an icon needs <code>aria-label</code>. A disabled button leaves the tab order, so say near it why the action is unavailable. A link that opens a new tab says so in its text or icon.</p>
-  <p>Every control keeps the visible focus ring <code>styles.css</code> gives <code>:focus-visible</code>: 2px <code>primary-600</code>, offset 2px.</p>
+  <p>The shared base styles provide a 2px <code>primary-600</code> keyboard-focus ring. Individual components keep it inside clipped controls or fields where needed; pointer activation does not force the keyboard indicator.</p>
 </div>
 
 <h2 class="g-h2" id="files">Files</h2>
-{{ files([["assets/css/styles.css", "<code>.start-panel__button</code>, <code>.doc-action</code>, <code>.split</code>, <code>.links</code>."], ["_includes/macros/icons.njk", "The icons inside them."]]) }}
+{{ files([["assets/css/components/actions.css, assets/css/components/about.css, assets/css/components/controls.css, assets/css/components/status-toasts.css", "<code>.start-panel__button</code>, <code>.doc-action</code>, <code>.split</code>, <code>.links</code>."], ["_includes/macros/icons.njk", "The icons inside them."]]) }}

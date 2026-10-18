@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const matter = require('gray-matter');
 const { sparseRows, centuryRows, denseRows } = require('./chart-examples.cjs');
 
 const root = path.resolve(__dirname, '..');
@@ -28,7 +29,14 @@ const scripts = {
   pagination: ['search_filter'],
 };
 const visual = new Set(['buttons', 'empty-states', 'fields', 'status-states']);
-const hostScripts = ['opinion_tabs', 'treatment_list', 'opinion_views', 'case_actions'];
+
+function readerScripts() {
+  const scripts = matter.read(path.join(root, 'src/opinion.njk')).data.scripts;
+  if (!Array.isArray(scripts) || scripts.some((script) => typeof script !== 'string')) {
+    throw new Error('src/opinion.njk must declare the reader scripts in loading order');
+  }
+  return [...scripts];
+}
 
 function exampleNames() {
   return fs.readdirSync(path.join(root, '_includes/examples')).filter((name) => name.endsWith('.njk')).map((name) => name.slice(0, -4));
@@ -83,10 +91,11 @@ document.addEventListener('click', (event) => {
 function examplePage(id) {
   const info = exampleInfo(id);
   let body = fs.readFileSync(path.join(root, '_includes/examples', `${id}.njk`), 'utf8').trim();
-  const pageScripts = (hosts.has(id) ? hostScripts : scripts[id] || []).map((name) => `/assets/js/alpine/components/${name}.js`);
+  const pageScripts = hosts.has(id)
+    ? readerScripts()
+    : (scripts[id] || []).map((name) => `/assets/js/alpine/components/${name}.js`);
   if (hosts.has(id)) {
     body = '{% include "partials/opinion-page.njk" %}';
-    pageScripts.push('/assets/js/doc_rail.js');
   }
   if (id === 'expandable') pageScripts.push('/assets/js/expandable.js');
   if (id === 'search-suggestions') {
@@ -119,4 +128,4 @@ ${body.replaceAll(`chartExamples.${key}`, 'exampleChart')}`;
   return front.join('\n');
 }
 
-module.exports = { exampleNames, exampleInfo, examplePage };
+module.exports = { exampleNames, exampleInfo, examplePage, readerScripts };

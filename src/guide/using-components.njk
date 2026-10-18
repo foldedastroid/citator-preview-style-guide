@@ -22,6 +22,7 @@ scripts:
 {% from \"macros/treatment.njk\" import severityBadge %}
 {{ severityBadge(\"Caution\", \"Distinguished by\", false, treatment_definitions[\"Distinguished by\"]) }}") }}
 <div class="g-prose">
+  <p>Reader exports read their script list directly from <code>src/opinion.njk</code>. Shared support, Find, citation, popover and selection composables load before <code>opinion_tabs.js</code>, which composes the existing <code>opinionTabs</code> interface. Keep that canonical order rather than loading the controller alone.</p>
   <p><code>layouts/base.njk</code> loads every page script with <code>defer</code> before <code>alpine.min.js</code>. That order matters: the CSP build starts Alpine as soon as it loads, and a component registered on <code>alpine:init</code> after that never runs.</p>
 </div>
 
@@ -32,7 +33,7 @@ scripts:
 
 <h2 class="g-h2" id="styles">Styles</h2>
 <div class="g-prose">
-  <p>Repeated patterns are component classes in <code>assets/css/styles.css</code> (<code>.severity-badge</code>, <code>.evidence-card</code>), written with Tailwind's <code>@apply</code> against the theme in <code>tailwind.config.js</code>; one-off styling is inline utilities. A part's classes come with the stylesheet, so in the app there is nothing to add. In another Tailwind 3 project, copy the theme and the component classes the part uses; the Files section of each page names them.</p>
+  <p>The CSS entry point is <code>assets/css/styles.css</code>. It imports feature files under <code>assets/css/components/</code> in cascade order, then builds through Tailwind. Component classes such as <code>.severity-badge</code> and <code>.evidence-card</code> use <code>@apply</code> against <code>tailwind.config.js</code>; one-off styling is inline utilities. <code>adaptive-overrides.css</code> and <code>layout-overrides.css</code> intentionally stay last for cross-feature responsive, panel and toolbar rules. A part's classes come with the stylesheet, so in the app there is nothing to add. In another Tailwind 3 project, copy the theme, fonts, CSS entry point and its imported files; the Files section of each page names them.</p>
 </div>
 
 <h2 class="g-h2" id="keeping-in-sync">Keeping this guide in sync</h2>

@@ -17,5 +17,5 @@ scripts:
 <div class="g-prose"><p><code>shortcuts.js</code> opens the sheet on <kbd>?</kbd> unless the reader is typing in a field or another dialog is open, remembers what had focus, and returns focus there on close. A click on the backdrop or the Esc button closes it. The list itself is data in the partial: add a row there when a component gains a shortcut.</p></div>
 
 <h2 class="g-h2" id="files">Files</h2>
-{{ files([["_includes/partials/shortcuts-sheet.njk", "The dialog and its rows; <code>layouts/base.njk</code> includes it once per page."], ["assets/js/shortcuts.js", "Opening and focus return."], ["assets/css/styles.css", "<code>.sheet</code>, <code>.shortcuts</code>."]]) }}
+{{ files([["_includes/partials/shortcuts-sheet.njk", "The dialog and its rows; <code>layouts/base.njk</code> includes it once per page."], ["assets/js/shortcuts.js", "Opening and focus return."], ["assets/css/components/navigation.css, assets/css/components/adaptive-overrides.css", "<code>.sheet</code>, <code>.shortcuts</code>."]]) }}
 {{ note("This guide's own shortcuts: <kbd>⌘K</kbd> finds a page, <kbd>⌘\\</kbd> folds the sidebar away.") }}

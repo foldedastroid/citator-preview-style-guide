@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const matter = require('gray-matter');
 const nunjucks = require('nunjucks');
+const vm = require('node:vm');
 const { exampleNames, examplePage, exampleInfo } = require('./example-pages.cjs');
 
 const root = path.resolve(__dirname, '..');
@@ -40,7 +41,11 @@ for (const id of exampleNames()) {
       assert.match(body, /x-data="opinionTabs"/);
       assert.match(body, /role="tabpanel"/);
       assert.match(body, /class="opinion-body/);
-      assert.ok(data.scripts.includes('/assets/js/alpine/components/opinion_tabs.js'));
+      const canonicalScripts = matter.read(path.join(app, 'src/opinion.njk')).data.scripts;
+      assert.deepEqual(data.scripts, canonicalScripts);
+      const positions = [...canonicalScripts, '/assets/js/alpine.min.js'].map((script) => html.indexOf(`src="${script}?`));
+      assert.ok(positions.every((position) => position >= 0));
+      assert.ok(positions.every((position, index) => index === 0 || position > positions[index - 1]));
       assert.match(html, /alpine\/composables\/highlight\.js/);
     }
     if (id.startsWith('citing-chart')) assert.match(body, /class="cite-chart__table"/);
@@ -48,6 +53,23 @@ for (const id of exampleNames()) {
     if (id === 'icons-all') assert.ok((body.match(/<svg/g) || []).length > 20);
     if (id === 'shortcuts-sheet') assert.equal((html.match(/id="shortcuts"/g) || []).length, 1);
     if (id === 'search-suggestions') assert.equal((html.match(/id="opinion-index"/g) || []).length, 1);
+    if (id === 'menu-copy-citation') {
+      const button = body.match(/<button\b[^>]*class="[^"]*doc-action--main[^"]*"[^>]*>/)[0];
+      const attribute = (name) => button.match(new RegExp(`${name}="([^"]*)"`))[1];
+      let factory;
+      const copied = [];
+      const context = {
+        document: { addEventListener: (name, callback) => callback() },
+        Alpine: { data: (name, callback) => { factory = callback; } },
+        window: { isSecureContext: true },
+        navigator: { clipboard: { writeText: (value) => { copied.push(value); return Promise.resolve(); } } },
+      };
+      vm.runInNewContext(fs.readFileSync(path.join(app, 'assets/js/alpine/components/case_actions.js'), 'utf8'), context);
+      const controller = factory();
+      controller.$el = { dataset: { copy: attribute('data-copy'), done: attribute('data-done') } };
+      controller[attribute('x-on:click')]();
+      assert.deepEqual(copied, ['Callahan v. Millard County, 494 F.3d 891 (10th Cir. 2007)']);
+    }
   });
 }
 

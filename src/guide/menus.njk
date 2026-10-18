@@ -37,6 +37,6 @@ keywords: menu dropdown caseActions helpMenu copy citation keyboard
   ["assets/js/alpine/components/case_actions.js", "<code>caseActions</code> and the clipboard helper."],
   ["assets/js/alpine/components/help_menu.js", "<code>helpMenu</code>; it also dismisses the first-visit hint."],
   ["assets/js/toast.js", "The copy confirmation."],
-  ["assets/css/styles.css", "<code>.help-menu</code>, <code>.cite-menu</code>, <code>.split</code>."]
+  ["assets/css/components/actions.css", "<code>.help-menu</code>, <code>.cite-menu</code>, <code>.split</code>."]
 ]) }}
-{{ note("The main Copy citation button calls <code>copyCitation</code> on the opinion page's component; in this guide the stage does the same job. Help's <em>Keyboard shortcuts</em> opens the sheet from <a href=\"/controls/keyboard-shortcuts/\">Keyboard shortcuts</a> when the page has one.") }}
+{{ note("This example's main action uses <code>caseActions.copyFormat</code> with <code>data-copy</code> and <code>data-done</code>, so the copied page needs no reader parent. The full opinion reader exposes its <code>copyCitation</code> action through <code>reader_selection.js</code>. Help's <em>Keyboard shortcuts</em> opens the sheet from <a href=\"/controls/keyboard-shortcuts/\">Keyboard shortcuts</a> when the page has one.") }}

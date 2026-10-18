@@ -37,8 +37,9 @@ keywords: rail minimap scrub sections reading position search find expandable
 <h2 class="g-h2" id="files">Files</h2>
 {{ files([
   ["assets/js/doc_rail.js", "The rail, plain script."],
-  ["assets/js/alpine/components/opinion_tabs.js", "Actual search expansion, query, match navigation and focus lifecycle."],
+  ["assets/js/alpine/composables/reader_find.js", "Actual search expansion, query, excerpts and match lifecycle."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Reader assembly and tab transitions; use its canonical script order from <code>src/opinion.njk</code>."],
   ["_includes/partials/opinion-page.njk", "Its markup: <code>[data-doc-rail]</code> in <code>.doc-layout</code>."],
-  ["assets/css/styles.css", "<code>.doc-rail</code> and its parts."]
+  ["assets/css/components/reader.css", "<code>.doc-rail</code> and its parts."]
 ]) }}
 {{ note("The rail measures the page around it, so it is shown here in the real opinion page rather than on its own.") }}

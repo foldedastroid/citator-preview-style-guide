@@ -22,7 +22,7 @@ keywords: animation duration easing reduced motion transition
 <div class="g-prose"><p>Two scripts time their own motion. <code>expandable.js</code> gives a full expansion the whole <code>--expand-base</code> duration and a partial reversal a share of it, so stopping half-way does not take as long as the full move. <code>cite_cta.js</code> holds a touch press for <code>--cta-span</code> so a quick tap is still seen. Both are covered by <code>tools/motion.test.cjs</code> in the app.</p></div>
 
 <h2 class="g-h2" id="reduced-motion">Reduced motion</h2>
-<div class="g-prose"><p>Every animation and transition in <code>styles.css</code> sits behind <code>prefers-reduced-motion</code>, and scripted scrolls go through one helper, <code>scrollBehavior()</code> in <code>composables/highlight.js</code>, so they jump instead of gliding:</p></div>
+<div class="g-prose"><p>The feature styles imported by <code>styles.css</code> include reduced-motion rules; <code>adaptive-overrides.css</code> keeps the shared <code>prefers-reduced-motion</code> override late in the cascade. Reader passage scrolling uses <code>scrollBehavior()</code> in <code>composables/highlight.js</code>, so they jump instead of gliding:</p></div>
 {{ code("code-scroll", "assets/js/alpine/composables/highlight.js", "function scrollBehavior() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
 }
