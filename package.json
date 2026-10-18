@@ -4,8 +4,8 @@
   "private": true,
   "description": "My style guide for the Citator preview, with live Nunjucks components and shared design tokens.",
   "scripts": {
-    "sync": "node tools/sync-app.cjs ../citator-app",
-    "check:sync": "node tools/sync-app.cjs ../citator-app --check",
+    "sync": "node tools/sync-app.cjs ../citator-demo",
+    "check:sync": "node tools/sync-app.cjs ../citator-demo --check",
     "build:css": "tailwindcss -i assets/css/styles.css -o _site/assets/css/styles.css --minify",
     "build:eleventy": "eleventy",
     "build": "npm run build:css && npm run build:eleventy",

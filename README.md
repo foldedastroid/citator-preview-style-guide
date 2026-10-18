@@ -21,7 +21,9 @@ For static hosting, serve `_site/` as the HTTP root. Asset paths are root-relati
 
 ## Use a component
 
-Open its guide page, try the example and copy the complete snippet. Keep its imports, data and listed controller/style dependencies together. These are Eleventy/Nunjucks components using Tailwind 3 and Alpine CSP; they do not require another runtime framework.
+Open its guide page, try the example and choose **Copy page**. Save the complete payload as `src/examples/<name>.njk` in the app and build. It includes front matter, required page scripts, imports and data setup. When moving its body into an existing template, retain that setup and merge its scripts; front matter belongs on a page, not inside an include.
+
+Record-backed exports explicitly select a preview id from `allOpinions`; choose an available record for your collection. Missing records or evidence show a setup message. Chart exports carry labelled illustrative literal rows. Reader-dependent fragments export the actual reader composition with its controllers, rather than a fragment with unresolved callbacks. Visual-state examples are labelled and require your own application actions. These are Eleventy/Nunjucks components using Tailwind 3 and Alpine CSP; they do not require another runtime framework.
 
 `src/guide/` contains the guide pages, `_includes/examples/` the copyable examples and `assets/guide/` the guide shell. The app's own templates, macros, controllers, styles and fonts are included alongside them. `tailwind.config.js` is the theme source; `design/tokens.json` records explicit values and their pinned CourtListener comparison. The guide's red accent CSS is generated from those primary theme values.
 
@@ -41,11 +43,11 @@ npm run build
 npm test
 ```
 
-The optional app data build needs Python 3.13 or later and [uv](https://docs.astral.sh/uv/). The guide build does not. The `npm run sync` and `npm run check:sync` shortcuts expect the app sibling to be named `citator-app`; use the explicit commands above for the GitHub repository's default folder name. `_data/site.js` deliberately keeps the guide's `/search/` home path while sharing the app's feedback URL.
+The optional app data build needs Python 3.13 or later and [uv](https://docs.astral.sh/uv/). The guide build does not. The `npm run sync` and `npm run check:sync` shortcuts use the default sibling name `citator-demo`; pass another path to `node tools/sync-app.cjs` for a differently named checkout. `_data/site.js` deliberately keeps the guide's `/search/` home path while sharing the app's feedback URL.
 
 ## Checks and scope
 
-`npm test` checks the built guide's pages, examples, internal links and navigation. The fixtures demonstrate behavior and do not establish legal accuracy, comprehensive treatment coverage or a case's current status.
+`npm test` checks the built guide's pages, examples, internal links and navigation, and renders every exported Copy page using only app templates, filters and globals. Tests cover missing records/evidence, embedded chart fixtures, copied script paths and the exact built clipboard payload. They do not replace browser interaction checks. The fixtures demonstrate behavior and do not establish legal accuracy, comprehensive treatment coverage or a case's current status.
 
 ## License
 

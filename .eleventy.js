@@ -9,10 +9,9 @@
 
 
 
-const fs = require("node:fs");
-const path = require("node:path");
 const addFilters = require("./tools/filters.cjs");
 const { groups } = require("./_data/guide.js");
+const { examplePage, exampleInfo } = require("./tools/example-pages.cjs");
 
 const groupIndex = (page) => {
   const i = groups.findIndex((g) => g.key === page.data.group);
@@ -51,9 +50,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("pad", (n) => String(n).padStart(2, "0"));
 
 
-  eleventyConfig.addFilter("exampleSource", (id) =>
-    fs.readFileSync(path.join(__dirname, "_includes/examples", `${id}.njk`), "utf8").trimEnd()
-  );
+  eleventyConfig.addFilter("exampleSource", examplePage);
+  eleventyConfig.addFilter("exampleInfo", exampleInfo);
 
 
   eleventyConfig.addFilter("sections", (html) =>

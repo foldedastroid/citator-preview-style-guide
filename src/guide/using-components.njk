@@ -9,7 +9,9 @@ kind: Guide
 
 <h2 class="g-h2" id="in-the-app">Inside the app</h2>
 <div class="g-prose">
-  <p>Every example's snippet runs as it is in a template under <code>src/</code> or <code>_includes/</code>. It imports the macros it calls and reads the app's global data by its real name (<code>treatment_definitions</code>, <code>allOpinions</code>, <code>index</code>), so pasting it into a page is enough. If the part is interactive, add its script to the page's <code>scripts</code> list in the front matter:</p>
+  <p><strong>Copy page</strong> exports a complete Eleventy page. Save it as <code>src/examples/&lt;name&gt;.njk</code> in the app, then build. The payload includes the base layout, page scripts, macro imports and data setup. Keep those parts when adapting its body into an existing template; do not paste its front matter into an include.</p>
+  <p>Record-backed pages select an explicit preview id from <code>allOpinions</code> with a portable Nunjucks loop. Set <code>exampleOpinionId</code> to your own available record. Missing records or evidence render a setup message. Chart fixtures are labelled illustrative and copied as literal rows, with the app's <code>chartBreakdown</code> filter; neither <code>opinionById</code> nor guide-only data is needed.</p>
+  <p>Some fragments depend on the full reader's tabs, panel and callbacks. Those exports are labelled <em>Reader composition</em> and include the real <code>partials/opinion-page.njk</code> host with its scripts. The isolated fragment's source path remains above the code. Visual-state exports are labelled separately and do not promise application actions.</p>
 </div>
 {{ code("code-front-matter", "src/example.njk", "---
 layout: layouts/base.njk
@@ -35,14 +37,14 @@ scripts:
 
 <h2 class="g-h2" id="keeping-in-sync">Keeping this guide in sync</h2>
 <div class="g-prose">
-  <p>The app is the source. After changing a macro, partial, style or script there, copy it here and rebuild:</p>
+  <p>The app is the source. After changing a macro, partial, style or script there, copy it here and rebuild. The npm shortcuts expect the sibling clone's default name, <code>citator-demo</code>:</p>
 </div>
-{{ code("code-sync", "Terminal, in citator-preview-style-guide", "node tools/sync-app.cjs ../citator-demo
-node tools/sync-app.cjs ../citator-demo --check
+{{ code("code-sync", "Terminal, in citator-preview-style-guide", "npm run sync
+npm run check:sync
 npm run build") }}
 {{ files([
   ["tools/sync-app.cjs", "Lists every shared path. Files under them are the app's: edit them there, not here."],
   ["_data/*.json, _data/opinions/", "The app's mock data build (<code>CITATOR_DEMO_DATA=mock npm run build:data</code>), committed here so the guide builds without Python."],
   ["src/guide/, _includes/guide/, _includes/examples/, assets/guide/", "The guide's own pages, layout, example snippets and chrome."]
 ]) }}
-{{ note("A new example is a snippet in <code>_includes/examples/</code> and a page in <code>src/guide/</code> that includes it with <code>{% set ex = \"name\" %}{% include \"guide/example.njk\" %}</code>. The page's <code>group</code> and <code>order</code> place it in the sidebar and in the previous / next sequence.") }}
+{{ note("Register a new example's copy setup and scripts in <code>tools/example-pages.cjs</code>; <code>tools/examples.test.cjs</code> renders every exported page with app-only context. A new example is a snippet in <code>_includes/examples/</code> and a page in <code>src/guide/</code> that includes it with <code>{% set ex = \"name\" %}{% include \"guide/example.njk\" %}</code>. The page's <code>group</code> and <code>order</code> place it in the sidebar and in the previous / next sequence.") }}
