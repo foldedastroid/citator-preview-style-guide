@@ -56,9 +56,10 @@ html {
   stroke-linejoin: round;
 }
 
-.g-body :is(a, button, input, summary):focus-visible {
+.g-body :where(.g-topbar, .g-sidebar, .g-crumbs, .g-toc, .g-prevnext, .g-catalogue, .g-prose, .g-table, .g-example__bar, .g-codeblock__bar, .g-frame__bar) :is(a, button, input, summary):focus-visible,
+.g-skip:focus-visible {
   outline: 2px solid var(--g-focus);
-  outline-offset: 3px;
+  outline-offset: 2px;
   border-radius: 2px;
 }
 .g-sr-only {
@@ -856,10 +857,14 @@ html {
 }
 .g-toc nav a {
   display: block;
+  padding: 2px 4px;
   font-size: 11px;
   line-height: 1.6;
   color: var(--g-secondary);
   text-decoration: none;
+}
+.g-toc nav a:focus-visible {
+  outline-offset: -2px;
 }
 .g-toc nav a:hover {
   color: var(--g-link);
