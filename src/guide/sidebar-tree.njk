@@ -31,7 +31,7 @@ scripts:
   ["Filter library", "Hides rows whose name or court does not match, opening groups with matches"],
   ["Recent", "The last six opinions opened in this browser, above the library, with Clear"]
 ]) }}
-<div class="g-prose"><p>Branches, filtering and Recent use <code>sidebar_tree.js</code>. The shared shell owns the header toggle, focus handoff and responsive open state. The sidebar slides with the page column using the expansion duration and standard easing; closing content stays visible during the slide but becomes inert immediately. Repeated toggles reverse the current transition. Resizing and reduced motion suppress the movement. The red Citator preview brand is a separate home link (<code>site.home</code>), with its own hover and pressed states. Stored Recent entries are checked before they are shown: only an opinion path, a title and a known tier are used.</p></div>
+<div class="g-prose"><p>Branches, filtering and Recent use <code>sidebar_tree.js</code>. The shared shell owns the header toggle, focus handoff and responsive open state. The sidebar slides with the page column using the expansion duration and standard easing; closing content stays visible during the slide but becomes inert immediately. Repeated toggles reverse the current transition. Window resizing suppresses layout transitions until 180ms of quiet and two settling frames have passed. Hover previews stay closed while resizing; reduced motion also suppresses movement. The red Citator preview brand is a separate home link (<code>site.home</code>), with its own hover and pressed states. Stored Recent entries are checked before they are shown: only an opinion path, a title and a known tier are used.</p></div>
 
 <h2 class="g-h2" id="files">Files</h2>
 {{ files([
