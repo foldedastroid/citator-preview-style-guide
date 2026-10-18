@@ -1,0 +1,15 @@
+
+{%- set exId = "code-" ~ (ex | replace("/", "-")) -%}
+{%- if exOpinion -%}{%- set opinion = allOpinions | opinionById(exOpinion) -%}{%- endif -%}
+<figure class="g-example">
+  <div class="g-example__stage {{ exStage }}" x-data="guideStage">
+    {% include "examples/" ~ ex ~ ".njk" %}
+  </div>
+  <figcaption class="g-example__bar">
+    <span class="g-example__title">{{ exTitle or "Example" }}</span>
+    <span class="g-example__file">_includes/examples/{{ ex }}.njk</span>
+    <button type="button" class="g-text-button" data-copy="{{ exId }}">Copy</button>
+  </figcaption>
+  <pre class="g-code" id="{{ exId }}"><code>{{ ex | exampleSource }}</code></pre>
+</figure>
+{%- set exTitle = "" -%}{%- set exStage = "" -%}{%- set exOpinion = "" -%}

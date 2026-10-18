@@ -1,0 +1,28 @@
+---
+title: Layers
+summary: "A named stacking order, from a raised link inside a card to the tooltip above everything. Use the name, never a bare number."
+group: foundations
+order: 5
+kind: Tailwind theme
+source: tailwind.config.js
+keywords: z-index stacking order layer
+---
+{% from "guide/macros.njk" import table, note %}
+{% set used = {
+  "raised": "A link above its card's covering link (the home cards)",
+  "sticky": "The tab bar and list headers that stick while scrolling",
+  "rail": "The document rail beside the opinion",
+  "header": "The top bar",
+  "scrim": "The shade behind a drawer on narrow screens",
+  "drawer": "The sidebar and panel as drawers",
+  "dialog": "The court picker and the shortcuts sheet",
+  "popover": "Citation, footnote and Why? popovers",
+  "menu": "Help and Copy citation menus",
+  "toast": "Notifications",
+  "tooltip": "Pill definitions and other tooltips"
+} %}
+{% set rows = [] %}
+{% for name, value in theme.extend.zIndex %}{% set rows = (rows.push(["<code>z-" ~ name ~ "</code>", "<code>" ~ value ~ "</code>", used[name]]), rows) %}{% endfor %}
+<h2 class="g-h2" id="order">Order</h2>
+{{ table(["Utility", "Value", "Used for"], rows) }}
+{{ note("A layer orders things; it does not make them modal. A dialog still needs focus kept inside it and returned to its opener, which the court picker and the shortcuts sheet do in their scripts.") }}

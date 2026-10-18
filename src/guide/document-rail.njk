@@ -1,0 +1,44 @@
+---
+title: Document rail
+summary: "A fine document rail on the Opinion tab: section ticks, a compact position marker and larger invisible hit targets. Click or drag to move through the opinion."
+group: navigation
+order: 4
+kind: Script
+source: assets/js/doc_rail.js
+keywords: rail minimap scrub sections reading position search find expandable
+---
+{% from "guide/macros.njk" import files, note, table %}
+{% set frameSrc = "/opinion/145918/" %}{% set frameTitle = "Pearson v. Callahan, with its document rail at the left" %}{% set frameHeight = 680 %}{% include "guide/frame.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+{{ table(["Input", "Does"], [
+  ["Click a tick or label", "Scrolls to that part"],
+  ["Drag along the rail", "Scrubs through the page; the thumb follows"],
+  ["Hover or focus the rail", "Fades the labels in, nearest first"],
+  ["Return within 30 days", "A toast offers to continue where you left off"]
+]) }}
+<div class="g-prose"><p>The Opinion tab supplies the document sections, counsel, judges and footnotes. A continuous 1px track and 2×12px position marker keep the rail visually light; links retain 24px targets and the thumb has a 26×28px invisible hitbox. Other tabs keep their list or history navigation without a document scrubber. The rail re-measures as content and fonts change. Reduced motion uses immediate movement.</p></div>
+
+<h2 class="g-h2" id="search">Search within the opinion</h2>
+<div class="g-prose"><p>Activate the rail's search icon to widen that control from left to right into the reader search field. The field keeps the icon's origin; up to five matching excerpts, the result count and match navigation appear directly below after a query. Choosing an excerpt hides the excerpt rows and focuses that match in the opinion; the query, count and previous/next controls stay available. Focus or edit the field to reopen the excerpt rows. The query stays when closed. Results come from the opinion text, not the case index. A compact trigger remains available when the rail is absent; opening search from another tab returns to Opinion. Leaving Opinion closes the field without clearing its query.</p></div>
+{{ table(["Input", "Does"], [
+  ["Search icon or /", "Opens the field and focuses it after expansion"],
+  ["Two or more characters", "Highlights matches and reports the current match count"],
+  ["Enter / Shift+Enter in the field", "Next / previous match across all results"],
+  ["Excerpt result", "Enter jumps to that match; ↑ / ↓ and Home / End move among the visible excerpt buttons"],
+  ["Clear", "Clears the query while keeping the field open"],
+  ["Escape or Close search", "Closes the field and returns focus to the search icon"],
+  ["Outside click", "Closes an empty field; retains an active query"],
+  ["Viewport edge", "The control expands rightward from its existing position within viewport gutters"],
+  ["Reduced motion", "Opens and closes immediately"]
+]) }}
+{{ note("The example uses the actual reader control and controller; it does not provide a separate direction setting.") }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["assets/js/doc_rail.js", "The rail, plain script."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Actual search expansion, query, match navigation and focus lifecycle."],
+  ["_includes/partials/opinion-page.njk", "Its markup: <code>[data-doc-rail]</code> in <code>.doc-layout</code>."],
+  ["assets/css/styles.css", "<code>.doc-rail</code> and its parts."]
+]) }}
+{{ note("The rail measures the page around it, so it is shown here in the real opinion page rather than on its own.") }}

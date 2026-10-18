@@ -1,0 +1,5 @@
+
+{% set citingBreak = opinion.cited_by | chartBreakdown("cited-by", "severity", "citing_court_display", "citing_date_filed") %}
+<div role="tabpanel" data-tab="cited-by">
+  {% include "partials/cited-by-tab.njk" %}
+</div>

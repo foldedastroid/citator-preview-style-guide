@@ -1,0 +1,42 @@
+---
+title: Treatment badge
+summary: "The pill every treatment renders as, in its tier's colour and glyph, with the treatment's definition on hover and focus."
+group: signals
+order: 2
+kind: Nunjucks macro
+source: _includes/macros/treatment.njk
+keywords: pill severity badge tooltip definition severityBadge
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "badge-tiers" %}{% set exTitle = "Five tiers, with definitions" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="variants">Variants</h2>
+<div class="g-prose"><p>Plain, the small size the filter menus use, and the "as recognized by" form, where the citing opinion reports another court's treatment; it keeps that treatment's tier.</p></div>
+{% set ex = "badge-sizes" %}{% set exTitle = "Plain, small, recognized" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["severity", "tier name", "", "<code>Stop</code>, <code>Warning</code>, <code>Caution</code>, <code>Positive</code> or <code>Neutral</code>; anything else renders as Neutral."],
+  ["label", "string", "", "The treatment as the reader sees it: <code>Distinguished by</code> from the cited case's side, <code>Distinguishes</code> from the acting opinion's."],
+  ["small", "boolean", "false", "The filter menus' compact size."],
+  ["definition", "string", "\"\"", "The tooltip text. Pass <code>treatment_definitions[label]</code>: global data a macro cannot read itself. Without it the pill is not focusable and has no tooltip."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>With a definition the pill gets <code>tabindex="0"</code> and a <code>.pill-tip</code> child. <code>assets/js/tooltips.js</code> positions that tip below the pill (above when there is no room), keeps it inside the viewport, and uses the Popover API where the browser has it so a clipping container cannot cut it off.</p>
+  <p>The labels and their tiers come from <code>scripts/taxonomy.py</code>: change a tier there and every badge follows on the next build. <code>treatment_definitions</code> is written from the same file.</p>
+</div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The tip is hidden with opacity rather than <code>display</code>, so a screen reader reads the label and then the definition; the tip's own copy of the label is <code>aria-hidden</code> so nothing is read twice. The definition opens on focus as well as hover. Never put an instruction only inside a tooltip.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/treatment.njk", "<code>severityBadge</code>."],
+  ["_includes/macros/icons.njk", "The tier glyphs."],
+  ["assets/css/styles.css", "<code>.severity-badge</code>, <code>.pill-tip</code>, <code>.tooltip-bubble</code>."],
+  ["assets/js/tooltips.js", "Positions the definition. Load it on every page that shows defined pills."],
+  ["_data/treatment_definitions.json", "Written by <code>scripts/build_data.py</code> from the taxonomy."]
+]) }}

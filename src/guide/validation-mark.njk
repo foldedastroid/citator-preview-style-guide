@@ -1,0 +1,35 @@
+---
+title: Validation mark
+summary: "Whether an expert's label agrees with the citator's treatment. A review aid: it only renders when the site is built with CITATOR_DEMO_VALIDATION=1."
+group: signals
+order: 3
+kind: Nunjucks macro
+source: _includes/macros/treatment.njk
+keywords: expert review validation validationDot flag
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "validation-states" %}{% set exTitle = "Agree, disagree, not reviewed" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="usage">Usage</h2>
+<div class="g-prose">
+  <p>Put the mark directly after the pill it judges. In the lists it renders only when <code>flags.validation</code> is on, which also adds the Validation section to the filter menus:</p>
+  <p><code>{{ "{% if flags.validation %}{{ validationDot(row.validation, row.expert_treatment) }}{% endif %}" }}</code></p>
+  <p>The mark reviews a classification, not a legal conclusion. The published site is built without it.</p>
+</div>
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["state", "\"agree\" | \"disagree\" | other", "", "<code>agree</code> draws a blue check, <code>disagree</code> a purple cross, anything else a grey question mark."],
+  ["expert_treatment", "string", "\"\"", "The expert's own label when they disagree; it joins the tooltip and the accessible name."]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The mark is <code>role="img"</code> with a full <code>aria-label</code> ("Invalidated by expert. Expert classification: Distinguished by") and is focusable so its tooltip opens from the keyboard (<code>tooltips.js</code>, through <code>data-tooltip</code>).</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/treatment.njk", "<code>validationDot</code>."],
+  ["assets/js/tooltips.js", "The tooltip."],
+  ["scripts/build_data.py", "Writes <code>flags.validation</code> from <code>CITATOR_DEMO_VALIDATION</code>."]
+]) }}

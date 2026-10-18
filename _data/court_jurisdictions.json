@@ -1,0 +1,12 @@
+[
+  {
+    "key": "federal",
+    "display": "Federal",
+    "order": 0
+  },
+  {
+    "key": "state",
+    "display": "State",
+    "order": 1
+  }
+]

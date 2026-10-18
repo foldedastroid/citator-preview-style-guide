@@ -1,0 +1,35 @@
+---
+title: Form fields
+summary: "The search fields, the sort select, checkboxes and the on/off switch. Every field has a label, visible or not, and keeps its native keyboard behaviour."
+group: controls
+order: 2
+kind: CSS classes
+source: assets/css/styles.css
+keywords: input search select checkbox switch field form
+scripts:
+  - /assets/js/text_signals.js
+---
+{% from "guide/macros.njk" import table, files, note %}
+
+{% set ex = "fields" %}{% set exTitle = "Search, list search and sort, checkboxes, switch" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="classes">Classes</h2>
+{{ table(["Class", "Use"], [
+  ["<code>.search-box</code> in <code>.suggest</code>", "The page's main search, with the icon inside (<code>.search-box__icon</code>)."],
+  ["<code>.list-search</code>", "The search above a list: compact, its label visually hidden."],
+  ["<code>.sort-select</code>", "A labelled native <code>&lt;select&gt;</code>; the label stays visible because the choice needs it."],
+  ["<code>.checkbox</code> in <code>.filter-check</code>", "A native checkbox; the whole label is the target."],
+  ["<code>.switch-row</code>", "An on/off setting as <code>role=\"switch\"</code> with <code>aria-checked</code>, and a help line tied to it by <code>aria-describedby</code>."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>The switch here is the opinion page's "Treatment beside citations": <code>text_signals.js</code> toggles <code>text-signals-off</code> on <code>&lt;html&gt;</code>, remembers it, and <code>shell_state.js</code> restores it before the first paint. Try it: the setting is shared with the app's opinion pages in this browser.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>A placeholder is not a label. Group related checkboxes in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code>. For a field that fails validation, set <code>aria-invalid="true"</code> and point <code>aria-describedby</code> at the message.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["assets/css/styles.css", "<code>.search-box</code>, <code>.list-search</code>, <code>.sort-select</code>, <code>.checkbox</code>, <code>.filter-check</code>, <code>.switch-row</code>, <code>.switch</code>."],
+  ["assets/js/text_signals.js", "The treatment switch."]
+]) }}

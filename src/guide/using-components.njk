@@ -1,0 +1,48 @@
+---
+title: Using a component
+summary: "How a part of this guide becomes a part of a page: the macro import, the data it reads, the stylesheet, and the script order Alpine's CSP build needs."
+group: start
+order: 2
+kind: Guide
+---
+{% from "guide/macros.njk" import code, note, files %}
+
+<h2 class="g-h2" id="in-the-app">Inside the app</h2>
+<div class="g-prose">
+  <p>Every example's snippet runs as it is in a template under <code>src/</code> or <code>_includes/</code>. It imports the macros it calls and reads the app's global data by its real name (<code>treatment_definitions</code>, <code>allOpinions</code>, <code>index</code>), so pasting it into a page is enough. If the part is interactive, add its script to the page's <code>scripts</code> list in the front matter:</p>
+</div>
+{{ code("code-front-matter", "src/example.njk", "---
+layout: layouts/base.njk
+title: Example
+scripts:
+  - /assets/js/alpine/components/treatment_list.js
+---
+{% from \"macros/treatment.njk\" import severityBadge %}
+{{ severityBadge(\"Caution\", \"Distinguished by\", false, treatment_definitions[\"Distinguished by\"]) }}") }}
+<div class="g-prose">
+  <p><code>layouts/base.njk</code> loads every page script with <code>defer</code> before <code>alpine.min.js</code>. That order matters: the CSP build starts Alpine as soon as it loads, and a component registered on <code>alpine:init</code> after that never runs.</p>
+</div>
+
+<h2 class="g-h2" id="the-csp-rule">The CSP rule</h2>
+<div class="g-prose">
+  <p>The app ships <code>@alpinejs/csp</code>, the build CourtListener uses, so a page needs no <code>unsafe-eval</code>. Templates may only name a component's members: <code>x-show="rowVisible"</code>, <code>x-on:click="toggleFilter"</code>. Expressions such as <code>x-show="open &amp;&amp; !busy"</code> belong in a getter on the component instead. Every component in <code>assets/js/alpine/components/</code> follows this, and so must a new one.</p>
+</div>
+
+<h2 class="g-h2" id="styles">Styles</h2>
+<div class="g-prose">
+  <p>Repeated patterns are component classes in <code>assets/css/styles.css</code> (<code>.severity-badge</code>, <code>.evidence-card</code>), written with Tailwind's <code>@apply</code> against the theme in <code>tailwind.config.js</code>; one-off styling is inline utilities. A part's classes come with the stylesheet, so in the app there is nothing to add. In another Tailwind 3 project, copy the theme and the component classes the part uses; the Files section of each page names them.</p>
+</div>
+
+<h2 class="g-h2" id="keeping-in-sync">Keeping this guide in sync</h2>
+<div class="g-prose">
+  <p>The app is the source. After changing a macro, partial, style or script there, copy it here and rebuild:</p>
+</div>
+{{ code("code-sync", "Terminal, in citator-preview-style-guide", "node tools/sync-app.cjs ../citator-demo
+node tools/sync-app.cjs ../citator-demo --check
+npm run build") }}
+{{ files([
+  ["tools/sync-app.cjs", "Lists every shared path. Files under them are the app's: edit them there, not here."],
+  ["_data/*.json, _data/opinions/", "The app's mock data build (<code>CITATOR_DEMO_DATA=mock npm run build:data</code>), committed here so the guide builds without Python."],
+  ["src/guide/, _includes/guide/, _includes/examples/, assets/guide/", "The guide's own pages, layout, example snippets and chrome."]
+]) }}
+{{ note("A new example is a snippet in <code>_includes/examples/</code> and a page in <code>src/guide/</code> that includes it with <code>{% set ex = \"name\" %}{% include \"guide/example.njk\" %}</code>. The page's <code>group</code> and <code>order</code> place it in the sidebar and in the previous / next sequence.") }}

@@ -1,0 +1,10 @@
+{% from "macros/treatment.njk" import severityBadge %}
+{% for t in [
+  ["Stop", "Overruled by"],
+  ["Warning", "Questioned by"],
+  ["Caution", "Distinguished by"],
+  ["Positive", "Followed by"],
+  ["Neutral", "Cited by"]
+] %}
+  {{ severityBadge(t[0], t[1], false, treatment_definitions[t[1]]) }}
+{% endfor %}

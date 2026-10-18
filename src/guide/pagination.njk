@@ -1,0 +1,41 @@
+---
+title: Pagination
+summary: "Numbered pages, previous and next controls, and the visible result range. The search page uses the same macro and controller."
+group: lists
+order: 6
+kind: Nunjucks macro
+source: _includes/macros/pagination.njk
+keywords: pagination page pages previous next ellipsis search
+scripts:
+  - /assets/js/alpine/components/search_filter.js
+---
+{% from "guide/macros.njk" import params, files, table, note %}
+
+{% set ex = "pagination" %}{% set exStage = "g-example__stage--flush" %}{% set exTitle = "93 illustrative results, ten per page" %}{% include "guide/example.njk" %}
+
+{{ note("These rows are UI fixtures, not opinions. The example uses the search controller's URL and session state; Reset example clears restored filters.") }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["label", "string", "Opinion results", "Names the result set; the navigation label adds “pages”."],
+  ["id", "string", "opinion-pages", "Unique navigation id; its range description uses the same id with <code>-summary</code>."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>Render <code>pagination()</code> inside <code>x-data="searchFilter"</code>. Rows use the search page's <code>data-court</code>, <code>data-tier</code>, <code>data-search</code>, severity and sort attributes, with <code>x-show="rowVisible"</code>. The controller filters and sorts before dividing matching rows into pages of ten.</p></div>
+{{ table(["State", "Behaviour"], [
+  ["Current page", "<code>aria-current=\"page\"</code>; page changes preserve filters and sort in the URL."],
+  ["First / last page", "Previous / Next is disabled at its respective boundary."],
+  ["Distant pages", "Endpoints remain available; ellipses are noninteractive."],
+  ["Zero or one page", "Pagination is hidden."],
+  ["Keyboard", "Native Tab and Enter / Space operate the buttons; focus remains visible."]
+]) }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/pagination.njk", "Shared pagination markup."],
+  ["assets/js/alpine/components/search_filter.js", "Page items, selection, boundaries, result range and URL state."],
+  ["assets/js/alpine/composables/highlight.js", "Shared reduced-motion scroll behaviour."],
+  ["assets/css/styles.css", "Pagination controls and focus states."],
+  ["src/index.njk", "Production search composition."]
+]) }}

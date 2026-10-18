@@ -1,0 +1,49 @@
+---
+title: Evidence card
+summary: "Why a row carries its treatment: the pill, the model's rationale, the quoted passage with two checks on it, and a way to read the passage in its opinion."
+group: opinion-data
+order: 3
+kind: Nunjucks macro
+source: _includes/macros/evidence.njk
+keywords: evidenceCard quote rationale passage check
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "evidence-card" %}{% set exTitle = "A Later Courts row's evidence" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="quote-checks">Quote checks</h2>
+<div class="g-prose"><p>The status line under the quote answers two questions the build checks (<code>model_output.py</code>): is the quote in the text, and does it name this case. Keep every state: a missing passage must never look verified.</p></div>
+{% set ex = "evidence-states" %}{% set exTitle = "Every quote status" %}{% set exStage = "g-example__stage--tint" %}{% include "guide/example.njk" %}
+{{ table(["Field", "Value", "Line"], [
+  ["<code>quote_status</code>", "<code>found</code>", "✓ In the opinion"],
+  ["", "<code>stitched</code>", "✓ In the opinion, separate passages"],
+  ["", "<code>partial</code>", "⚠ Only partly in the opinion"],
+  ["", "<code>missing</code>", "✗ Not found in the opinion; no link to the passage"],
+  ["", "anything else", "– Too short to check"],
+  ["<code>quote_names</code>", "<code>cite</code> / <code>name</code>", "✓ Cites / Names this case"],
+  ["", "anything else", "⚠ Does not name this case"]
+]) }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["card", "object", "", "<code>label</code>, <code>severity</code>, <code>rationale</code>, <code>quote</code>, <code>quote_html</code> (the quote escaped, the case in bold), <code>quote_status</code>, <code>quote_names</code>, optionally <code>other_label</code>. Rows carry them as <code>evidence_cards</code>."],
+  ["defs", "object", "", "<code>treatment_definitions</code>."],
+  ["where", "string", "\"the opinion\"", "Names the text the quote comes from in the status line."],
+  ["href", "string", "\"\"", "A link to the passage on another page. Without it, the card renders a <em>Read in the opinion</em> button for the current page."],
+  ["href_label", "string", "\"\"", "The link's text."],
+  ["linkable", "boolean", "true", "<code>false</code> renders no way to the passage."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>The <em>Read in the opinion</em> button calls <code>readQuote</code> on the opinion page's <code>opinionTabs</code> component: it switches to the Opinion tab, finds the passage (the whole quote first, then its opening words), wraps it and flashes it. Outside the opinion page, pass <code>href</code>. In this guide the button explains where it works.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The quote is a <code>&lt;blockquote&gt;</code>; the status marks are text, not colour alone. The passage link names where it goes.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/evidence.njk", "<code>evidenceCard</code>."],
+  ["_includes/macros/treatment.njk", "The pill."],
+  ["assets/css/styles.css", "<code>.evidence-card</code>, <code>.quote-status</code>."],
+  ["assets/js/alpine/components/opinion_tabs.js", "<code>readQuote</code>, on the opinion page."]
+]) }}

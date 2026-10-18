@@ -1,0 +1,112 @@
+
+{% from "macros/list_header.njk" import listHeader, listToolbar %}
+{% from "macros/treatment.njk" import severityBadge, validationDot, discussion %}
+{% from "macros/evidence.njk" import evidenceCard %}
+{% from "macros/lists.njk" import citeList %}
+{% from "macros/icons.njk" import icon %}
+
+<section class="cited-authorities" aria-label="Cited authorities" x-data="authoritiesFilter">
+  {% if opinion.cited_authorities | length %}
+  {{ listToolbar([
+    {"key": "severity", "label": "Analysis (most negative first)"},
+    {"key": "appearance", "label": "Order of appearance"},
+    {"key": "name", "label": "Case name (A–Z)"},
+    {"key": "date", "label": "Date (newest first)"},
+    {"key": "mentions", "label": "Discussion (deepest first)"},
+    {"key": "court", "label": "Court (highest first)"}
+  ], "authorities", "Applied treatment", "Recognized treatment", flags.validation) }}
+  {{ listHeader([
+    {"label": "Authority", "title": "The cited case, under what this opinion does to it and what it recognizes other courts did"},
+    {"label": "Date filed", "class": "col-head--pad", "title": "When the cited case was decided"},
+    {"label": "Discussion", "class": "col-head--pad", "title": "How many times this opinion cites the case"}
+  ]) }}
+  <ol role="list" class="citator-list" x-bind:class="listClass">
+    {% for a in opinion.cited_authorities %}
+    <li
+      id="authority-{{ a.n }}"
+      data-row-id="{{ a.row_id }}"
+      data-search="{{ a.search_text }}"
+      data-severity="{{ a.overall_severity | lower }}"
+      data-applied-severity="{{ a.severity | lower }}"
+      data-rec-severity="{{ a.recognized_filter | lower }}"
+      data-validation="{{ a.validation }}"
+      data-appearance-index="{{ a.appearance_index }}"
+      data-severity-index="{{ a.severity_index }}"
+      data-date-index="{{ a.date_index }}"
+      data-name-index="{{ a.name_index }}"
+      data-mentions-index="{{ a.mentions_index }}"
+      data-court-index="{{ a.court_index }}"
+      data-court-label="{{ a.court_name or 'Court not identified' }}"
+      data-year="{{ (a.date_filed_iso or '').slice(0, 4) }}"
+      data-date="{{ a.date_filed_iso or '' }}"
+      x-bind:class="rowClass"
+      x-bind:style="rowStyle"
+      class="cited-authority sev-rail sev-rail--{{ a.overall_severity | lower }}"
+    >
+      <div class="court-group-head" aria-hidden="true">{{ a.court_name or "Court not identified" }}</div>
+      {% if a.has_detail %}<details class="authority-row"><summary class="authority-row__summary">{% endif %}
+      <div class="citator-row">
+
+
+        <div class="citator-row__treatment">
+          <span>
+            {{ severityBadge(a.severity, a.treatment_active, false, treatment_definitions[a.treatment_active]) }}
+            {% if flags.validation %}{{ validationDot(a.applied_validation, a.expert_treatment) }}{% endif %}
+          </span>
+          {% for r in a.recognized %}
+          <span>
+            {{ severityBadge(r.severity, r.label, false, treatment_definitions[r.label]) }}
+            {% if flags.validation %}{{ validationDot(r.validation, a.expert_treatment) }}{% endif %}
+          </span>
+          {% endfor %}
+        </div>
+        <div class="cited-authority__body">
+          <div class="citator-row__name">
+
+
+            {% if a.page_url %}<a href="{{ a.page_url }}" x-on:click.stop class="citator-row__link" title="Open this opinion">{{ a.name }}</a>
+            {% else %}<span class="citator-row__title">{{ a.name }}</span>{% endif %}
+
+          </div>
+
+
+          {% set parts = [] %}
+          {% if a.court_name %}{% set parts = (parts.push(a.court_name), parts) %}{% endif %}
+          {% if a.status %}{% set parts = (parts.push(a.status), parts) %}{% endif %}
+          {% if parts | length or a.docket_numbers | length %}
+          <p class="citator-row__meta">
+            {%- for part in parts %}{{ part }}{% if not loop.last or a.docket_numbers | length %} <span class="cite-list__dot" aria-hidden="true">·</span> {% endif %}{% endfor -%}
+            {%- if a.docket_numbers | length %}<span class="citator-row__meta-item" data-cite-cell>No. {{ citeList(a.docket_numbers, noun="case number") }}</span>{% endif -%}
+          </p>
+          {% endif %}
+          {% set lead = a.evidence_cards[0] if a.evidence_cards | length else null %}
+          {% if lead and lead.quote %}<p class="citator-row__excerpt">{{ lead.quote_html | safe }}</p>{% endif %}
+        </div>
+        <div class="citator-row__date">{{ a.date_filed }}</div>
+        <div class="citator-row__cited">{{ discussion(a.n_mentions, "in this opinion") }}</div>
+        {% if a.has_detail %}
+        {{ icon("chevron-right", "citator-row__chevron expand-chevron") }}
+        {% else %}
+        <span aria-hidden="true"></span>
+        {% endif %}
+      </div>
+      {% if a.has_detail %}</summary>
+        <div class="authority-detail">
+          {% for c in a.evidence_cards %}{{ evidenceCard(c, treatment_definitions) }}{% endfor %}
+        </div>
+      </details>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% elif opinion.authorities_populated %}
+  <p class="tab-empty">This opinion cites no other opinions.</p>
+  {% else %}
+  <div class="tab-empty">
+    <p class="m-0">The authorities cited in this opinion have not been identified yet.</p>
+    <p class="tab-empty__actions">
+      <a href="#opinion" class="doc-action">Read the opinion</a>
+      {% if opinion.cl_url %}<a href="{{ opinion.cl_url }}" class="doc-action" target="_blank" rel="noopener">Open on CourtListener</a>{% endif %}
+    </p>
+  </div>
+  {% endif %}
+</section>

@@ -1,0 +1,34 @@
+---
+title: Narrow by
+summary: "The opinion page's side panel for a list: every tier, court and period with its count. A row narrows the list to that part; a second click removes it."
+group: lists
+order: 4
+kind: Nunjucks macro
+source: _includes/macros/narrow.njk
+keywords: narrowView facets panel court year tier
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "narrow-by" %}{% set exTitle = "Callahan v. Millard County: list and panel" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>Each row is a facet: following it narrows the list by that part and keeps the others (a tier and a court together), and following it again removes it. The narrowing in force is marked on the panel by <code>narrowPanel</code> (<code>opinion_views.js</code>), which listens for the <code>citator-narrow</code> event the list sends.</p>
+  <p><em>Citator summary</em> returns the panel to the opinion's summary on the opinion page.</p>
+</div>
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["b", "breakdown", "", "The list's <code>chartBreakdown</code>: the same counts as its chart."],
+  ["href", "string", "", "The list it narrows: <code>#cited-by</code> or <code>#authorities</code>."],
+  ["noun", "string", "", "\"All <em>citing opinions</em>\"."],
+  ["empty", "string", "", "Shown when the list has no rows."]
+]) }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/narrow.njk", "<code>narrowView</code>, <code>narrowRow</code>."],
+  ["assets/js/alpine/components/opinion_views.js", "<code>narrowPanel</code>."],
+  ["assets/js/alpine/components/treatment_list.js", "Applies a narrowing to the list."],
+  ["assets/css/components/opinion-views.css", "<code>.narrow</code> and its rows."]
+]) }}

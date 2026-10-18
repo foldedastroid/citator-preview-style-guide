@@ -1,0 +1,384 @@
+{
+  "cluster_id": 2219834,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/2219834/x/",
+  "case_name": "Martinez v. City of Schenectady",
+  "name_missing": false,
+  "docket_number": "N/A",
+  "docket_numbers": [
+    "N/A"
+  ],
+  "citations": [
+    "97 N.Y.2d 78",
+    "761 N.E.2d 560",
+    "735 N.Y.S.2d 868"
+  ],
+  "court": "ny",
+  "court_display": "New York Court of Appeals",
+  "is_court_of_last_resort": true,
+  "date_filed": "2001-11-19",
+  "excerpt": "The long history of this appeal began in September 1987 when, pursuant to a search warrant, defendants — Schenectady police officers — entered the residence of plaintiff Melody Martinez, seized four ounces of cocaine from a dresser drawer in her bedroom and arrested her.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>The long history of this appeal began in September 1987 when, pursuant to a search warrant, defendants — Schenectady police officers — entered the residence of plaintiff Melody Martinez, seized four ounces of cocaine from a dresser drawer in her bedroom and arrested her.</p>\n<p>Plaintiff then brought suit in the United States District Court for the Northern District of New York against the City of Schenectady and five officers involved in the relevant events, asserting a claim for damages under 42 USC §1983, common-law claims of malicious prosecution and false imprisonment, and a claim against the City for negligent hiring, training and supervision of the officers.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>On appeals by plaintiff and the officers, the United States Court of Appeals for the Second Circuit reversed the denial of defendants&#x27; summary judgment motion, concluding as a matter of law that qualified immunity barred the assertion of the section 1983 claims against the police officers. Applying the &quot;corrected affidavits&quot; doctrine previously espoused by the Second Circuit, the court reviewed all the evidence known to the officers at the time they sought the warrant to determine if under the totality of the circumstances a reasonable officer would believe that there was probable cause for the search.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>The present action followed in State Supreme Court against the City of Schenectady and the officers individually, asserting three causes of action: false imprisonment, malicious prosecution, and violation of article I, §§1, 11 and 12 of the New York State Constitution. We agree with Supreme Court and the Appellate Division that the &quot;narrow remedy&quot; established in <span class=\"cited-case-wrap\"><span class=\"cited-case\">Brown v. State of New York</span></span> cannot be stretched to fit the facts before us. We affirm dismissal of the complaint.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Limited by",
+        "label": "Limited by",
+        "severity": "Warning",
+        "rationale": "Same court (NY Court of Appeals) narrows Martinez.",
+        "quote": "Martinez's preclusion holding does not extend beyond the search-warrant context",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong>&#x27;s preclusion holding does not extend beyond the search-warrant context"
+      },
+      "has_detail": true,
+      "row_id": "cb-56",
+      "citing_cluster_id": 9920061,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Williams v. State of New York",
+      "citing_docket_numbers": [
+        "OD-2014-04"
+      ],
+      "citing_citations": [
+        "22 N.Y.3d 423"
+      ],
+      "citing_court_display": "New York Court of Appeals",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2014-04-29",
+      "citing_date_short": "04/29/2014",
+      "search_text": "williamsvstateofnewyork22ny3d423",
+      "is_scoped": false,
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Distinguished by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Limited by",
+          "treatment_past": "Limited",
+          "severity": "Warning",
+          "direction": "Citing Reference",
+          "expert_treatment": "Distinguished by",
+          "source": "model",
+          "evidence": {
+            "quote": "Martinez's preclusion holding does not extend beyond the search-warrant context",
+            "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong>&#x27;s preclusion holding does not extend beyond the search-warrant context",
+            "rationale": "Same court (NY Court of Appeals) narrows Martinez.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Limited by",
+          "label": "Limited by",
+          "severity": "Warning",
+          "rationale": "Same court (NY Court of Appeals) narrows Martinez.",
+          "quote": "Martinez's preclusion holding does not extend beyond the search-warrant context",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong>&#x27;s preclusion holding does not extend beyond the search-warrant context"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 0,
+      "name_index": 3,
+      "mentions_index": 0,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Same court distinguishes on procedural posture.",
+        "quote": "Martinez involved a federal qualified-immunity ruling that triggered preclusion",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong> involved a federal qualified-immunity ruling that triggered preclusion"
+      },
+      "has_detail": true,
+      "row_id": "cb-55",
+      "citing_cluster_id": 9920060,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Lyles v. State",
+      "citing_docket_numbers": [
+        "OD-2009-12"
+      ],
+      "citing_citations": [
+        "13 N.Y.3d 312"
+      ],
+      "citing_court_display": "New York Court of Appeals",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-10-22",
+      "citing_date_short": "10/22/2009",
+      "search_text": "lylesvstate13ny3d312",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Martinez involved a federal qualified-immunity ruling that triggered preclusion",
+            "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong> involved a federal qualified-immunity ruling that triggered preclusion",
+            "rationale": "Same court distinguishes on procedural posture.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Same court distinguishes on procedural posture.",
+          "quote": "Martinez involved a federal qualified-immunity ruling that triggered preclusion",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Martinez</strong> involved a federal qualified-immunity ruling that triggered preclusion"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 1,
+      "name_index": 2,
+      "mentions_index": 1,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Sister-state (horizontal_persuasive) — Cal. Sup. Ct. cites NY Court of Appeals as persuasive authority on §1983 preclusion.",
+        "quote": "the New York Court of Appeals confronted a similar preclusion question",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the New York Court of Appeals confronted a similar preclusion question"
+      },
+      "has_detail": false,
+      "row_id": "cb-21",
+      "citing_cluster_id": 1801687,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hernandez v. City of Pomona",
+      "citing_docket_numbers": [
+        "S149499"
+      ],
+      "citing_citations": [
+        "46 Cal. 4th 501",
+        "207 P.3d 506",
+        "94 Cal. Rptr. 3d 1"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-05-28",
+      "citing_date_short": "05/28/2009",
+      "search_text": "hernandezvcityofpomona46cal4th501207p3d50694calrptr3d1",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the New York Court of Appeals confronted a similar preclusion question",
+            "quote_html": "the New York Court of Appeals confronted a similar preclusion question",
+            "rationale": "Sister-state (horizontal_persuasive) — Cal. Sup. Ct. cites NY Court of Appeals as persuasive authority on §1983 preclusion.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 2,
+      "name_index": 1,
+      "mentions_index": 2,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Later NY Court of Appeals case citing Martinez on state constitutional torts.",
+        "quote": "this Court declined in Martinez to extend the Brown remedy",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "this Court declined in <strong class=\"evidence-card__case\">Martinez</strong> to extend the Brown remedy"
+      },
+      "has_detail": false,
+      "row_id": "cb-33",
+      "citing_cluster_id": 9100213,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hartman v. State",
+      "citing_docket_numbers": [
+        "98-CC-12345"
+      ],
+      "citing_citations": [
+        "8 N.Y.3d 542"
+      ],
+      "citing_court_display": "New York Court of Appeals",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2007-05-08",
+      "citing_date_short": "05/08/2007",
+      "search_text": "hartmanvstate8ny3d542",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "this Court declined in Martinez to extend the Brown remedy",
+            "quote_html": "this Court declined in <strong class=\"evidence-card__case\">Martinez</strong> to extend the Brown remedy",
+            "rationale": "Later NY Court of Appeals case citing Martinez on state constitutional torts.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 3,
+      "name_index": 0,
+      "mentions_index": 3,
+      "court_index": 0
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Warning"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 2219834,
+        "case_name": "Martinez v. City of Schenectady",
+        "court": "New York Court of Appeals",
+        "court_id": "ny",
+        "level": 1,
+        "date_filed": "2001-11-19",
+        "docket_number": "N/A",
+        "citations": [
+          "97 N.Y.2d 78",
+          "761 N.E.2d 560",
+          "735 N.Y.S.2d 868"
+        ],
+        "url": "/opinion/2219834/"
+      }
+    ],
+    "chain": [],
+    "levels": [],
+    "n_opinions": 1
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "not_reviewable"
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "citing_name": "Williams v. State of New York",
+      "citing_court": "New York Court of Appeals",
+      "citing_cluster_id": 9920061,
+      "n_other_negative": 1,
+      "n_plain": 2,
+      "n_total": 4,
+      "quote": "Martinez's preclusion holding does not extend beyond the search-warrant context",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

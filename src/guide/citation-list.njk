@@ -1,0 +1,43 @@
+---
+title: Citation list
+summary: "Reporter citations or case numbers kept to one line: as many as fit, then a \"+N\" button that opens the rest in place."
+group: opinion-data
+order: 1
+kind: Nunjucks macro
+source: _includes/macros/lists.njk
+keywords: citeList citations docket clamp fit expand list_toggle cite_fit
+scripts:
+  - /assets/js/alpine/composables/list_toggle.js
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "citation-list" %}{% set exTitle = "Pearson v. Callahan's citations and five case numbers, in a narrow cell" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="usage">Usage</h2>
+<div class="g-prose">
+  <p>Put the list in a <code>&lt;dd data-cite-cell&gt;</code>. <code>cite_fit.js</code> measures that cell and hides, from the end, every entry that would overflow it or wrap; the button then says how many are hidden. Narrow the window and the count changes. In an inline cell (no <code>data-cite-cell</code>, as in a tab row's detail line) the first <code>limit</code> entries show and nothing is measured.</p>
+</div>
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["items", "string[]", "", "The entries, in order."],
+  ["limit", "number", "3", "How many are candidates to show before the button."],
+  ["dot", "boolean", "false", "Separate entries with a middle dot instead of a comma."],
+  ["noun", "string", "\"citation\"", "Names the entries in the button's label: \"Show 2 more case numbers\"."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>The button is an Alpine <code>listToggle</code> (<code>composables/list_toggle.js</code>). Expanding adds <code>is-expanded</code> to the cell, which shows every entry; collapsing dispatches <code>cite-list:collapse</code> so <code>cite_fit.js</code> fits the line again. The list keeps no state of its own. Without script the first <code>limit</code> entries show.</p>
+</div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The button is a native <code>&lt;button&gt;</code> with <code>aria-expanded</code> and a label that counts what it reveals. Test it with text zoom: fitting re-runs whenever the cell changes size.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/lists.njk", "<code>citeList</code>."],
+  ["assets/js/cite_fit.js", "Fits block cells to one line."],
+  ["assets/js/alpine/composables/list_toggle.js", "The \"+N\" / less button."],
+  ["assets/css/styles.css", "<code>.cite-list</code>, <code>.cite-extra</code>, <code>.cite-fit-hidden</code>, <code>.meta-list</code>."]
+]) }}

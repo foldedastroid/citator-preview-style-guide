@@ -1,0 +1,53 @@
+{#- -#}
+
+{#- -#}
+{% macro params(rows) %}
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr><th scope="col">Parameter</th><th scope="col">Type</th><th scope="col">Default</th><th scope="col">Description</th></tr></thead>
+    <tbody>
+      {% for r in rows %}
+      <tr><td><code>{{ r[0] }}</code></td><td>{{ r[1] }}</td><td>{% if r[2] %}<code>{{ r[2] }}</code>{% else %}—{% endif %}</td><td>{{ r[3] | safe }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endmacro %}
+
+{#- -#}
+{% macro table(head, rows) %}
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr>{% for h in head %}<th scope="col">{{ h }}</th>{% endfor %}</tr></thead>
+    <tbody>
+      {% for r in rows %}<tr>{% for c in r %}<td>{{ c | safe }}</td>{% endfor %}</tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endmacro %}
+
+{#- -#}
+{% macro files(rows) %}
+<ul role="list" class="g-files">
+  {% for r in rows %}<li><code>{{ r[0] }}</code><span>{{ r[1] | safe }}</span></li>{% endfor %}
+</ul>
+{% endmacro %}
+
+{#- -#}
+{% macro note(text) %}
+<p class="g-note">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg>
+  <span>{{ text | safe }}</span>
+</p>
+{% endmacro %}
+
+{#- -#}
+{% macro code(id, label, text) %}
+<figure class="g-codeblock">
+  <figcaption class="g-codeblock__bar">
+    <span class="g-example__title">{{ label }}</span>
+    <button type="button" class="g-text-button" data-copy="{{ id }}">Copy</button>
+  </figcaption>
+  <pre class="g-code" id="{{ id }}"><code>{{ text }}</code></pre>
+</figure>
+{% endmacro %}

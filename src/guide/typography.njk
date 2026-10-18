@@ -1,0 +1,44 @@
+---
+title: Typography
+summary: "Inter for the interface and for reading, Cooper Hewitt for the wordmark's voice, DM Mono for citations and case numbers; and the role sizes the components share."
+group: foundations
+order: 2
+kind: Tailwind theme
+source: tailwind.config.js
+keywords: fonts type scale inter cooper hewitt dm mono
+---
+{% from "guide/macros.njk" import table, note %}
+{% set f = theme.extend.fontSize %}
+
+<h2 class="g-h2" id="families">Families</h2>
+{{ table(["Family", "Utility", "Used for", "Specimen"], [
+  ["Inter", "<code>font-sans</code>", "Everything by default: controls, lists, the opinion text", "<span style=\"font-family: Inter, sans-serif; font-size: 15px; color: #1c1814\">Pearson v. Callahan</span>"],
+  ["Cooper Hewitt", "<code>font-cooper</code>", "Display sizes where CourtListener uses its own voice", "<span style=\"font-family: 'Cooper Hewitt', sans-serif; font-size: 17px; color: #1c1814\">Citator preview</span>"],
+  ["DM Mono", "<code>font-mono</code>", "Reporter citations and docket numbers, which a reader may copy", "<span style=\"font-family: 'DM Mono', monospace; font-size: 12px; color: #1c1814\">555 U.S. 223</span>"]
+]) }}
+<div class="g-prose"><p>The fonts are bundled in <code>assets/fonts/</code> with their licences and declared in <code>assets/css/fonts.css</code>; no font is fetched from a third party.</p></div>
+
+<h2 class="g-h2" id="roles">Roles</h2>
+<div class="g-prose"><p>Components size their text by role, not by raw size, so a change to a role reaches every heading of that kind.</p></div>
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr><th scope="col">Utility</th><th scope="col">Size / line</th><th scope="col">Specimen</th></tr></thead>
+    <tbody>
+      {% for name in ["role-title", "role-section", "role-subheading", "role-reading", "role-body", "role-control", "role-support"] %}
+      {% set v = f[name] %}
+      <tr>
+        <td><code>text-{{ name }}</code></td>
+        <td><code>{{ v[0] }}</code> / <code>{{ v[1].lineHeight if v[1].lineHeight else v[1] }}</code></td>
+        <td><span class="text-{{ name }}" style="font-family: Inter, sans-serif; color: #1c1814">Saucier v. Katz</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2 class="g-h2" id="scale">Scale</h2>
+<div class="g-prose"><p>CourtListener's own steps, for the places a role does not fit.</p></div>
+{% set rows = [] %}
+{% for name, v in f %}{% if not (name | string).startsWith("role-") %}{% set rows = (rows.push(["<code>text-" ~ name ~ "</code>", "<code>" ~ v[0] ~ "</code> / <code>" ~ v[1] ~ "</code>"]), rows) %}{% endif %}{% endfor %}
+{{ table(["Utility", "Size / line"], rows) }}
+{{ note("Weight carries less than size and colour here: most text is regular, labels and names are medium (500), and bold is kept for the count in a meter or a bold name inside a quote.") }}

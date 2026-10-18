@@ -1,0 +1,5 @@
+{% from "macros/treatment.njk" import severityBadge %}
+<div class="flex flex-wrap items-center gap-6 text-sm text-greyscale-700">
+  {{ severityBadge("Caution", "Criticized by", false, treatment_definitions["Criticized by"]) }}
+  <span class="tooltip-target underline decoration-dotted underline-offset-4" tabindex="0" data-tooltip="Controlling or equal: a court whose decisions bind this one, or the same court.">controlling or equal court</span>
+</div>

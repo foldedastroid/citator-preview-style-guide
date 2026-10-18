@@ -1,0 +1,11 @@
+{% from "macros/evidence.njk" import evidenceCard %}
+
+{% set cb = opinion.cited_by[1] %}
+{% for c in cb.evidence_cards %}
+  {% if cb.is_scoped and (cb.citing_authority_n or c.quote_status != "missing") %}
+    {% set href = "/opinion/" ~ cb.citing_cluster_id ~ "/" ~ ("#authority-" ~ cb.citing_authority_n if cb.citing_authority_n else "#q=" ~ (c.quote | urlencode)) %}
+    {{ evidenceCard(c, treatment_definitions, "the citing opinion", href, "See it in the citing opinion") }}
+  {% else %}
+    {{ evidenceCard(c, treatment_definitions, "the citing opinion", "", "", false) }}
+  {% endif %}
+{% endfor %}

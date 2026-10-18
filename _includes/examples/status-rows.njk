@@ -1,0 +1,4 @@
+{% from "macros/status.njk" import statusRows %}
+
+{% set pageIds = [] %}{% for o in allOpinions %}{% set pageIds = (pageIds.push(o.cluster_id), pageIds) %}{% endfor %}
+{{ statusRows(opinion.status, opinion.disposition, treatment_definitions, "", false, "#cited-by", pageIds) }}

@@ -1,0 +1,11 @@
+{% from "macros/lists.njk" import citeList %}
+<dl class="meta-list home-meta max-w-[17rem]">
+  <div>
+    <dt>Citations</dt>
+    <dd data-cite-cell>{{ citeList(["555 U.S. 223", "129 S. Ct. 808", "172 L. Ed. 2d 565"], dot=true) }}</dd>
+  </div>
+  <div>
+    <dt>Docket No.</dt>
+    <dd data-cite-cell>{{ citeList(["06-4135", "06-4136", "06-4137", "06-4138", "06-4139"], noun="case number") }}</dd>
+  </div>
+</dl>

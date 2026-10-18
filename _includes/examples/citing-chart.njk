@@ -1,0 +1,26 @@
+{% from "macros/citing_chart.njk" import citingChart %}
+{% from "macros/treatment.njk" import severityBadge %}
+
+{% set b = chartExamples.sparse %}
+<div role="tabpanel" data-tab="{{ b.list }}">
+  {{ citingChart(b) }}
+  <section x-data="citedByFilter" class="mt-4">
+    <p class="list-count" role="status" aria-live="polite"><span x-text="visibleCount"></span> of <span x-text="totalCount"></span> rows</p>
+    <ol role="list" class="citator-list" x-bind:class="listClass">
+      {% for r in b.rows %}
+      <li data-row-id="{{ r.row_id }}" data-search="{{ r.search_text }}" data-severity="{{ r.severity | lower }}"
+          data-applied-severity="{{ r.severity | lower }}" data-rec-severity="none" data-validation="unverified"
+          data-severity-index="{{ r.severity_index }}" data-court-label="{{ r.citing_court_display }}"
+          data-date="{{ r.citing_date_filed }}" x-bind:class="rowClass" x-bind:style="rowStyle"
+          class="sev-rail sev-rail--{{ r.severity | lower }}">
+        <div class="citator-row">
+          <div class="citator-row__treatment"><span>{{ severityBadge(r.severity, r.applied[0].treatment ~ " by") }}</span></div>
+          <div><div class="citator-row__name"><span class="citator-row__title">{{ r.citing_case_name }}</span></div><p class="citator-row__meta">{{ r.citing_court_display }}</p></div>
+          <div class="citator-row__date">{{ r.citing_date_short }}</div>
+          <span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+</div>

@@ -1,0 +1,26 @@
+---
+title: Tooltips
+summary: "Short definitions on hover and focus: a defined treatment pill, or any element with data-tooltip. Placed below their anchor, kept in the viewport."
+group: controls
+order: 4
+kind: Script
+source: assets/js/tooltips.js
+keywords: tooltip popover definition hover focus data-tooltip
+---
+{% from "guide/macros.njk" import files, note %}
+
+{% set ex = "tooltips" %}{% set exTitle = "A defined pill, and a data-tooltip term" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="usage">Usage</h2>
+<div class="g-prose">
+  <p>A pill gets its tooltip from <code>severityBadge</code>'s <code>definition</code>. Anything else: class <code>tooltip-target</code>, <code>tabindex="0"</code> so it can take focus, and the text in <code>data-tooltip</code>. The script finds both on load and on hover.</p>
+</div>
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>The tip opens on pointer hover (not touch) and on focus, closes on Escape, blur, a press elsewhere or the anchor scrolling out of view, and follows the anchor on scroll and resize. Where the browser has the Popover API the tip is a manual popover, so no <code>overflow: hidden</code> container clips it; otherwise it moves to <code>&lt;body&gt;</code> while open.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The anchor's <code>aria-describedby</code> names the tip (<code>role="tooltip"</code>), so the definition is read after the label. Keep a tooltip to a definition: nothing the reader must act on.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/js/tooltips.js", "Positioning and lifecycle."], ["assets/css/styles.css", "<code>.pill-tip</code>, <code>.tooltip-bubble</code>, <code>.tooltip-target</code>."]]) }}

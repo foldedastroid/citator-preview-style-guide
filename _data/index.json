@@ -1,0 +1,430 @@
+[
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "none"
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Distinguished by",
+        "severity": "Caution",
+        "citing_name": "Ballentine v. Tucker",
+        "citing_court": "Ninth Circuit",
+        "citing_cluster_id": 9920040,
+        "n_other_negative": 0,
+        "n_plain": 3,
+        "n_total": 4,
+        "quote": "Lacey involved a high-profile arrest of journalists for newsgathering activity",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 807646,
+    "case_name": "Lacey v. Arpaio",
+    "search_text": "laceyvarpaio693f3d896",
+    "excerpt": "This §1983 case concerns allegations of unlawful conduct by officials in the Maricopa County Sheriff's Office and the Maricopa County Attorney's Office, conduct which culminated in the late-night arrests of Michael Lacey and Jim Larkin, owners of the Phoenix New Times.",
+    "name_missing": false,
+    "docket_numbers": [
+      "09-15703"
+    ],
+    "citations": [
+      "693 F.3d 896"
+    ],
+    "court": "ca9",
+    "court_display": "Ninth Circuit",
+    "date_filed": "2012-08-29",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Caution"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "treated",
+        "treatment": "Affirmed by",
+        "severity": "Positive",
+        "citing_name": "Purnell v. Henry",
+        "citing_cluster_id": 9999002,
+        "quote": "the judgment of the Court of Appeals is affirmed",
+        "quote_status": "missing",
+        "authority_n": null
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Limited by",
+        "severity": "Warning",
+        "citing_name": "Mayfield v. Roanoke County",
+        "citing_court": "Fourth Circuit",
+        "citing_cluster_id": 9920024,
+        "n_other_negative": 2,
+        "n_plain": 2,
+        "n_total": 5,
+        "quote": "Henry's holding is limited to the stipulated mistake-of-weapon scenario",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 220962,
+    "case_name": "Henry v. Purnell",
+    "search_text": "henryvpurnell652f3d524",
+    "excerpt": "Without warning, Officer Robert Purnell shot Frederick Henry, an unarmed man wanted for misdemeanor failure to pay child support, when he started running away. In the ensuing §1983 action, the parties stipulated that Purnell had intended to use his Taser rather than his gun and t…",
+    "name_missing": false,
+    "docket_numbers": [
+      "08-7433"
+    ],
+    "citations": [
+      "652 F.3d 524"
+    ],
+    "court": "ca4",
+    "court_display": "Fourth Circuit",
+    "date_filed": "2011-07-14",
+    "summary": {
+      "dh_severity": "Positive",
+      "cr_severity": "Warning"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "treated",
+        "treatment": "Affirmed in part; Reversed in part as recognized by",
+        "severity": "Warning",
+        "citing_name": "Estrada v. Rhode Island",
+        "citing_cluster_id": 9920032,
+        "quote": "Maldonado was later affirmed in part and reversed in part by the Supreme Court",
+        "quote_status": "missing",
+        "authority_n": null
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Distinguished by",
+        "severity": "Caution",
+        "citing_name": "Garcia v. Municipality of Carolina",
+        "citing_court": "First Circuit",
+        "citing_cluster_id": 9920031,
+        "n_other_negative": 1,
+        "n_plain": 1,
+        "n_total": 3,
+        "quote": "Maldonado involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 203857,
+    "case_name": "Maldonado v. Fontanes",
+    "search_text": "maldonadovfontanes568f3d263",
+    "excerpt": "Residents of three public housing complexes brought a civil rights suit under 42 U.S.C. §1983 against the Mayor of Barceloneta, Puerto Rico, protesting the precipitous seizures and cruel killings of their pet cats and dogs.",
+    "name_missing": false,
+    "docket_numbers": [
+      "08-2211"
+    ],
+    "citations": [
+      "568 F.3d 263"
+    ],
+    "court": "ca1",
+    "court_display": "First Circuit",
+    "date_filed": "2009-06-04",
+    "summary": {
+      "dh_severity": "Warning",
+      "cr_severity": "Caution"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "not_reviewable"
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Distinguished by",
+        "severity": "Caution",
+        "citing_name": "Hayes v. County of San Diego",
+        "citing_court": "California Supreme Court",
+        "citing_cluster_id": 9920050,
+        "n_other_negative": 0,
+        "n_plain": 2,
+        "n_total": 3,
+        "quote": "Hernandez addressed preclusion arising from a federal qualified-immunity ruling",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 1801687,
+    "case_name": "Hernandez v. City of Pomona",
+    "search_text": "hernandezvcityofpomona46cal4th501207p3d50694calrptr3d1",
+    "excerpt": "We granted review in this case to consider the following question: When a federal court enters judgment in favor of the defendants on a civil rights claim brought under 42 United States Code section 1983, in which the plaintiffs seek damages for police use of deadly and constitut…",
+    "name_missing": false,
+    "docket_numbers": [
+      "S149499"
+    ],
+    "citations": [
+      "46 Cal. 4th 501",
+      "207 P.3d 506",
+      "94 Cal. Rptr. 3d 1"
+    ],
+    "court": "cal",
+    "court_display": "California Supreme Court",
+    "date_filed": "2009-05-28",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Caution"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "not_reviewable"
+      },
+      "later_courts": {
+        "state": "plain",
+        "n_total": 8
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 145918,
+    "case_name": "Pearson v. Callahan",
+    "search_text": "pearsonvcallahan555us223129sct808172led2d565",
+    "excerpt": "This is an action brought by respondent under Rev. Stat. §1979, 42 U. S. C. §1983, against state law enforcement officers who conducted a warrantless search of his house incident to his arrest for the sale of methamphetamine to an undercover informant whom he had voluntarily admi…",
+    "name_missing": false,
+    "docket_numbers": [
+      "07-751"
+    ],
+    "citations": [
+      "555 U.S. 223",
+      "129 S. Ct. 808",
+      "172 L. Ed. 2d 565"
+    ],
+    "court": "scotus",
+    "court_display": "U.S. Supreme Court",
+    "date_filed": "2009-01-21",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Positive"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "treated",
+        "treatment": "Reversed by",
+        "severity": "Stop",
+        "citing_name": "Pearson v. Callahan",
+        "citing_cluster_id": 145918,
+        "quote": "we reverse and remand for further proceedings consistent with this opinion",
+        "quote_status": "missing",
+        "authority_n": null
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Limited by",
+        "severity": "Warning",
+        "citing_name": "Saavedra v. Murphy",
+        "citing_court": "Tenth Circuit",
+        "citing_cluster_id": 9920010,
+        "n_other_negative": 3,
+        "n_plain": 1,
+        "n_total": 5,
+        "quote": "the consent-once-removed analysis in Callahan must be read narrowly post-Pearson",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 1425860,
+    "case_name": "Callahan v. Millard County",
+    "search_text": "callahanvmillardcounty494f3d891",
+    "excerpt": "In this civil rights action, Plaintiff-Appellant Afton Callahan appeals from the district court's grant of summary judgment in favor of the numerous Defendant-Appellees. The district court held that the individual officers were entitled to qualified immunity because Mr.",
+    "name_missing": false,
+    "docket_numbers": [
+      "06-4135"
+    ],
+    "citations": [
+      "494 F.3d 891"
+    ],
+    "court": "ca10",
+    "court_display": "Tenth Circuit",
+    "date_filed": "2007-07-16",
+    "summary": {
+      "dh_severity": "Stop",
+      "cr_severity": "Warning"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "treated",
+        "treatment": "Affirmed by",
+        "severity": "Positive",
+        "citing_name": "Callahan v. Millard County",
+        "citing_cluster_id": 1425860,
+        "quote": "Holding that the district court was correct in its determination that Mr. Callahan's constitutional rights were violated",
+        "quote_status": "missing",
+        "authority_n": null
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Distinguished by",
+        "severity": "Caution",
+        "citing_name": "Walker v. Salt Lake City",
+        "citing_court": "U.S. District Court (D. Utah)",
+        "citing_cluster_id": 9920070,
+        "n_other_negative": 0,
+        "n_plain": 1,
+        "n_total": 2,
+        "quote": "the district court's analysis in Callahan v. Millard County Sheriff turned on the consent-once-removed posture",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 9999001,
+    "case_name": "Callahan v. Millard County Sheriff",
+    "search_text": "callahanvmillardcountysheriffno205cv00170dutah2005",
+    "excerpt": "This is a civil-rights action brought under 42 U.S.C. §1983 by plaintiff Afton Callahan against officers of the Central Utah Narcotics Task Force, who entered his residence on March 19, 2002 incident to a controlled drug buy by a confidential informant.",
+    "name_missing": false,
+    "docket_numbers": [
+      "2:05-cv-00170"
+    ],
+    "citations": [
+      "No. 2:05-cv-00170 (D. Utah 2005)"
+    ],
+    "court": "utd",
+    "court_display": "U.S. District Court (D. Utah)",
+    "date_filed": "2005-09-14",
+    "summary": {
+      "dh_severity": "Positive",
+      "cr_severity": "Caution"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "not_reviewable"
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Limited by",
+        "severity": "Warning",
+        "citing_name": "Williams v. State of New York",
+        "citing_court": "New York Court of Appeals",
+        "citing_cluster_id": 9920061,
+        "n_other_negative": 1,
+        "n_plain": 2,
+        "n_total": 4,
+        "quote": "Martinez's preclusion holding does not extend beyond the search-warrant context",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 2219834,
+    "case_name": "Martinez v. City of Schenectady",
+    "search_text": "martinezvcityofschenectady97ny2d78761ne2d560735nys2d868",
+    "excerpt": "The long history of this appeal began in September 1987 when, pursuant to a search warrant, defendants — Schenectady police officers — entered the residence of plaintiff Melody Martinez, seized four ounces of cocaine from a dresser drawer in her bedroom and arrested her.",
+    "name_missing": false,
+    "docket_numbers": [
+      "N/A"
+    ],
+    "citations": [
+      "97 N.Y.2d 78",
+      "761 N.E.2d 560",
+      "735 N.Y.S.2d 868"
+    ],
+    "court": "ny",
+    "court_display": "New York Court of Appeals",
+    "date_filed": "2001-11-19",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Warning"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "not_reviewable"
+      },
+      "later_courts": {
+        "state": "negative",
+        "treatment": "Limited by",
+        "severity": "Warning",
+        "citing_name": "Pearson v. Callahan",
+        "citing_court": "U.S. Supreme Court",
+        "citing_cluster_id": 145918,
+        "n_other_negative": 1,
+        "n_plain": 9,
+        "n_total": 11,
+        "quote": "the Saucier procedure should not be regarded as an inflexible requirement",
+        "quote_status": "missing",
+        "authority_n": null
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 118449,
+    "case_name": "Saucier v. Katz",
+    "search_text": "sauciervkatz533us194121sct2151150led2d272",
+    "excerpt": "In this case a citizen alleged excessive force was used to arrest him. The arresting officer asserted the defense of qualified immunity. The matter we address is whether the requisite analysis to determine qualified immunity is so intertwined with the question whether the officer…",
+    "name_missing": false,
+    "docket_numbers": [
+      "99-1977"
+    ],
+    "citations": [
+      "533 U.S. 194",
+      "121 S. Ct. 2151",
+      "150 L. Ed. 2d 272"
+    ],
+    "court": "scotus",
+    "court_display": "U.S. Supreme Court",
+    "date_filed": "2001-06-18",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Warning"
+    }
+  },
+  {
+    "status": {
+      "scope": "controlling",
+      "on_appeal": {
+        "state": "not_reviewable"
+      },
+      "later_courts": {
+        "state": "plain",
+        "n_total": 6
+      }
+    },
+    "tier": "anchor",
+    "cluster_id": 110763,
+    "case_name": "Harlow v. Fitzgerald",
+    "search_text": "harlowvfitzgerald457us800102sct272773led2d396",
+    "excerpt": "The issue in this case is the scope of the immunity available to the senior aides and advisers of the President of the United States in a suit for damages based upon their official acts.",
+    "name_missing": false,
+    "docket_numbers": [
+      "80-945"
+    ],
+    "citations": [
+      "457 U.S. 800",
+      "102 S. Ct. 2727",
+      "73 L. Ed. 2d 396"
+    ],
+    "court": "scotus",
+    "court_display": "U.S. Supreme Court",
+    "date_filed": "1982-06-24",
+    "summary": {
+      "dh_severity": null,
+      "cr_severity": "Neutral"
+    }
+  }
+]

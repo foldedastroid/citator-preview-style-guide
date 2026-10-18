@@ -1,0 +1,10 @@
+{% from "macros/icons.njk" import icon %}
+
+<script type="application/json" id="opinion-index" data-src="/assets/opinions.json?v={{ build.stamp }}"></script>
+<div class="suggest max-w-xl" data-suggest>
+  <label for="guide-search" class="sr-only">Search by case name or citation</label>
+  {{ icon("search", "search-box__icon") }}
+  <input type="search" id="guide-search" class="search-box" placeholder="Try Saucier, Lacey or 693 F.3d…" autocomplete="off" spellcheck="false"
+         role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="home-suggest">
+  <div id="home-suggest" class="suggest__list" role="listbox" aria-label="Suggestions" hidden></div>
+</div>

@@ -1,0 +1,17 @@
+---
+title: Not found
+summary: "The page for an address the preview does not have. For an opinion address it says the opinion is outside the preview and links to it on CourtListener."
+group: pages
+order: 4
+kind: Page
+source: src/404.njk
+keywords: 404 missing not found error
+---
+{% from "guide/macros.njk" import files, note %}
+{% set frameSrc = "/404.html" %}{% set frameTitle = "Not in this preview" %}{% set frameHeight = 520 %}{% include "guide/frame.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p><code>not_found.js</code> reads the requested path: for <code>/opinion/&lt;cluster id&gt;/</code> it swaps the message and shows <em>Open this opinion on CourtListener</em> for that cluster. For it to see the path, the host must serve <code>404.html</code> for missing routes without redirecting; <code>python3 -m http.server</code> does not, Netlify and most static hosts do.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["src/404.njk", "The page."], ["assets/js/not_found.js", "The opinion-address case."]]) }}

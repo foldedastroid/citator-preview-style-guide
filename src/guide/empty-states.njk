@@ -1,0 +1,27 @@
+---
+title: Empty states
+summary: "What the reader sees when there is nothing to list, and why: no match, nothing collected yet, or truly none. Each says what is missing and offers the next step."
+group: controls
+order: 7
+kind: CSS classes
+source: assets/css/styles.css
+keywords: empty no results not collected coverage scope message
+---
+{% from "guide/macros.njk" import table, files, note %}
+
+{% set ex = "empty-states" %}{% set exTitle = "No match, not collected, none, and a scope note" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="wording">Wording</h2>
+<div class="g-prose"><p>The difference between these states is the data's meaning, so keep the words exact:</p></div>
+{{ table(["State", "Means", "Offers"], [
+  ["No opinions match these filters", "The filters hide everything", "Clear all filters"],
+  ["… have not been collected … yet", "The pipeline has not fetched this", "Nothing to do here; on CourtListener when there is a link"],
+  ["No subsequent opinions from a controlling or equal court …", "Collected, and there are none", "—"],
+  ["Only the opinions in this preview are shown", "A standing limit of scope", "The full list on CourtListener"]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>A state that appears because of something the reader did (filtering to nothing) is a polite <code>role="status"</code>. A state that is simply true when the page loads is plain text: announcing it would repeat it.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/css/styles.css", "<code>.empty-state</code>, <code>.tab-empty</code>, <code>.tab-note</code>, <code>.meter__empty</code>."], ["src/404.njk", "The page for an address the preview does not have; see <a href=\"/pages/not-found/\">Not found</a>."]]) }}

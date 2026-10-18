@@ -1,0 +1,33 @@
+---
+title: Design tokens
+summary: "Every explicit value in the Tailwind theme, compared with CourtListener's own configuration: the same value, a changed one, or an addition for the citator."
+group: foundations
+order: 7
+kind: Inventory
+source: design/tokens.json
+keywords: tokens provenance courtlistener theme inventory
+---
+{% from "guide/macros.njk" import note %}
+{% set labels = {"courtlistener-identical": "Same as CourtListener", "courtlistener-modified": "Changed from CourtListener", "local-addition": "Added for the citator"} %}
+
+<h2 class="g-h2" id="summary">Summary</h2>
+<div class="g-prose">
+  <p>{{ theme.tokens | length }} values: {% for key, label in labels %}{{ theme.provenance[key] or 0 }} {{ label | lower }}{% if not loop.last %}, {% endif %}{% endfor %}. The comparison is against <a href="{{ theme.tokenSource }}" target="_blank" rel="noopener">CourtListener's Tailwind config</a> at a pinned commit; Tailwind's own defaults are not listed.</p>
+</div>
+
+<h2 class="g-h2" id="inventory">Inventory</h2>
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr><th scope="col">Path</th><th scope="col">Value</th><th scope="col">Origin</th></tr></thead>
+    <tbody>
+      {% for t in theme.tokens %}
+      <tr>
+        <td><code>{{ t.path }}</code></td>
+        <td>{% if t.path.startsWith("colors.") and (t.value | string).startsWith("#") %}<span class="g-swatch" style="background: {{ t.value }}"></span> {% endif %}<code>{{ t.value | dump if t.value is not string else t.value }}</code>{% if t.courtlistenerValue %}<br><small>CourtListener: <code>{{ t.courtlistenerValue | dump }}</code></small>{% endif %}</td>
+        <td>{{ labels[t.provenance] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{{ note("Regenerate the inventory in the app with <code>npm run build:tokens</code> after changing the theme, then <code>npm run sync</code> here.") }}

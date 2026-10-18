@@ -1,0 +1,797 @@
+{
+  "cluster_id": 145918,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/145918/x/",
+  "case_name": "Pearson v. Callahan",
+  "name_missing": false,
+  "docket_number": "07-751",
+  "docket_numbers": [
+    "07-751"
+  ],
+  "citations": [
+    "555 U.S. 223",
+    "129 S. Ct. 808",
+    "172 L. Ed. 2d 565"
+  ],
+  "court": "scotus",
+  "court_display": "U.S. Supreme Court",
+  "is_court_of_last_resort": true,
+  "date_filed": "2009-01-21",
+  "excerpt": "This is an action brought by respondent under Rev. Stat. §1979, 42 U. S. C. §1983, against state law enforcement officers who conducted a warrantless search of his house incident to his arrest for the sale of methamphetamine to an undercover informant whom he had voluntarily admi…",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>This is an action brought by respondent under Rev. Stat. §1979, 42 U. S. C. §1983, against state law enforcement officers who conducted a warrantless search of his house incident to his arrest for the sale of methamphetamine to an undercover informant whom he had voluntarily admitted to the premises. The Court of Appeals held that petitioners were not entitled to summary judgment on qualified immunity grounds. Following the procedure we mandated in <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U. S. 194 (2001), the Court of Appeals held, first, that respondent adduced facts sufficient to make out a violation of the Fourth Amendment and, second, that the unconstitutionality of the officers&#x27; conduct was clearly established.<sup class=\"fnref\" id=\"fnref-1-1\"><a href=\"#fn-1-1\">1</a></sup></p>\n<p>We now hold that the <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier</a></span> procedure should not be regarded as an inflexible requirement and that petitioners are entitled to qualified immunity on the ground that it was not clearly established at the time of the search that their conduct was unconstitutional. We therefore reverse.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>The doctrine of qualified immunity protects government officials &quot;from liability for civil damages insofar as their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known.&quot; <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/110763/\">Harlow v. Fitzgerald</a></span>, 457 U. S. 800, 818 (1982). Qualified immunity balances two important interests — the need to hold public officials accountable when they exercise power irresponsibly and the need to shield officials from harassment, distraction, and liability when they perform their duties reasonably.<sup class=\"fnref\" id=\"fnref-1-2\"><a href=\"#fn-1-2\">2</a></sup></p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>On appeal, a divided panel of the Tenth Circuit held that petitioners&#x27; conduct violated respondent&#x27;s Fourth Amendment rights. <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/1425860/\">Callahan v. Millard Cty.</a></span>, 494 F. 3d 891, 895–899 (2007). For the reasons set forth above, we reverse and remand for further proceedings consistent with this opinion.</p></section>\n<aside class=\"opinion-footnotes\" aria-label=\"Footnotes\"><h3 class=\"opinion-heading opinion-heading--notes\">Footnotes</h3><ol><li id=\"fn-1-1\"><span class=\"fn-label\"><a class=\"fn-label__link\" href=\"#fnref-1-1\" aria-label=\"Back to reference 1\">1</a></span><div class=\"fn-body\"><p>Under that procedure a court first decides whether the facts alleged make out a violation of a constitutional right and, only if they do, whether that right was clearly established at the time of the conduct.</p></div></li><li id=\"fn-1-2\"><span class=\"fn-label\"><a class=\"fn-label__link\" href=\"#fnref-1-2\" aria-label=\"Back to reference 2\">2</a></span><div class=\"fn-body\"><p>Qualified immunity is an immunity from suit rather than a mere defense to liability, so it is effectively lost if a case is erroneously permitted to go to trial.</p></div></li></ol></aside>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Followed by",
+        "label": "Followed by",
+        "severity": "Positive",
+        "rationale": "Maldonado applies Pearson's permissive sequencing rule.",
+        "quote": "Pearson also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory"
+      },
+      "has_detail": true,
+      "row_id": "cb-11",
+      "citing_cluster_id": 203857,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Maldonado v. Fontanes",
+      "citing_docket_numbers": [
+        "08-2211"
+      ],
+      "citing_citations": [
+        "568 F.3d 263"
+      ],
+      "citing_court_display": "First Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-06-04",
+      "citing_date_short": "06/04/2009",
+      "search_text": "maldonadovfontanes568f3d263",
+      "is_scoped": true,
+      "treatment": "Followed by",
+      "severity": "Positive",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Followed by",
+          "treatment_past": "Followed",
+          "severity": "Positive",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Pearson also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory",
+            "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory",
+            "rationale": "Maldonado applies Pearson's permissive sequencing rule.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Followed by",
+          "label": "Followed by",
+          "severity": "Positive",
+          "rationale": "Maldonado applies Pearson's permissive sequencing rule.",
+          "quote": "Pearson also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 6,
+      "name_index": 5,
+      "mentions_index": 0,
+      "court_index": 6
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "SCOTUS Bivens / cross-border shooting case applying Pearson sequencing.",
+        "quote": "our discretion to address either prong of the qualified-immunity inquiry first",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "our discretion to address either prong of the qualified-immunity inquiry first"
+      },
+      "has_detail": false,
+      "row_id": "cb-25",
+      "citing_cluster_id": 9100204,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hernandez v. Mesa",
+      "citing_docket_numbers": [
+        "17-1678"
+      ],
+      "citing_citations": [
+        "589 U.S. ___"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2020-02-25",
+      "citing_date_short": "02/25/2020",
+      "search_text": "hernandezvmesa589us",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "our discretion to address either prong of the qualified-immunity inquiry first",
+            "quote_html": "our discretion to address either prong of the qualified-immunity inquiry first",
+            "rationale": "SCOTUS Bivens / cross-border shooting case applying Pearson sequencing.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 1,
+      "recency_index": 0,
+      "name_index": 3,
+      "mentions_index": 1,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "SCOTUS reverses 5th Cir. for not heeding Pearson's discretionary sequencing.",
+        "quote": "Pearson did not require the Fifth Circuit to address the constitutional question",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> did not require the Fifth Circuit to address the constitutional question"
+      },
+      "has_detail": false,
+      "row_id": "cb-24",
+      "citing_cluster_id": 9100203,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Mullenix v. Luna",
+      "citing_docket_numbers": [
+        "14-1143"
+      ],
+      "citing_citations": [
+        "577 U.S. 7"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2015-11-09",
+      "citing_date_short": "11/09/2015",
+      "search_text": "mullenixvluna577us7",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Pearson did not require the Fifth Circuit to address the constitutional question",
+            "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> did not require the Fifth Circuit to address the constitutional question",
+            "rationale": "SCOTUS reverses 5th Cir. for not heeding Pearson's discretionary sequencing.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 1,
+      "name_index": 6,
+      "mentions_index": 2,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "District court applies Pearson sequencing.",
+        "quote": "Pearson permits courts to bypass the constitutional-violation prong",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> permits courts to bypass the constitutional-violation prong"
+      },
+      "has_detail": false,
+      "row_id": "cb-35",
+      "citing_cluster_id": 9920003,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Doe v. City of Boston",
+      "citing_docket_numbers": [
+        "11-cv-12011"
+      ],
+      "citing_citations": [
+        "No. 11-12011 (D. Mass. 2014)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2014-03-19",
+      "citing_date_short": "03/19/2014",
+      "search_text": "doevcityofbostonno1112011dmass2014",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Pearson permits courts to bypass the constitutional-violation prong",
+            "quote_html": "<strong class=\"evidence-card__case\">Pearson</strong> permits courts to bypass the constitutional-violation prong",
+            "rationale": "District court applies Pearson sequencing.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 2,
+      "name_index": 0,
+      "mentions_index": 3,
+      "court_index": 7
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Lacey applies Pearson's discretionary ordering rule.",
+        "quote": "We have the discretion to decide which of the two prongs of the qualified immunity analysis should be addressed first",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "We have the discretion to decide which of the two prongs of the qualified immunity analysis should be addressed first"
+      },
+      "has_detail": false,
+      "row_id": "cb-13",
+      "citing_cluster_id": 807646,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Lacey v. Arpaio",
+      "citing_docket_numbers": [
+        "09-15703"
+      ],
+      "citing_citations": [
+        "693 F.3d 896"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-08-29",
+      "citing_date_short": "08/29/2012",
+      "search_text": "laceyvarpaio693f3d896",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "We have the discretion to decide which of the two prongs of the qualified immunity analysis should be addressed first",
+            "quote_html": "We have the discretion to decide which of the two prongs of the qualified immunity analysis should be addressed first",
+            "rationale": "Lacey applies Pearson's discretionary ordering rule.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 4,
+      "recency_index": 3,
+      "name_index": 4,
+      "mentions_index": 4,
+      "court_index": 5
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "SCOTUS post-Pearson case applying its rule.",
+        "quote": "we follow the discretionary sequencing established in Pearson",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we follow the discretionary sequencing established in <strong class=\"evidence-card__case\">Pearson</strong>"
+      },
+      "has_detail": false,
+      "row_id": "cb-22",
+      "citing_cluster_id": 9100201,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Reichle v. Howards",
+      "citing_docket_numbers": [
+        "11-262"
+      ],
+      "citing_citations": [
+        "566 U.S. 658"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2012-06-04",
+      "citing_date_short": "06/04/2012",
+      "search_text": "reichlevhowards566us658",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we follow the discretionary sequencing established in Pearson",
+            "quote_html": "we follow the discretionary sequencing established in <strong class=\"evidence-card__case\">Pearson</strong>",
+            "rationale": "SCOTUS post-Pearson case applying its rule.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 5,
+      "recency_index": 4,
+      "name_index": 7,
+      "mentions_index": 5,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Henry cites Pearson as the modifying authority.",
+        "quote": "Following the Supreme Court's recent decision in Pearson",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "Following the Supreme Court&#x27;s recent decision in <strong class=\"evidence-card__case\">Pearson</strong>"
+      },
+      "has_detail": false,
+      "row_id": "cb-9",
+      "citing_cluster_id": 220962,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Henry v. Purnell",
+      "citing_docket_numbers": [
+        "08-7433"
+      ],
+      "citing_citations": [
+        "652 F.3d 524"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2011-07-14",
+      "citing_date_short": "07/14/2011",
+      "search_text": "henryvpurnell652f3d524",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Following the Supreme Court's recent decision in Pearson",
+            "quote_html": "Following the Supreme Court&#x27;s recent decision in <strong class=\"evidence-card__case\">Pearson</strong>",
+            "rationale": "Henry cites Pearson as the modifying authority.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 6,
+      "recency_index": 5,
+      "name_index": 1,
+      "mentions_index": 6,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Cal. Sup. Ct. acknowledges Pearson's change to the ordering rule.",
+        "quote": "The high court recently changed this rule, holding that trial courts may decide the immunity question",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "The high court recently changed this rule, holding that trial courts may decide the immunity question"
+      },
+      "has_detail": false,
+      "row_id": "cb-20",
+      "citing_cluster_id": 1801687,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hernandez v. City of Pomona",
+      "citing_docket_numbers": [
+        "S149499"
+      ],
+      "citing_citations": [
+        "46 Cal. 4th 501",
+        "207 P.3d 506",
+        "94 Cal. Rptr. 3d 1"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-05-28",
+      "citing_date_short": "05/28/2009",
+      "search_text": "hernandezvcityofpomona46cal4th501207p3d50694calrptr3d1",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "The high court recently changed this rule, holding that trial courts may decide the immunity question",
+            "quote_html": "The high court recently changed this rule, holding that trial courts may decide the immunity question",
+            "rationale": "Cal. Sup. Ct. acknowledges Pearson's change to the ordering rule.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 7,
+      "recency_index": 7,
+      "name_index": 2,
+      "mentions_index": 7,
+      "court_index": 4
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Positive"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reverses",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/"
+      }
+    ],
+    "chain": [
+      {
+        "role": "below",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/",
+        "index": 2,
+        "row": 5,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "below",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 1,
+        "row": 3,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 4,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      },
+      {
+        "role": "self",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reverses",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 0,
+        "row": 1,
+        "col": 5,
+        "tier": "Highest court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 4,
+            "col_end": 6,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      },
+      {
+        "level": 0,
+        "col": 5,
+        "label": "Highest court"
+      }
+    ],
+    "has_reported": false,
+    "n_opinions": 3
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "not_reviewable"
+    },
+    "later_courts": {
+      "state": "plain",
+      "n_total": 8
+    }
+  }
+}

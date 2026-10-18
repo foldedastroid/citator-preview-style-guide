@@ -1,0 +1,37 @@
+---
+title: Allocation meter
+summary: "A list's rows by tier: a segmented bar in the signal colours over each tier's count and share. Each tier links to the list, narrowed to that tier."
+group: signals
+order: 5
+kind: Nunjucks macro
+source: _includes/macros/treatment.njk
+keywords: meter bar distribution allocation share tiers
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "allocation-citing" %}{% set exTitle = "Citing references of Callahan v. Millard County" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+{% set ex = "allocation-empty" %}{% set exTitle = "No rows" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["title", "string", "", "The meter's heading."],
+  ["rows", "array", "", "The list's rows: <code>opinion.cited_by</code> or <code>opinion.cited_authorities</code>."],
+  ["key", "string", "", "The row field holding its tier: <code>severity</code> for citing rows, <code>overall_severity</code> for authorities."],
+  ["href", "string", "", "The list to open, <code>#cited-by</code> or <code>#authorities</code>."],
+  ["noun", "string", "", "Follows the total: \"8 <em>citing</em>\"."],
+  ["empty", "string", "", "Shown in place of the bar when there are no rows."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>Each tier row and segment carries <code>data-narrow="&lt;tier&gt;"</code>. On the opinion page, following one opens the list's tab and <code>treatment_list.js</code> narrows the list to that tier, with a removable chip naming it. Zero tiers stay in the list as plain text so the five rows always line up.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The bar is <code>role="img"</code> with a summary ("2 stop, 1 caution, 3 neutral of 6"); its segments are out of the tab order because the rows below repeat them as links with full labels ("Caution: 1 of 6, show them").</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/treatment.njk", "<code>allocation</code>."],
+  ["assets/css/styles.css", "<code>.meter</code> and its parts."],
+  ["assets/js/alpine/components/treatment_list.js", "Narrows the list when a tier is followed on the opinion page."]
+]) }}
+{{ note("The segment widths are inline <code>style</code> attributes, so a Content-Security-Policy for the site needs <code>style-src 'unsafe-inline'</code> or a hash; scripts need nothing beyond <code>'self'</code>.") }}

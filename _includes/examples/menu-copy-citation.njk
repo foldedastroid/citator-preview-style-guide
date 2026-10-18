@@ -1,0 +1,25 @@
+{% from "macros/icons.njk" import icon %}
+{% set cite = "Callahan v. Millard County, 494 F.3d 891 (10th Cir. 2007)" %}
+<div class="case-head__actions flex justify-end" x-data="caseActions" x-on:keydown="onMenuKeydown">
+  <div class="split" x-on:click.outside="menuClickOutside">
+    <button type="button" class="doc-action doc-action--main" data-cite="{{ cite }}" x-on:click="copyCitation" title="Copy citation: {{ cite }}">
+      {{ icon("document", "w-3.5 h-3.5") }}<span class="doc-action__label">Copy citation</span>
+    </button>
+    <button type="button" class="doc-action doc-action--caret" x-ref="menuButton" aria-haspopup="menu" aria-controls="guide-cite-menu" aria-expanded="false"
+            x-bind:aria-expanded="menuExpanded" x-on:click="toggleMenu" aria-label="Other citation forms" title="Other citation forms">
+      {{ icon("chevron-down", "w-3 h-3") }}
+    </button>
+    <div id="guide-cite-menu" class="help-menu__panel cite-menu" role="menu" aria-label="Copy citation as" x-bind:class="menuClass">
+      <p class="help-menu__label" aria-hidden="true">Copy as</p>
+      <button type="button" class="cite-menu__item" role="menuitem" tabindex="-1" data-copy="{{ cite }}" data-done="Citation copied" x-on:click="copyFormat">
+        <span class="cite-menu__name">Full citation</span><span class="cite-menu__sample">{{ cite }}</span>
+      </button>
+      <button type="button" class="cite-menu__item" role="menuitem" tabindex="-1" data-copy="Callahan, 494 F.3d at " data-done="Short form copied; add the pinpoint page" x-on:click="copyFormat">
+        <span class="cite-menu__name">Short form</span><span class="cite-menu__sample">Callahan, 494 F.3d at ___</span>
+      </button>
+      <button type="button" class="cite-menu__item" role="menuitem" tabindex="-1" data-copy="Callahan v. Millard County" data-done="Case name copied" x-on:click="copyFormat">
+        <span class="cite-menu__name">Case name</span><span class="cite-menu__sample">Callahan v. Millard County</span>
+      </button>
+    </div>
+  </div>
+</div>

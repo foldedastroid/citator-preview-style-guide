@@ -1,0 +1,62 @@
+[
+  {
+    "key": "scotus",
+    "display": "U.S. Supreme Court",
+    "level": 0,
+    "category": "scotus"
+  },
+  {
+    "key": "cal",
+    "display": "California Supreme Court",
+    "level": 1,
+    "category": "state_supreme"
+  },
+  {
+    "key": "ca1",
+    "display": "First Circuit",
+    "level": 1,
+    "category": "circuit"
+  },
+  {
+    "key": "ca4",
+    "display": "Fourth Circuit",
+    "level": 1,
+    "category": "circuit"
+  },
+  {
+    "key": "ny",
+    "display": "New York Court of Appeals",
+    "level": 1,
+    "category": "state_supreme"
+  },
+  {
+    "key": "ca9",
+    "display": "Ninth Circuit",
+    "level": 1,
+    "category": "circuit"
+  },
+  {
+    "key": "ca2",
+    "display": "Second Circuit",
+    "level": 1,
+    "category": "circuit"
+  },
+  {
+    "key": "ca10",
+    "display": "Tenth Circuit",
+    "level": 1,
+    "category": "circuit"
+  },
+  {
+    "key": "dist",
+    "display": "U.S. District Court",
+    "level": 2,
+    "category": "district"
+  },
+  {
+    "key": "utd",
+    "display": "U.S. District Court (D. Utah)",
+    "level": 2,
+    "category": "district"
+  }
+]

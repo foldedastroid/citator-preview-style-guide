@@ -1,0 +1,38 @@
+---
+title: Toasts
+summary: "Short confirmations that come and go at the bottom of the screen: copied, failed, continue where you left off. Never the only place an error is shown."
+group: controls
+order: 5
+kind: Script
+source: assets/js/toast.js
+keywords: toast notification snackbar citatorToast
+---
+{% from "guide/macros.njk" import params, files, code, note %}
+
+{% set ex = "toasts" %}{% set exTitle = "Four kinds" %}{% include "guide/example.njk" %}
+{{ code("code-toast-call", "From a script", "window.citatorToast({
+  title: 'Continue where you left off',
+  message: 'At Part II',
+  intent: 'neutral',
+  duration: 8000,
+  action: { label: 'Continue', run: () => window.scrollTo({ top: saved.y }) },
+});") }}
+<div class="g-prose"><p>The buttons above call the same function from the guide's script; the app calls it from its components (the copy menu, the document rail's return-to-place offer).</p></div>
+
+<h2 class="g-h2" id="options">Options</h2>
+{{ params([
+  ["title", "string", "", "Required. Without it nothing is shown."],
+  ["message", "string", "\"\"", "A second line."],
+  ["intent", "\"positive\" | \"neutral\" | \"destructive\"", "\"neutral\"", "Sets the icon and accent."],
+  ["duration", "ms", "4000", "How long it stays. <code>0</code> keeps it until dismissed."],
+  ["action", "{label, run}", "null", "A button that runs <code>run</code> and closes the toast."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>At most three show; a fourth retires the oldest. A toast pauses while the pointer or focus is on it and resumes after. Each has a named dismiss button.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The stack is a polite live region, so a toast is announced without taking focus. Because a toast leaves, put anything the reader needs to recover from an error in the page as well.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/js/toast.js", "<code>window.citatorToast</code>."], ["assets/css/styles.css", "<code>.toast-viewport</code>, <code>.toast</code>."]]) }}

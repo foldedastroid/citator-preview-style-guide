@@ -1,0 +1,305 @@
+{
+  "cluster_id": 1801687,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/1801687/x/",
+  "case_name": "Hernandez v. City of Pomona",
+  "name_missing": false,
+  "docket_number": "S149499",
+  "docket_numbers": [
+    "S149499"
+  ],
+  "citations": [
+    "46 Cal. 4th 501",
+    "207 P.3d 506",
+    "94 Cal. Rptr. 3d 1"
+  ],
+  "court": "cal",
+  "court_display": "California Supreme Court",
+  "is_court_of_last_resort": true,
+  "date_filed": "2009-05-28",
+  "excerpt": "We granted review in this case to consider the following question: When a federal court enters judgment in favor of the defendants on a civil rights claim brought under 42 United States Code section 1983, in which the plaintiffs seek damages for police use of deadly and constitut…",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>We granted review in this case to consider the following question: When a federal court enters judgment in favor of the defendants on a civil rights claim brought under 42 United States Code section 1983, in which the plaintiffs seek damages for police use of deadly and constitutionally excessive force in pursuing a suspect, and the court then dismisses a supplemental state law wrongful death claim arising out of the same incident, what, if any, preclusive effect does the judgment have in a subsequent state court wrongful death action?</p>\n<p>Before dawn on January 16, 2001, City of Pomona Police Officer Dennis Cooper was patrolling a neighborhood in a marked black-and-white police vehicle when he saw a gray Ford Thunderbird approach from the other direction with its headlights unilluminated. The Thunderbird abruptly pulled over to the curb and stopped with its engine running.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>At the time of the federal trial, high court precedent required the trial court first to decide whether Sanchez had violated Hernandez&#x27;s constitutional rights, and then to decide the immunity question — <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span> (2001) 533 U.S. 194, 201. The high court recently changed this rule, holding that trial courts may decide the immunity question before (or without) determining whether there was a constitutional violation — <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/145918/\">Pearson v. Callahan</a></span> (2009) 555 U.S. ___.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>Sanchez then moved for judgment as a matter of law, based on qualified immunity. The court granted the motion, finding that because Sanchez&#x27;s &quot;use of deadly force was reasonable under the circumstances,&quot; he &quot;did not violate Hernandez&#x27;s Fourth Amendment rights.&quot; In <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/2219834/\">Martinez v. City of Schenectady</a></span>, the New York Court of Appeals confronted a similar preclusion question and declined to extend the state constitutional tort remedy where federal courts had already resolved the underlying §1983 claim on qualified-immunity grounds. We hold that the trial court did not err in entering judgment for defendants. We therefore reverse the Court of Appeal&#x27;s judgment and remand the matter with directions to reinstate the trial court&#x27;s judgment.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Same court (Cal. Supreme self-citation) distinguishes on procedural posture.",
+        "quote": "Hernandez addressed preclusion arising from a federal qualified-immunity ruling",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Hernandez</strong> addressed preclusion arising from a federal qualified-immunity ruling"
+      },
+      "has_detail": true,
+      "row_id": "cb-53",
+      "citing_cluster_id": 9920050,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hayes v. County of San Diego",
+      "citing_docket_numbers": [
+        "S193997"
+      ],
+      "citing_citations": [
+        "57 Cal. 4th 622"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2013-08-19",
+      "citing_date_short": "08/19/2013",
+      "search_text": "hayesvcountyofsandiego57cal4th622",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "Hernandez addressed preclusion arising from a federal qualified-immunity ruling",
+            "quote_html": "<strong class=\"evidence-card__case\">Hernandez</strong> addressed preclusion arising from a federal qualified-immunity ruling",
+            "rationale": "Same court (Cal. Supreme self-citation) distinguishes on procedural posture.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Same court (Cal. Supreme self-citation) distinguishes on procedural posture.",
+          "quote": "Hernandez addressed preclusion arising from a federal qualified-immunity ruling",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Hernandez</strong> addressed preclusion arising from a federal qualified-immunity ruling"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 0,
+      "name_index": 1,
+      "mentions_index": 0,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "State appellate court applies Hernandez.",
+        "quote": "Hernandez v. City of Pomona controls the issue-preclusion analysis",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Hernandez</strong> v. City of Pomona controls the issue-preclusion analysis"
+      },
+      "has_detail": false,
+      "row_id": "cb-54",
+      "citing_cluster_id": 9920051,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Adams v. City of Fremont",
+      "citing_docket_numbers": [
+        "A123456"
+      ],
+      "citing_citations": [
+        "68 Cal. App. 4th 243"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-05-14",
+      "citing_date_short": "05/14/2012",
+      "search_text": "adamsvcityoffremont68calapp4th243",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Hernandez v. City of Pomona controls the issue-preclusion analysis",
+            "quote_html": "<strong class=\"evidence-card__case\">Hernandez</strong> v. City of Pomona controls the issue-preclusion analysis",
+            "rationale": "State appellate court applies Hernandez.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 1,
+      "recency_index": 1,
+      "name_index": 0,
+      "mentions_index": 1,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Later Cal. Sup. Ct. case applying Hernandez Pomona's preclusion holding.",
+        "quote": "our decision in Hernandez v. City of Pomona controls the preclusion analysis",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "our decision in <strong class=\"evidence-card__case\">Hernandez</strong> v. City of Pomona controls the preclusion analysis"
+      },
+      "has_detail": false,
+      "row_id": "cb-34",
+      "citing_cluster_id": 9100214,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Robinson v. County of Los Angeles",
+      "citing_docket_numbers": [
+        "S180404"
+      ],
+      "citing_citations": [
+        "50 Cal. 4th 1078"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2010-08-12",
+      "citing_date_short": "08/12/2010",
+      "search_text": "robinsonvcountyoflosangeles50cal4th1078",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "our decision in Hernandez v. City of Pomona controls the preclusion analysis",
+            "quote_html": "our decision in <strong class=\"evidence-card__case\">Hernandez</strong> v. City of Pomona controls the preclusion analysis",
+            "rationale": "Later Cal. Sup. Ct. case applying Hernandez Pomona's preclusion holding.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 2,
+      "name_index": 2,
+      "mentions_index": 2,
+      "court_index": 2
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Caution"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 1801687,
+        "case_name": "Hernandez v. City of Pomona",
+        "court": "California Supreme Court",
+        "court_id": "cal",
+        "level": 1,
+        "date_filed": "2009-05-28",
+        "docket_number": "S149499",
+        "citations": [
+          "46 Cal. 4th 501",
+          "207 P.3d 506",
+          "94 Cal. Rptr. 3d 1"
+        ],
+        "url": "/opinion/1801687/"
+      }
+    ],
+    "chain": [],
+    "levels": [],
+    "n_opinions": 1
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "not_reviewable"
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "citing_name": "Hayes v. County of San Diego",
+      "citing_court": "California Supreme Court",
+      "citing_cluster_id": 9920050,
+      "n_other_negative": 0,
+      "n_plain": 2,
+      "n_total": 3,
+      "quote": "Hernandez addressed preclusion arising from a federal qualified-immunity ruling",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

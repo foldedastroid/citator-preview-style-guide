@@ -1,0 +1,6 @@
+{% from "macros/treatment.njk" import signal %}
+<ul role="list" class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-greyscale-800">
+  {% for tier in ["Stop", "Warning", "Caution", "Positive", "Neutral"] %}
+  <li class="flex items-center gap-2">{{ signal(tier, "w-4 h-4") }}{{ tier }}</li>
+  {% endfor %}
+</ul>

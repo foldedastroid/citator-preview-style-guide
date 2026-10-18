@@ -1,0 +1,36 @@
+{% from "macros/icons.njk" import icon %}
+<div class="grid max-w-xl gap-6">
+  <div class="suggest">
+    <label for="field-search" class="sr-only">Search by case name or citation</label>
+    {{ icon("search", "search-box__icon") }}
+    <input type="search" id="field-search" class="search-box" placeholder="Search by case name or citation…" autocomplete="off">
+  </div>
+  <div class="flex flex-wrap items-center gap-3">
+    <label class="list-search">
+      <span class="sr-only">Search citing opinions by name or citation</span>
+      {{ icon("search", "list-search__icon") }}
+      <input type="search" class="list-search__input" placeholder="Name or citation…">
+    </label>
+    <label class="sort-select">
+      <span class="sort-select__label">Sort by</span>
+      <select class="sort-select__input">
+        <option>Analysis (most negative first)</option>
+        <option>Case name (A–Z)</option>
+        <option>Date (newest first)</option>
+      </select>
+    </label>
+  </div>
+  <fieldset class="space-y-2">
+    <legend class="mb-1 text-xs font-medium text-greyscale-600">Scope</legend>
+    <label class="filter-check"><input type="checkbox" class="checkbox" checked> Anchor opinions only</label>
+    <label class="filter-check"><input type="checkbox" class="checkbox"> Include courts of last resort</label>
+    <label class="filter-check"><input type="checkbox" class="checkbox" disabled> Unavailable choice</label>
+  </fieldset>
+  <div class="switch-row max-w-xs">
+    <button type="button" class="switch-row__control" role="switch" aria-checked="true" aria-describedby="field-switch-help" data-text-signals>
+      <span class="switch-row__label">Treatment beside citations</span>
+      <span class="switch" aria-hidden="true"></span>
+    </button>
+    <p id="field-switch-help" class="switch-row__help">Marks each cited case in the opinion text with its signal.</p>
+  </div>
+</div>

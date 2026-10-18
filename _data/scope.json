@@ -1,0 +1,12 @@
+{
+  "opinions": 10,
+  "anchors": 10,
+  "authorities": 0,
+  "citing": 0,
+  "courts": 10,
+  "anchor_earliest_year": "1982",
+  "anchor_latest_year": "2012",
+  "opinions_display": "10",
+  "authorities_display": "0",
+  "citing_display": "0"
+}

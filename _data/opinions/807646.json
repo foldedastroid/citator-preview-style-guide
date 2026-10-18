@@ -1,0 +1,465 @@
+{
+  "cluster_id": 807646,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/807646/x/",
+  "case_name": "Lacey v. Arpaio",
+  "name_missing": false,
+  "docket_number": "09-15703",
+  "docket_numbers": [
+    "09-15703"
+  ],
+  "citations": [
+    "693 F.3d 896"
+  ],
+  "court": "ca9",
+  "court_display": "Ninth Circuit",
+  "is_court_of_last_resort": false,
+  "date_filed": "2012-08-29",
+  "excerpt": "This §1983 case concerns allegations of unlawful conduct by officials in the Maricopa County Sheriff's Office and the Maricopa County Attorney's Office, conduct which culminated in the late-night arrests of Michael Lacey and Jim Larkin, owners of the Phoenix New Times.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>This §1983 case concerns allegations of unlawful conduct by officials in the Maricopa County Sheriff&#x27;s Office and the Maricopa County Attorney&#x27;s Office, conduct which culminated in the late-night arrests of Michael Lacey and Jim Larkin, owners of the Phoenix New Times. The district court dismissed all federal claims, and remanded all state law claims back to the Arizona courts. We affirm in part and reverse in part, finding that Lacey adequately alleged several causes of action for which the defendants are not entitled to immunity.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>Determining whether a defendant is entitled to qualified immunity involves a two-pronged analysis. First, we ask whether the facts alleged show the officer&#x27;s conduct violated a constitutional right — <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U.S. 194, 201 (2001), overruled in part by <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/145918/\">Pearson</a></span>, 555 U.S. at 235–236. Second, we must ask whether the right was clearly established. We have the discretion to decide which of the two prongs of the qualified immunity analysis should be addressed first in light of the circumstances in the particular case at hand.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>Qualified immunity &quot;represents the norm&quot; for government officials exercising discretionary authority, <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/110763/\">Harlow v. Fitzgerald</a></span>, 457 U.S. 800, 807 (1982), including prosecutors who are not acting as an advocate for the state and may not be entitled to absolute immunity. We have little difficulty concluding that Arpaio is not entitled to qualified immunity on Lacey&#x27;s First Amendment retaliation claims. Lacey may proceed on those claims.</p>\n<p>The First Circuit&#x27;s analysis in <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/203857/\">Maldonado v. Fontanes</a></span> addressed substantive due process claims with no allegation of First Amendment retaliation. Here, Lacey&#x27;s claims are anchored in retaliation for newsgathering, a context Maldonado did not consider.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Within-circuit panel distinguishes on the journalism context.",
+        "quote": "Lacey involved a high-profile arrest of journalists for newsgathering activity",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> involved a high-profile arrest of journalists for newsgathering activity"
+      },
+      "has_detail": true,
+      "row_id": "cb-50",
+      "citing_cluster_id": 9920040,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Ballentine v. Tucker",
+      "citing_docket_numbers": [
+        "16-15672"
+      ],
+      "citing_citations": [
+        "881 F.3d 597"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2018-01-08",
+      "citing_date_short": "01/08/2018",
+      "search_text": "ballentinevtucker881f3d597",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Lacey involved a high-profile arrest of journalists for newsgathering activity",
+            "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> involved a high-profile arrest of journalists for newsgathering activity",
+            "rationale": "Within-circuit panel distinguishes on the journalism context.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Within-circuit panel distinguishes on the journalism context.",
+          "quote": "Lacey involved a high-profile arrest of journalists for newsgathering activity",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> involved a high-profile arrest of journalists for newsgathering activity"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 0,
+      "name_index": 0,
+      "mentions_index": 0,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit district court applies Lacey.",
+        "quote": "Lacey v. Arpaio governs First Amendment retaliation analysis in this Circuit",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio governs First Amendment retaliation analysis in this Circuit"
+      },
+      "has_detail": false,
+      "row_id": "cb-52",
+      "citing_cluster_id": 9920042,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Doe v. Maricopa County",
+      "citing_docket_numbers": [
+        "15-cv-00789"
+      ],
+      "citing_citations": [
+        "No. CV-15-789 (D. Ariz. 2017)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2017-11-04",
+      "citing_date_short": "11/04/2017",
+      "search_text": "doevmaricopacountynocv15789dariz2017",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Lacey v. Arpaio governs First Amendment retaliation analysis in this Circuit",
+            "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio governs First Amendment retaliation analysis in this Circuit",
+            "rationale": "Within-circuit district court applies Lacey.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 1,
+      "recency_index": 1,
+      "name_index": 1,
+      "mentions_index": 1,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "District court within 9th Cir. applies Lacey.",
+        "quote": "Lacey v. Arpaio is binding authority on First Amendment retaliation claims",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio is binding authority on First Amendment retaliation claims"
+      },
+      "has_detail": false,
+      "row_id": "cb-36",
+      "citing_cluster_id": 9920004,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Roe v. Phoenix Police Dept.",
+      "citing_docket_numbers": [
+        "13-cv-00214"
+      ],
+      "citing_citations": [
+        "No. CV-13-0214 (D. Ariz. 2015)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2015-08-20",
+      "citing_date_short": "08/20/2015",
+      "search_text": "roevphoenixpolicedeptnocv130214dariz2015",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Distinguished by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": "Distinguished by",
+          "source": "model",
+          "evidence": {
+            "quote": "Lacey v. Arpaio is binding authority on First Amendment retaliation claims",
+            "quote_html": "<strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio is binding authority on First Amendment retaliation claims",
+            "rationale": "District court within 9th Cir. applies Lacey.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 2,
+      "name_index": 2,
+      "mentions_index": 2,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit follow-on applying Lacey's First Amendment retaliation framework.",
+        "quote": "our en banc decision in Lacey v. Arpaio",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "our en banc decision in <strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio"
+      },
+      "has_detail": false,
+      "row_id": "cb-51",
+      "citing_cluster_id": 9920041,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Skoog v. County of Clackamas",
+      "citing_docket_numbers": [
+        "13-35451"
+      ],
+      "citing_citations": [
+        "744 F.3d 1198"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2014-03-21",
+      "citing_date_short": "03/21/2014",
+      "search_text": "skoogvcountyofclackamas744f3d1198",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "our en banc decision in Lacey v. Arpaio",
+            "quote_html": "our en banc decision in <strong class=\"evidence-card__case\">Lacey</strong> v. Arpaio",
+            "rationale": "Within-circuit follow-on applying Lacey's First Amendment retaliation framework.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 3,
+      "name_index": 3,
+      "mentions_index": 3,
+      "court_index": 1
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Caution"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 807646,
+        "case_name": "Lacey v. Arpaio",
+        "court": "Ninth Circuit",
+        "court_id": "ca9",
+        "level": 1,
+        "date_filed": "2012-08-29",
+        "docket_number": "09-15703",
+        "citations": [
+          "693 F.3d 896"
+        ],
+        "url": "/opinion/807646/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms in part; Reverses in part",
+                "defined_as": "Affirms in part; Reverses in part",
+                "severity": "Warning",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 9100212,
+        "case_name": "Lacey v. Arpaio (D. Ariz.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2010-12-08",
+        "docket_number": "08-cv-01457",
+        "citations": [
+          "No. CV-08-1457 (D. Ariz. 2010)"
+        ],
+        "url": "/opinion/9100212/"
+      }
+    ],
+    "chain": [
+      {
+        "role": "below",
+        "cluster_id": 9100212,
+        "case_name": "Lacey v. Arpaio (D. Ariz.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2010-12-08",
+        "docket_number": "08-cv-01457",
+        "citations": [
+          "No. CV-08-1457 (D. Ariz. 2010)"
+        ],
+        "url": "/opinion/9100212/",
+        "index": 1,
+        "row": 3,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "self",
+        "cluster_id": 807646,
+        "case_name": "Lacey v. Arpaio",
+        "court": "Ninth Circuit",
+        "court_id": "ca9",
+        "level": 1,
+        "date_filed": "2012-08-29",
+        "docket_number": "09-15703",
+        "citations": [
+          "693 F.3d 896"
+        ],
+        "url": "/opinion/807646/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms in part; Reverses in part",
+                "defined_as": "Affirms in part; Reverses in part",
+                "severity": "Warning",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 0,
+        "row": 1,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      }
+    ],
+    "has_reported": false,
+    "n_opinions": 2
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "none"
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "citing_name": "Ballentine v. Tucker",
+      "citing_court": "Ninth Circuit",
+      "citing_cluster_id": 9920040,
+      "n_other_negative": 0,
+      "n_plain": 3,
+      "n_total": 4,
+      "quote": "Lacey involved a high-profile arrest of journalists for newsgathering activity",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

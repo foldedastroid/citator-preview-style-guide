@@ -1,0 +1,36 @@
+---
+title: Search suggestions
+summary: "A combobox over every opinion in the preview: matching names first, then words, then citations; Enter opens the active one."
+group: lists
+order: 5
+kind: Script
+source: assets/js/search_suggest.js
+keywords: search combobox autocomplete suggest listbox
+scripts:
+  - /assets/js/search_suggest.js
+---
+{% from "guide/macros.njk" import files, note, table %}
+
+{% set ex = "search-suggestions" %}{% set exTitle = "Type a name or a citation" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>The index (<code>/assets/opinions.json</code>, written by <code>src/opinions.json.njk</code>) loads on first focus. While it loads the list says so; if it fails, the list says suggestions are unavailable and the page's own filter still works. The first option, <em>Show results for …</em>, filters the list on the search page rather than leaving it.</p>
+  <p>Ranking: a name that starts with the text, then a name with a word that does, then a match anywhere in the name, court or citations; at most six.</p>
+</div>
+{{ table(["Key", "Does"], [
+  ["↓ / ↑", "Moves the active option, wrapping; opens the list when closed"],
+  ["Enter", "Chooses the active option"],
+  ["Escape", "Closes the list"],
+  ["Tab", "Closes the list and moves on"]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The input is the combobox and keeps focus; <code>aria-activedescendant</code> points at the active option. Typing with an input method (Chinese, Japanese) waits for composition to end before suggesting.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["assets/js/search_suggest.js", "The combobox."],
+  ["src/opinions.json.njk", "The index: name, court and first citation, other citations, URL, worst tier."],
+  ["assets/css/styles.css", "<code>.suggest</code>, <code>.search-box</code>."]
+]) }}

@@ -1,0 +1,12 @@
+{% from "macros/evidence.njk" import evidenceCard %}
+{% set quote = "Callahan is distinguishable because the officers there entered without consent." %}
+{% set marked = "<strong class=\"evidence-card__case\">Callahan</strong> is distinguishable because the officers there entered without consent." %}
+{% set cards = [
+  {"label": "Distinguished by", "severity": "Caution", "rationale": "Found in the text, and it names the case.", "quote": quote, "quote_html": marked, "quote_status": "found", "quote_names": "name"},
+  {"label": "Distinguished by", "severity": "Caution", "rationale": "Found as separate passages, citing the case.", "quote": quote, "quote_html": marked, "quote_status": "stitched", "quote_names": "cite"},
+  {"label": "Criticized by", "severity": "Caution", "rationale": "Only partly in the text, and it does not name the case.", "quote": quote, "quote_html": quote, "quote_status": "partial", "quote_names": "none"},
+  {"label": "Questioned by", "severity": "Warning", "rationale": "Not found in the text.", "quote": quote, "quote_html": marked, "quote_status": "missing", "quote_names": "name"}
+] %}
+<div class="grid gap-4">
+  {% for card in cards %}{{ evidenceCard(card, treatment_definitions, "the citing opinion", "", "", false) }}{% endfor %}
+</div>

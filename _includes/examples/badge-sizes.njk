@@ -1,0 +1,6 @@
+{% from "macros/treatment.njk" import severityBadge %}
+<div class="flex flex-wrap items-center gap-3">
+  {{ severityBadge("Warning", "Limited by") }}
+  {{ severityBadge("Warning", "Limited by", true) }}
+  {{ severityBadge("Stop", "Reversed as recognized by", false, treatment_definitions["Reversed as recognized by"]) }}
+</div>

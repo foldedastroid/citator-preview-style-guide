@@ -1,0 +1,26 @@
+[
+  {
+    "key": "scotus",
+    "display": "U.S. Supreme Court",
+    "jurisdiction": "federal",
+    "order": 0
+  },
+  {
+    "key": "circuit",
+    "display": "U.S. Circuit courts",
+    "jurisdiction": "federal",
+    "order": 1
+  },
+  {
+    "key": "district",
+    "display": "U.S. District courts",
+    "jurisdiction": "federal",
+    "order": 2
+  },
+  {
+    "key": "state_supreme",
+    "display": "State COLR",
+    "jurisdiction": "state",
+    "order": 3
+  }
+]

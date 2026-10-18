@@ -1,0 +1,85 @@
+---
+title: Color
+summary: "CourtListener's warm greys and brick red, plus the five signal tiers that carry every treatment: a fill, an ink for text, and a wash for backgrounds."
+group: foundations
+order: 1
+kind: Tailwind theme
+source: tailwind.config.js
+keywords: colour palette signal greyscale primary state tokens
+---
+{% from "guide/macros.njk" import table, note %}
+{% set c = theme.extend.colors %}
+
+<h2 class="g-h2" id="signals">Signals</h2>
+<div class="g-prose">
+  <p>Each tier has three values. The <strong>fill</strong> draws the glyph and the meter segment; the <strong>ink</strong> is the same hue dark enough for text on white; the <strong>wash</strong> is the pill's background. A treatment is never shown by colour alone: the glyph and the label go with it.</p>
+</div>
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr><th scope="col">Tier</th><th scope="col">Fill</th><th scope="col">Ink</th><th scope="col">Wash</th><th scope="col">Used for</th></tr></thead>
+    <tbody>
+      {% for t in [
+        ["stop", "Stop", "Reversed, vacated, overruled, abrogated"],
+        ["warning", "Warning", "Questioned, disapproved, limited, reversed in part"],
+        ["caution", "Caution", "Distinguished, criticized, remanded, declined to follow"],
+        ["positive", "Positive", "Followed, affirmed"],
+        ["neutral", "Neutral", "Cited, dismissed, cert. denied"]
+      ] %}
+      <tr>
+        <td><code>signal.{{ t[0] }}</code></td>
+        <td><span class="g-swatch" style="background: {{ c.signal[t[0]] }}"></span> <code>{{ c.signal[t[0]] }}</code></td>
+        <td><span class="g-swatch" style="background: {{ c.signal[t[0] ~ '-ink'] }}"></span> <code>{{ c.signal[t[0] ~ '-ink'] }}</code></td>
+        <td><span class="g-swatch" style="background: {{ c.signal[t[0] ~ '-wash'] }}"></span> <code>{{ c.signal[t[0] ~ '-wash'] }}</code></td>
+        <td>{{ t[2] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2 class="g-h2" id="interface-state">Interface state</h2>
+<div class="g-prose"><p>Feedback about the interface itself (an error, a success), kept apart from the signal tiers so a red error never reads as an overruling.</p></div>
+<div class="g-swatches">
+  {% for name, value in c.state %}
+  <div class="g-swatch-card"><div class="g-swatch-card__chip" style="background: {{ value }}"></div><strong>state.{{ name }}</strong><code>{{ value }}</code></div>
+  {% endfor %}
+</div>
+
+<h2 class="g-h2" id="primary">Primary</h2>
+<div class="g-prose"><p>CourtListener's brick red: actions, links, the current location. Use <code>primary-600</code> for controls and <code>primary-700</code> for their hover.</p></div>
+<div class="g-swatches">
+  {% for name, value in c.primary %}
+  <div class="g-swatch-card"><div class="g-swatch-card__chip" style="background: {{ value }}"></div><strong>primary-{{ name }}</strong><code>{{ value }}</code></div>
+  {% endfor %}
+</div>
+
+<h2 class="g-h2" id="greyscale">Greyscale</h2>
+<div class="g-prose"><p>Warm greys for text, borders and surfaces: <code>greyscale-900</code> for text, <code>-600</code> for secondary text, <code>-200</code> for borders, <code>-50</code> for quiet surfaces.</p></div>
+<div class="g-swatches">
+  {% for name, value in c.greyscale %}
+  <div class="g-swatch-card"><div class="g-swatch-card__chip" style="background: {{ value }}"></div><strong>greyscale-{{ name }}</strong><code>{{ value }}</code></div>
+  {% endfor %}
+</div>
+
+<h2 class="g-h2" id="lines-and-overlays">Lines and overlays</h2>
+{{ table(["Token", "Value", "Used for"], [
+  ["<code>line</code>", "<code>" ~ c.line ~ "</code>", "Hairlines between rows and around cards"],
+  ["<code>line-pop</code>", "<code>" ~ c["line-pop"] ~ "</code>", "The border of menus, popovers and dialogs"],
+  ["<code>mark</code>", "<code>" ~ c.mark ~ "</code>", "The tint behind a cited case in the opinion text"],
+  ["<code>scrim</code>", "<code>" ~ c.scrim ~ "</code>", "Behind a drawer or dialog on narrow screens"]
+]) }}
+
+<h2 class="g-h2" id="guide-accents">Guide accents</h2>
+{{ table(["Role", "Theme token", "Value"], [
+  ["Links, current location and focus", "<code>primary-600</code>", "<code>" ~ c.primary[600] ~ "</code>"],
+  ["Link and action hover", "<code>primary-700</code>", "<code>" ~ c.primary[700] ~ "</code>"],
+  ["Current-page background", "<code>primary-50</code>", "<code>" ~ c.primary[50] ~ "</code>"],
+  ["Text selection", "<code>primary-100</code>", "<code>" ~ c.primary[100] ~ "</code>"]
+]) }}
+<div class="g-prose"><p>The guide generates <code>/assets/guide/accent.css</code> from this same theme. Treatment, validation and interface-status colors retain their separate meanings.</p></div>
+
+<h2 class="g-h2" id="in-code">In code</h2>
+<div class="g-prose">
+  <p>Use the token through Tailwind: <code>text-signal-stop-ink</code>, <code>bg-signal-caution-wash</code>, <code>border-line</code>, or <code>theme('colors.signal.stop')</code> inside <code>styles.css</code>. Never write the hex value in a template; a tier change then reaches every page on the next build.</p>
+</div>
+{{ note("Every value on this page is read from <code>tailwind.config.js</code> when the guide builds. <a href=\"/foundations/design-tokens/\">Design tokens</a> lists each one with where it comes from.") }}

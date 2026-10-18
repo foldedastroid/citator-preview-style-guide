@@ -1,0 +1,558 @@
+{
+  "cluster_id": 203857,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/203857/x/",
+  "case_name": "Maldonado v. Fontanes",
+  "name_missing": false,
+  "docket_number": "08-2211",
+  "docket_numbers": [
+    "08-2211"
+  ],
+  "citations": [
+    "568 F.3d 263"
+  ],
+  "court": "ca1",
+  "court_display": "First Circuit",
+  "is_court_of_last_resort": false,
+  "date_filed": "2009-06-04",
+  "excerpt": "Residents of three public housing complexes brought a civil rights suit under 42 U.S.C. §1983 against the Mayor of Barceloneta, Puerto Rico, protesting the precipitous seizures and cruel killings of their pet cats and dogs.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>Residents of three public housing complexes brought a civil rights suit under 42 U.S.C. §1983 against the Mayor of Barceloneta, Puerto Rico, protesting the precipitous seizures and cruel killings of their pet cats and dogs. The twenty named plaintiff families assert violations of their Fourth Amendment rights to be free from unreasonable seizures of their &quot;effects&quot; and their Fourteenth Amendment procedural and substantive due process rights.</p>\n<p>The Mayor, in his personal capacity, moved to dismiss all damages claims against him on grounds of qualified immunity. That motion was denied; the Mayor has taken an interlocutory appeal. We are informed that discovery is being completed and that the case is nearly ready for trial.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>In <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/145918/\">Pearson v. Callahan</a></span>, 129 S. Ct. 808 (2009), the Court reiterated that the qualified immunity inquiry is a two-part test. <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/145918/\">Pearson</a></span> also held that while it is frequently appropriate for courts to answer each step in turn, it is not mandatory that courts follow the two-step analysis sequentially. Courts have discretion to decide whether, on the facts of a particular case, it is worthwhile to address first whether the facts alleged make out a violation of a constitutional right.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>The relevant, dispositive inquiry in determining whether a right is clearly established is whether it would be clear to a reasonable officer that his conduct was unlawful in the situation he confronted — quoting <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U.S. at 202. That is, the salient question is whether the state of the law at the time of the alleged violation gave the defendant fair warning that his particular conduct was unconstitutional. We affirm the denial of the Mayor&#x27;s motion for qualified immunity on the Fourth Amendment and Fourteenth Amendment procedural due process claims.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Affirmed in part; Reversed in part as recognized by",
+        "label": "Affirmed in part; Reversed in part as recognized by",
+        "severity": "Warning",
+        "rationale": "Long-treatment fixture: within-circuit panel recognizes Maldonado's mixed appellate disposition.",
+        "quote": "Maldonado was later affirmed in part and reversed in part by the Supreme Court",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> was later affirmed in part and reversed in part by the Supreme Court"
+      },
+      "has_detail": true,
+      "row_id": "cb-49",
+      "citing_cluster_id": 9920032,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Estrada v. Rhode Island",
+      "citing_docket_numbers": [
+        "16-1567"
+      ],
+      "citing_citations": [
+        "832 F.3d 39"
+      ],
+      "citing_court_display": "First Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2016-08-15",
+      "citing_date_short": "08/15/2016",
+      "search_text": "estradavrhodeisland832f3d39",
+      "is_scoped": false,
+      "treatment": "Affirmed in part; Reversed in part as recognized by",
+      "severity": "Warning",
+      "direction": "Related Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [],
+      "recognized": [
+        {
+          "kind": "recognized",
+          "acting_case": "",
+          "treatment": "Affirmed in part; Reversed in part as recognized by",
+          "treatment_past": "Affirmed in part; Reversed in part",
+          "severity": "Warning",
+          "direction": "Related Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Maldonado was later affirmed in part and reversed in part by the Supreme Court",
+            "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> was later affirmed in part and reversed in part by the Supreme Court",
+            "rationale": "Long-treatment fixture: within-circuit panel recognizes Maldonado's mixed appellate disposition.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "validation": "unverified",
+      "recognized_filter": "Warning",
+      "evidence_cards": [
+        {
+          "treatment": "Affirmed in part; Reversed in part as recognized by",
+          "label": "Affirmed in part; Reversed in part as recognized by",
+          "severity": "Warning",
+          "rationale": "Long-treatment fixture: within-circuit panel recognizes Maldonado's mixed appellate disposition.",
+          "quote": "Maldonado was later affirmed in part and reversed in part by the Supreme Court",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> was later affirmed in part and reversed in part by the Supreme Court"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 0,
+      "name_index": 0,
+      "mentions_index": 0,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Within-circuit panel distinguishes on the underlying constitutional claim.",
+        "quote": "Maldonado involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine"
+      },
+      "has_detail": true,
+      "row_id": "cb-48",
+      "citing_cluster_id": 9920031,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Garcia v. Municipality of Carolina",
+      "citing_docket_numbers": [
+        "12-1456"
+      ],
+      "citing_citations": [
+        "692 F.3d 7"
+      ],
+      "citing_court_display": "First Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-09-04",
+      "citing_date_short": "09/04/2012",
+      "search_text": "garciavmunicipalityofcarolina692f3d7",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Maldonado involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+            "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+            "rationale": "Within-circuit panel distinguishes on the underlying constitutional claim.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Within-circuit panel distinguishes on the underlying constitutional claim.",
+          "quote": "Maldonado involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Maldonado</strong> involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 2,
+      "name_index": 1,
+      "mentions_index": 1,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Sister-circuit (horizontal_persuasive) — Lacey distinguishes Maldonado on factual posture.",
+        "quote": "The First Circuit's analysis in Maldonado v. Fontanes addressed substantive due process claims",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "The First Circuit&#x27;s analysis in <strong class=\"evidence-card__case\">Maldonado</strong> v. Fontanes addressed substantive due process claims"
+      },
+      "has_detail": true,
+      "row_id": "cb-16",
+      "citing_cluster_id": 807646,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Lacey v. Arpaio",
+      "citing_docket_numbers": [
+        "09-15703"
+      ],
+      "citing_citations": [
+        "693 F.3d 896"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-08-29",
+      "citing_date_short": "08/29/2012",
+      "search_text": "laceyvarpaio693f3d896",
+      "is_scoped": true,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "The First Circuit's analysis in Maldonado v. Fontanes addressed substantive due process claims",
+            "quote_html": "The First Circuit&#x27;s analysis in <strong class=\"evidence-card__case\">Maldonado</strong> v. Fontanes addressed substantive due process claims",
+            "rationale": "Sister-circuit (horizontal_persuasive) — Lacey distinguishes Maldonado on factual posture.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Sister-circuit (horizontal_persuasive) — Lacey distinguishes Maldonado on factual posture.",
+          "quote": "The First Circuit's analysis in Maldonado v. Fontanes addressed substantive due process claims",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "The First Circuit&#x27;s analysis in <strong class=\"evidence-card__case\">Maldonado</strong> v. Fontanes addressed substantive due process claims"
+        }
+      ],
+      "severity_index": 2,
+      "recency_index": 3,
+      "name_index": 2,
+      "mentions_index": 2,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit district court applies Maldonado.",
+        "quote": "we follow Maldonado v. Fontanes's articulation of the post-Pearson sequencing rule",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we follow <strong class=\"evidence-card__case\">Maldonado</strong> v. Fontanes&#x27;s articulation of the post-Pearson sequencing rule"
+      },
+      "has_detail": false,
+      "row_id": "cb-47",
+      "citing_cluster_id": 9920030,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Pearson Educ., Inc. v. Liu",
+      "citing_docket_numbers": [
+        "11-cv-12345"
+      ],
+      "citing_citations": [
+        "No. 11-12345 (D.P.R. 2013)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2013-06-18",
+      "citing_date_short": "06/18/2013",
+      "search_text": "pearsoneducincvliuno1112345dpr2013",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we follow Maldonado v. Fontanes's articulation of the post-Pearson sequencing rule",
+            "quote_html": "we follow <strong class=\"evidence-card__case\">Maldonado</strong> v. Fontanes&#x27;s articulation of the post-Pearson sequencing rule",
+            "rationale": "Within-circuit district court applies Maldonado.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 1,
+      "name_index": 3,
+      "mentions_index": 3,
+      "court_index": 3
+    }
+  ],
+  "summary": {
+    "dh_severity": "Warning",
+    "cr_severity": "Caution"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 203857,
+        "case_name": "Maldonado v. Fontanes",
+        "court": "First Circuit",
+        "court_id": "ca1",
+        "level": 1,
+        "date_filed": "2009-06-04",
+        "docket_number": "08-2211",
+        "citations": [
+          "568 F.3d 263"
+        ],
+        "url": "/opinion/203857/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirms",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 9100211,
+        "case_name": "Maldonado v. Fontanes (D.P.R.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2008-11-12",
+        "docket_number": "07-cv-01711",
+        "citations": [
+          "No. 07-1711 (D.P.R. 2008)"
+        ],
+        "url": "/opinion/9100211/"
+      },
+      {
+        "role": "reported",
+        "cluster_id": null,
+        "case_name": "Estrada v. Rhode Island",
+        "acting_case": "",
+        "court": "Court not identified",
+        "court_id": "",
+        "date_filed": "2016-08-15",
+        "url": "",
+        "level": 0,
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms in part; Reverses in part",
+                "defined_as": "Affirmed in part; Reversed in part",
+                "severity": "Warning",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chain": [
+      {
+        "role": "below",
+        "cluster_id": 9100211,
+        "case_name": "Maldonado v. Fontanes (D.P.R.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2008-11-12",
+        "docket_number": "07-cv-01711",
+        "citations": [
+          "No. 07-1711 (D.P.R. 2008)"
+        ],
+        "url": "/opinion/9100211/",
+        "index": 1,
+        "row": 5,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "self",
+        "cluster_id": 203857,
+        "case_name": "Maldonado v. Fontanes",
+        "court": "First Circuit",
+        "court_id": "ca1",
+        "level": 1,
+        "date_filed": "2009-06-04",
+        "docket_number": "08-2211",
+        "citations": [
+          "568 F.3d 263"
+        ],
+        "url": "/opinion/203857/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirms",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 0,
+        "row": 3,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 4,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      },
+      {
+        "role": "reported",
+        "cluster_id": null,
+        "case_name": "Estrada v. Rhode Island",
+        "acting_case": "",
+        "court": "Court not identified",
+        "court_id": "",
+        "date_filed": "2016-08-15",
+        "url": "",
+        "level": 0,
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms in part; Reverses in part",
+                "defined_as": "Affirmed in part; Reversed in part",
+                "severity": "Warning",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 2,
+        "row": 1,
+        "col": 5,
+        "tier": "Highest court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 4,
+            "col_end": 6,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      },
+      {
+        "level": 0,
+        "col": 5,
+        "label": "Highest court"
+      }
+    ],
+    "has_reported": true,
+    "n_opinions": 2
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "treated",
+      "treatment": "Affirmed in part; Reversed in part as recognized by",
+      "severity": "Warning",
+      "citing_name": "Estrada v. Rhode Island",
+      "citing_cluster_id": 9920032,
+      "quote": "Maldonado was later affirmed in part and reversed in part by the Supreme Court",
+      "quote_status": "missing",
+      "authority_n": null
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "citing_name": "Garcia v. Municipality of Carolina",
+      "citing_court": "First Circuit",
+      "citing_cluster_id": 9920031,
+      "n_other_negative": 1,
+      "n_plain": 1,
+      "n_total": 3,
+      "quote": "Maldonado involved a substantive due process claim; the present case is grounded entirely in Fourth Amendment seizure doctrine",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

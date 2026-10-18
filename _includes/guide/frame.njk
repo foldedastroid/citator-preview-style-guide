@@ -1,0 +1,14 @@
+
+{%- set fw = frameWidth or 1280 -%}
+<figure class="g-frame" style="--g-frame-height: {{ frameHeight or 640 }}px">
+  <figcaption class="g-frame__bar">
+    <span class="g-example__title">{{ frameTitle }}</span>
+    <span class="g-example__file">{{ frameSrc }} · {{ fw }}px wide</span>
+    <a class="g-text-button" href="{{ frameSrc }}" target="_blank" rel="noopener">Open full page
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
+  </figcaption>
+  <div class="g-frame__viewport" data-frame-width="{{ fw }}">
+    <iframe src="{{ frameSrc }}" title="{{ frameTitle }}" loading="lazy"></iframe>
+  </div>
+</figure>
+{%- set frameHeight = "" -%}{%- set frameWidth = "" -%}

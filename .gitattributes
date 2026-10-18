@@ -1,0 +1,29 @@
+* text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.psd binary
+
+*.wma binary
+*.mp3 binary
+
+*.jar binary
+*.exe binary
+*.bz2 binary
+*.gz binary
+*.zip binary
+
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+*.ods binary
+*.pdf binary
+*.xls binary
+*.wpd binary
+
+assets/fonts/**/OFL.txt -text -whitespace

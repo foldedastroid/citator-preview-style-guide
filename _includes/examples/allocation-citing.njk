@@ -1,0 +1,5 @@
+{% from "macros/treatment.njk" import allocation %}
+
+<div class="max-w-xs">
+  {{ allocation("Citing references", opinion.cited_by, "severity", "#cited-by", "citing", "None in this preview") }}
+</div>

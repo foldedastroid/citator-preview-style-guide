@@ -1,0 +1,42 @@
+---
+title: Sidebar tree
+summary: "The library in the app's sidebar: each opinion with its worst signal, and a branch with its three views and their counts. Branches open with a click or the arrow keys and stay as you left them."
+group: navigation
+order: 1
+kind: Nunjucks macro
+source: _includes/macros/sidebar.njk
+keywords: caseNode tree sidebar navigation branch library
+scripts:
+  - /assets/js/sidebar_tree.js
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "sidebar-tree" %}{% set exTitle = "The first five opinions" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["case", "index entry", "", "An entry of <code>index</code>: <code>cluster_id</code>, <code>case_name</code>, <code>court_display</code>, <code>summary</code>."],
+  ["group", "string", "", "The group the case is listed under; with the cluster id it keys the branch's remembered state."],
+  ["url", "string", "", "<code>page.url</code>. On the case's own page the row is current and its branch links switch tabs in place."],
+  ["counts", "object", "", "<code>allOpinions | listCounts</code>, computed once per page."],
+  ["expand", "boolean", "", "Open the branch on the case's own page."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+{{ table(["Input", "Does"], [
+  ["Sidebar header toggle", "Collapses the sidebar; the content header provides the reopen control. See the <a href=\"/pages/search-page/\">search page</a> for the complete shell."],
+  ["Click the chevron", "Opens or closes the branch; remembered per key in localStorage"],
+  ["→ / ← on a row", "Opens / closes its branch"],
+  ["Filter library", "Hides rows whose name or court does not match, opening groups with matches"],
+  ["Recent", "The last six opinions opened in this browser, above the library, with Clear"]
+]) }}
+<div class="g-prose"><p>Branches, filtering and Recent use <code>sidebar_tree.js</code>. The shared shell owns the header toggle, focus handoff and responsive open state; resizing does not animate the page geometry. The red Citator preview brand is a separate home link (<code>site.home</code>), with its own hover and pressed states. Stored Recent entries are checked before they are shown: only an opinion path, a title and a known tier are used.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/sidebar.njk", "<code>caseNode</code>."],
+  ["_includes/layouts/base.njk", "The sidebar around it: groups by court system, the filter, Recent."],
+  ["assets/js/sidebar_tree.js", "Branches, filter, Recent, current-location marks."],
+  ["assets/js/alpine/components/app_shell.js", "Sidebar and panel state, responsive layout and focus handoff."],
+  ["tools/filters.cjs", "<code>worstSignal</code>, <code>listCounts</code>."]
+]) }}

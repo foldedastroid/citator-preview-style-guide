@@ -1,0 +1,135 @@
+[
+  {
+    "key": "federal_appellate",
+    "display": "Federal appellate",
+    "n_courts": 6,
+    "groups": [
+      {
+        "name": "U.S. Supreme Court",
+        "keys": [
+          "scotus"
+        ],
+        "courts": [
+          {
+            "key": "scotus",
+            "display": "U.S. Supreme Court",
+            "level": 0,
+            "depth": 0
+          }
+        ]
+      },
+      {
+        "name": "U.S. Circuit courts",
+        "keys": [
+          "ca1",
+          "ca2",
+          "ca4",
+          "ca9",
+          "ca10"
+        ],
+        "courts": [
+          {
+            "key": "ca1",
+            "display": "First Circuit",
+            "level": 1,
+            "depth": 0
+          },
+          {
+            "key": "ca2",
+            "display": "Second Circuit",
+            "level": 1,
+            "depth": 0
+          },
+          {
+            "key": "ca4",
+            "display": "Fourth Circuit",
+            "level": 1,
+            "depth": 0
+          },
+          {
+            "key": "ca9",
+            "display": "Ninth Circuit",
+            "level": 1,
+            "depth": 0
+          },
+          {
+            "key": "ca10",
+            "display": "Tenth Circuit",
+            "level": 1,
+            "depth": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "federal_district",
+    "display": "Federal district",
+    "n_courts": 2,
+    "groups": [
+      {
+        "name": "Utah",
+        "keys": [
+          "utd"
+        ],
+        "courts": [
+          {
+            "key": "utd",
+            "display": "U.S. District Court (D. Utah)",
+            "level": 2,
+            "depth": 0
+          }
+        ]
+      },
+      {
+        "name": "Other courts",
+        "keys": [
+          "dist"
+        ],
+        "courts": [
+          {
+            "key": "dist",
+            "display": "U.S. District Court",
+            "level": 2,
+            "depth": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "state",
+    "display": "State",
+    "n_courts": 2,
+    "groups": [
+      {
+        "name": "California",
+        "keys": [
+          "cal"
+        ],
+        "courts": [
+          {
+            "key": "cal",
+            "display": "California Supreme Court",
+            "level": 1,
+            "depth": 0
+          }
+        ]
+      },
+      {
+        "name": "New York",
+        "keys": [
+          "ny"
+        ],
+        "courts": [
+          {
+            "key": "ny",
+            "display": "New York Court of Appeals",
+            "level": 1,
+            "depth": 0
+          }
+        ]
+      }
+    ]
+  }
+]

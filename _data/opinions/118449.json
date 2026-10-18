@@ -1,0 +1,861 @@
+{
+  "cluster_id": 118449,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/118449/x/",
+  "case_name": "Saucier v. Katz",
+  "name_missing": false,
+  "docket_number": "99-1977",
+  "docket_numbers": [
+    "99-1977"
+  ],
+  "citations": [
+    "533 U.S. 194",
+    "121 S. Ct. 2151",
+    "150 L. Ed. 2d 272"
+  ],
+  "court": "scotus",
+  "court_display": "U.S. Supreme Court",
+  "is_court_of_last_resort": true,
+  "date_filed": "2001-06-18",
+  "excerpt": "In this case a citizen alleged excessive force was used to arrest him. The arresting officer asserted the defense of qualified immunity. The matter we address is whether the requisite analysis to determine qualified immunity is so intertwined with the question whether the officer…",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>In this case a citizen alleged excessive force was used to arrest him. The arresting officer asserted the defense of qualified immunity. The matter we address is whether the requisite analysis to determine qualified immunity is so intertwined with the question whether the officer used excessive force in making the arrest that qualified immunity and constitutional violation issues should be treated as one question, to be decided by the trier of fact. The Court of Appeals held the inquiries do merge into a single question. We now reverse and hold that the ruling on qualified immunity requires an analysis not susceptible of fusion with the question whether unreasonable force was used in making the arrest.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>A court required to rule upon the qualified immunity issue must consider, then, this threshold question: Taken in the light most favorable to the party asserting the injury, do the facts alleged show the officer&#x27;s conduct violated a constitutional right? This must be the initial inquiry. If no constitutional right would have been violated were the allegations established, there is no necessity for further inquiries concerning qualified immunity. On the other hand, if a violation could be made out on a favorable view of the parties&#x27; submissions, the next, sequential step is to ask whether the right was clearly established.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>The approach the Court of Appeals adopted — to deny summary judgment any time a material issue of fact remains on the excessive force claim — could undermine the goal of qualified immunity to &quot;avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment.&quot; <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/110763/\">Harlow v. Fitzgerald</a></span>, 457 U. S. 800, 818 (1982). If the law did not put the officer on notice that his conduct would be clearly unlawful, summary judgment based on qualified immunity is appropriate.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Limited as recognized by",
+        "label": "Limited as recognized by",
+        "severity": "Warning",
+        "rationale": "Henry recognizes Pearson modified Saucier (\"as recognized by\" / Related Reference).",
+        "quote": "Saucier v. Katz, 533 U.S. 194, 206 (2001), overruled in part",
+        "quote_status": "missing",
+        "quote_names": "cite",
+        "quote_html": "<strong class=\"evidence-card__case\">Saucier</strong> v. Katz, <strong class=\"evidence-card__case\">533 U.S. 194</strong>, 206 (2001), overruled in part"
+      },
+      "has_detail": true,
+      "row_id": "cb-8",
+      "citing_cluster_id": 220962,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Henry v. Purnell",
+      "citing_docket_numbers": [
+        "08-7433"
+      ],
+      "citing_citations": [
+        "652 F.3d 524"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2011-07-14",
+      "citing_date_short": "07/14/2011",
+      "search_text": "henryvpurnell652f3d524",
+      "is_scoped": true,
+      "treatment": "Limited as recognized by",
+      "severity": "Warning",
+      "direction": "Related Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [],
+      "recognized": [
+        {
+          "kind": "recognized",
+          "acting_case": "",
+          "treatment": "Limited as recognized by",
+          "treatment_past": "Limited",
+          "severity": "Warning",
+          "direction": "Related Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "Saucier v. Katz, 533 U.S. 194, 206 (2001), overruled in part",
+            "quote_html": "<strong class=\"evidence-card__case\">Saucier</strong> v. Katz, <strong class=\"evidence-card__case\">533 U.S. 194</strong>, 206 (2001), overruled in part",
+            "rationale": "Henry recognizes Pearson modified Saucier (\"as recognized by\" / Related Reference).",
+            "quote_status": "missing",
+            "quote_names": "cite"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "validation": "unverified",
+      "recognized_filter": "Warning",
+      "evidence_cards": [
+        {
+          "treatment": "Limited as recognized by",
+          "label": "Limited as recognized by",
+          "severity": "Warning",
+          "rationale": "Henry recognizes Pearson modified Saucier (\"as recognized by\" / Related Reference).",
+          "quote": "Saucier v. Katz, 533 U.S. 194, 206 (2001), overruled in part",
+          "quote_status": "missing",
+          "quote_names": "cite",
+          "quote_html": "<strong class=\"evidence-card__case\">Saucier</strong> v. Katz, <strong class=\"evidence-card__case\">533 U.S. 194</strong>, 206 (2001), overruled in part"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 2,
+      "name_index": 3,
+      "mentions_index": 0,
+      "court_index": 5
+    },
+    {
+      "evidence": {
+        "treatment": "Limited by",
+        "label": "Limited by",
+        "severity": "Warning",
+        "rationale": "Pearson held Saucier's mandatory two-step ordering is no longer required.",
+        "quote": "the Saucier procedure should not be regarded as an inflexible requirement",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "the <strong class=\"evidence-card__case\">Saucier</strong> procedure should not be regarded as an inflexible requirement"
+      },
+      "has_detail": true,
+      "row_id": "cb-3",
+      "citing_cluster_id": 145918,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Pearson v. Callahan",
+      "citing_docket_numbers": [
+        "07-751"
+      ],
+      "citing_citations": [
+        "555 U.S. 223",
+        "129 S. Ct. 808",
+        "172 L. Ed. 2d 565"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2009-01-21",
+      "citing_date_short": "01/21/2009",
+      "search_text": "pearsonvcallahan555us223129sct808172led2d565",
+      "is_scoped": true,
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Limited by",
+          "treatment_past": "Limited",
+          "severity": "Warning",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "the Saucier procedure should not be regarded as an inflexible requirement",
+            "quote_html": "the <strong class=\"evidence-card__case\">Saucier</strong> procedure should not be regarded as an inflexible requirement",
+            "rationale": "Pearson held Saucier's mandatory two-step ordering is no longer required.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Limited by",
+          "label": "Limited by",
+          "severity": "Warning",
+          "rationale": "Pearson held Saucier's mandatory two-step ordering is no longer required.",
+          "quote": "the Saucier procedure should not be regarded as an inflexible requirement",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "the <strong class=\"evidence-card__case\">Saucier</strong> procedure should not be regarded as an inflexible requirement"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 5,
+      "name_index": 8,
+      "mentions_index": 1,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Followed by",
+        "label": "Followed by",
+        "severity": "Positive",
+        "rationale": "10th Cir. applies Saucier's mandatory two-step.",
+        "quote": "If no constitutional right would have been violated were the allegations established",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "If no constitutional right would have been violated were the allegations established"
+      },
+      "has_detail": true,
+      "row_id": "cb-6",
+      "citing_cluster_id": 1425860,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Callahan v. Millard County",
+      "citing_docket_numbers": [
+        "06-4135"
+      ],
+      "citing_citations": [
+        "494 F.3d 891"
+      ],
+      "citing_court_display": "Tenth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2007-07-16",
+      "citing_date_short": "07/16/2007",
+      "search_text": "callahanvmillardcounty494f3d891",
+      "is_scoped": true,
+      "treatment": "Followed by",
+      "severity": "Positive",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Followed by",
+          "treatment_past": "Followed",
+          "severity": "Positive",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "If no constitutional right would have been violated were the allegations established",
+            "quote_html": "If no constitutional right would have been violated were the allegations established",
+            "rationale": "10th Cir. applies Saucier's mandatory two-step.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Followed by",
+          "label": "Followed by",
+          "severity": "Positive",
+          "rationale": "10th Cir. applies Saucier's mandatory two-step.",
+          "quote": "If no constitutional right would have been violated were the allegations established",
+          "quote_status": "missing",
+          "quote_names": "",
+          "quote_html": "If no constitutional right would have been violated were the allegations established"
+        }
+      ],
+      "severity_index": 2,
+      "recency_index": 6,
+      "name_index": 1,
+      "mentions_index": 2,
+      "court_index": 4
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "SCOTUS QI case applying Saucier framework.",
+        "quote": "we apply the two-step framework articulated in Saucier",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we apply the two-step framework articulated in <strong class=\"evidence-card__case\">Saucier</strong>"
+      },
+      "has_detail": false,
+      "row_id": "cb-23",
+      "citing_cluster_id": 9100202,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Plumhoff v. Rickard",
+      "citing_docket_numbers": [
+        "12-1117"
+      ],
+      "citing_citations": [
+        "572 U.S. 765"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2014-05-27",
+      "citing_date_short": "05/27/2014",
+      "search_text": "plumhoffvrickard572us765",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we apply the two-step framework articulated in Saucier",
+            "quote_html": "we apply the two-step framework articulated in <strong class=\"evidence-card__case\">Saucier</strong>",
+            "rationale": "SCOTUS QI case applying Saucier framework.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 0,
+      "name_index": 9,
+      "mentions_index": 3,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Lacey applies Saucier's first prong.",
+        "quote": "we ask whether the facts alleged show the officer's conduct violated a constitutional right",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "we ask whether the facts alleged show the officer&#x27;s conduct violated a constitutional right"
+      },
+      "has_detail": false,
+      "row_id": "cb-14",
+      "citing_cluster_id": 807646,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Lacey v. Arpaio",
+      "citing_docket_numbers": [
+        "09-15703"
+      ],
+      "citing_citations": [
+        "693 F.3d 896"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-08-29",
+      "citing_date_short": "08/29/2012",
+      "search_text": "laceyvarpaio693f3d896",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we ask whether the facts alleged show the officer's conduct violated a constitutional right",
+            "quote_html": "we ask whether the facts alleged show the officer&#x27;s conduct violated a constitutional right",
+            "rationale": "Lacey applies Saucier's first prong.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 4,
+      "recency_index": 1,
+      "name_index": 5,
+      "mentions_index": 4,
+      "court_index": 7
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Maldonado cites Saucier's clearly-established formulation.",
+        "quote": "the salient question is whether the state of the law at the time of the alleged violation gave the defendant fair warning",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the salient question is whether the state of the law at the time of the alleged violation gave the defendant fair warning"
+      },
+      "has_detail": false,
+      "row_id": "cb-12",
+      "citing_cluster_id": 203857,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Maldonado v. Fontanes",
+      "citing_docket_numbers": [
+        "08-2211"
+      ],
+      "citing_citations": [
+        "568 F.3d 263"
+      ],
+      "citing_court_display": "First Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-06-04",
+      "citing_date_short": "06/04/2009",
+      "search_text": "maldonadovfontanes568f3d263",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Distinguished by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": "Distinguished by",
+          "source": "model",
+          "evidence": {
+            "quote": "the salient question is whether the state of the law at the time of the alleged violation gave the defendant fair warning",
+            "quote_html": "the salient question is whether the state of the law at the time of the alleged violation gave the defendant fair warning",
+            "rationale": "Maldonado cites Saucier's clearly-established formulation.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 5,
+      "recency_index": 3,
+      "name_index": 6,
+      "mentions_index": 5,
+      "court_index": 8
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Cal. Sup. Ct. notes Saucier's mandatory ordering at the time of trial.",
+        "quote": "high court precedent required the trial court first to decide whether Sanchez had violated Hernandez's constitutional rights",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "high court precedent required the trial court first to decide whether Sanchez had violated Hernandez&#x27;s constitutional rights"
+      },
+      "has_detail": false,
+      "row_id": "cb-19",
+      "citing_cluster_id": 1801687,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Hernandez v. City of Pomona",
+      "citing_docket_numbers": [
+        "S149499"
+      ],
+      "citing_citations": [
+        "46 Cal. 4th 501",
+        "207 P.3d 506",
+        "94 Cal. Rptr. 3d 1"
+      ],
+      "citing_court_display": "California Supreme Court",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2009-05-28",
+      "citing_date_short": "05/28/2009",
+      "search_text": "hernandezvcityofpomona46cal4th501207p3d50694calrptr3d1",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "high court precedent required the trial court first to decide whether Sanchez had violated Hernandez's constitutional rights",
+            "quote_html": "high court precedent required the trial court first to decide whether Sanchez had violated Hernandez&#x27;s constitutional rights",
+            "rationale": "Cal. Sup. Ct. notes Saucier's mandatory ordering at the time of trial.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 6,
+      "recency_index": 4,
+      "name_index": 4,
+      "mentions_index": 6,
+      "court_index": 6
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "SCOTUS pre-Pearson; mandatory two-step still good law at the time.",
+        "quote": "we follow the order of analysis Saucier prescribed",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we follow the order of analysis <strong class=\"evidence-card__case\">Saucier</strong> prescribed"
+      },
+      "has_detail": false,
+      "row_id": "cb-27",
+      "citing_cluster_id": 9100206,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Scott v. Harris",
+      "citing_docket_numbers": [
+        "05-1631"
+      ],
+      "citing_citations": [
+        "550 U.S. 372"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2007-04-30",
+      "citing_date_short": "04/30/2007",
+      "search_text": "scottvharris550us372",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we follow the order of analysis Saucier prescribed",
+            "quote_html": "we follow the order of analysis <strong class=\"evidence-card__case\">Saucier</strong> prescribed",
+            "rationale": "SCOTUS pre-Pearson; mandatory two-step still good law at the time.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 7,
+      "recency_index": 7,
+      "name_index": 10,
+      "mentions_index": 7,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "District court applies Saucier's two-step.",
+        "quote": "the two-step inquiry set out by the Supreme Court",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the two-step inquiry set out by the Supreme Court"
+      },
+      "has_detail": false,
+      "row_id": "cb-7",
+      "citing_cluster_id": 9999001,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Callahan v. Millard County Sheriff",
+      "citing_docket_numbers": [
+        "2:05-cv-00170"
+      ],
+      "citing_citations": [
+        "No. 2:05-cv-00170 (D. Utah 2005)"
+      ],
+      "citing_court_display": "U.S. District Court (D. Utah)",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2005-09-14",
+      "citing_date_short": "09/14/2005",
+      "search_text": "callahanvmillardcountysheriffno205cv00170dutah2005",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the two-step inquiry set out by the Supreme Court",
+            "quote_html": "the two-step inquiry set out by the Supreme Court",
+            "rationale": "District court applies Saucier's two-step.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 8,
+      "recency_index": 8,
+      "name_index": 2,
+      "mentions_index": 8,
+      "court_index": 10
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Pre-Pearson per-curiam SCOTUS case applying Saucier framework.",
+        "quote": "the second step of the qualified immunity analysis must be undertaken in light of the specific context",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the second step of the qualified immunity analysis must be undertaken in light of the specific context"
+      },
+      "has_detail": false,
+      "row_id": "cb-26",
+      "citing_cluster_id": 9100205,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Brosseau v. Haugen",
+      "citing_docket_numbers": [
+        "03-1261"
+      ],
+      "citing_citations": [
+        "543 U.S. 194"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2004-12-13",
+      "citing_date_short": "12/13/2004",
+      "search_text": "brosseauvhaugen543us194",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the second step of the qualified immunity analysis must be undertaken in light of the specific context",
+            "quote_html": "the second step of the qualified immunity analysis must be undertaken in light of the specific context",
+            "rationale": "Pre-Pearson per-curiam SCOTUS case applying Saucier framework.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 9,
+      "recency_index": 9,
+      "name_index": 0,
+      "mentions_index": 9,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "NY Court of Appeals notes federal QI ruling.",
+        "quote": "qualified immunity barred the assertion of the section 1983 claims",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "qualified immunity barred the assertion of the section 1983 claims"
+      },
+      "has_detail": false,
+      "row_id": "cb-17",
+      "citing_cluster_id": 2219834,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Martinez v. City of Schenectady",
+      "citing_docket_numbers": [
+        "N/A"
+      ],
+      "citing_citations": [
+        "97 N.Y.2d 78",
+        "761 N.E.2d 560",
+        "735 N.Y.S.2d 868"
+      ],
+      "citing_court_display": "New York Court of Appeals",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2001-11-19",
+      "citing_date_short": "11/19/2001",
+      "search_text": "martinezvcityofschenectady97ny2d78761ne2d560735nys2d868",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "qualified immunity barred the assertion of the section 1983 claims",
+            "quote_html": "qualified immunity barred the assertion of the section 1983 claims",
+            "rationale": "NY Court of Appeals notes federal QI ruling.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 10,
+      "recency_index": 10,
+      "name_index": 7,
+      "mentions_index": 10,
+      "court_index": 9
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Warning"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 118449,
+        "case_name": "Saucier v. Katz",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2001-06-18",
+        "docket_number": "99-1977",
+        "citations": [
+          "533 U.S. 194",
+          "121 S. Ct. 2151",
+          "150 L. Ed. 2d 272"
+        ],
+        "url": "/opinion/118449/"
+      }
+    ],
+    "chain": [],
+    "levels": [],
+    "n_opinions": 1
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "not_reviewable"
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "citing_name": "Pearson v. Callahan",
+      "citing_court": "U.S. Supreme Court",
+      "citing_cluster_id": 145918,
+      "n_other_negative": 1,
+      "n_plain": 9,
+      "n_total": 11,
+      "quote": "the Saucier procedure should not be regarded as an inflexible requirement",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

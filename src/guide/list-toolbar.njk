@@ -1,0 +1,44 @@
+---
+title: List toolbar
+summary: "Search, sort, the tier filter menu and the live count above a treatment list, with the column headers the rows line up under."
+group: lists
+order: 2
+kind: Nunjucks macros
+source: _includes/macros/list_header.njk
+keywords: listToolbar listHeader filterMenu sort search filter count
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "list-toolbar" %}{% set exTitle = "Toolbar over five illustrative rows" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="row-contract">Row contract</h2>
+<div class="g-prose"><p>The toolbar drives whatever rows sit in its <code>authoritiesFilter</code> or <code>citedByFilter</code> scope, as long as each carries:</p></div>
+{{ table(["Attribute", "Holds"], [
+  ["<code>data-row-id</code>", "A unique id; marks the element as a row."],
+  ["<code>data-search</code>", "Name and citations reduced to letters and digits, lower case: what the search box matches."],
+  ["<code>data-severity</code>", "The row's most serious tier, lower case: what chart and meter narrowing match."],
+  ["<code>data-applied-severity</code>, <code>data-rec-severity</code>", "The applied tier and the worst recognized tier (<code>none</code> when there is none): what the filter menu matches."],
+  ["<code>data-validation</code>", "<code>agree</code>, <code>disagree</code> or <code>unverified</code>, for the Validation section."],
+  ["<code>data-&lt;key&gt;-index</code>", "The row's rank under each sort option's key (<code>data-severity-index</code>, <code>data-recency-index</code>). Sorting sets the row's CSS <code>order</code> from it."],
+  ["<code>data-court-label</code>, <code>data-court-index</code>, <code>data-date</code>", "For narrowing by court and by date, and for the court sort's group heads."],
+  ["<code>x-bind:class=\"rowClass\" x-bind:style=\"rowStyle\"</code>", "Visibility and order. Visibility is a class, not <code>x-show</code>: Alpine's style bookkeeping would undo <code>x-show</code>'s display."]
+]) }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+<h3 class="g-h3">listToolbar(sort_options, noun, applied_label, rec_label, validation)</h3>
+{{ params([
+  ["sort_options", "{key, label}[]", "", "The sort choices, first selected. Each <code>key</code> needs a matching <code>data-&lt;key&gt;-index</code> on the rows and an entry in the component's sort keys (<code>treatment_list.js</code>)."],
+  ["noun", "string", "", "Ends the count and the search label: \"3 of 5 <em>citing opinions</em>\"."],
+  ["applied_label", "string", "", "Heads the filter menu's first section."],
+  ["rec_label", "string", "", "Heads its second."],
+  ["validation", "boolean", "false", "Adds the Validation section. Pass <code>flags.validation</code>."]
+]) }}
+<h3 class="g-h3">listHeader(cols)</h3>
+{{ params([["cols", "{label, class?, title?}[]", "", "One per grid column after the treatment line. <code>col-head--pad</code> aligns a header over a padded cell; <code>title</code> explains the column on hover."]]) }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/list_header.njk", "<code>listToolbar</code>, <code>filterMenu</code>, <code>listHeader</code>."],
+  ["assets/js/alpine/components/treatment_list.js", "The two list components and their sort keys."],
+  ["assets/css/styles.css", "<code>.list-toolbar</code>, <code>.list-filter</code>, <code>.citator-row</code>, <code>.sev-rail</code>."]
+]) }}

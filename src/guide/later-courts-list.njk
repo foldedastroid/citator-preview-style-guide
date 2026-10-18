@@ -1,0 +1,41 @@
+---
+title: Later Courts list
+summary: "Every later opinion that cites this one, with what it did and what it reports other courts did: searchable, sortable, filterable by tier, and opened row by row to the evidence."
+group: lists
+order: 1
+kind: Partial
+source: _includes/partials/cited-by-tab.njk
+keywords: cited by citing references list tab treatment_list citedByFilter
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "later-courts-list" %}{% set exTitle = "Callahan v. Millard County, Later Courts tab" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="data">Data</h2>
+<div class="g-prose"><p>The partial reads the page's <code>opinion</code> record and the chart's counts, <code>citingBreak</code>, which <code>partials/opinion-page.njk</code> sets before the tabs.</p></div>
+{{ table(["Field", "Meaning"], [
+  ["<code>opinion.cited_by</code>", "One row per citing opinion, sorted most severe first, then newest. Each row has its pills (<code>applied</code>, <code>recognized</code>), <code>evidence_cards</code>, its rank under every sort key (<code>severity_index</code>, <code>recency_index</code>, …) and <code>search_text</code>."],
+  ["<code>opinion.cited_by_scope</code>", "<code>controlling</code>: every citing opinion from a court that binds this one. <code>collection</code>: only the opinions in the preview."],
+  ["<code>opinion.cited_by_populated</code>", "Whether citing opinions were collected at all, so an empty list says \"none\" rather than \"not collected yet\"."],
+  ["<code>opinion.citing_counts</code>", "Totals from CourtListener for opinions outside the preview's scope."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>The list is an Alpine <code>citedByFilter</code> (<code>treatment_list.js</code>). Every row carries its rank under each sort key, so sorting sets a CSS <code>order</code> and filtering toggles a class: the list is never rebuilt. The applied and recognized filter sections are a union: a row shows when either has a ticked tier. A chart cell, a meter tier or a Narrow by row narrows the list further, shown as a chip that names the narrowing and removes it.</p>
+  <p>Rows with evidence are native <code>&lt;details&gt;</code>: Enter or Space opens one.</p>
+</div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>"N of M" is a polite live status, so filtering is announced. The filter menu is a <code>&lt;details&gt;</code> of native checkboxes that closes on Escape or a click outside (<code>sidebar_tree.js</code> handles both for every <code>details.list-filter</code>). Each row's rail colour repeats its first pill, never replaces it.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/partials/cited-by-tab.njk", "The list, with its empty and out-of-scope states."],
+  ["_includes/partials/authorities-tab.njk", "The Authorities list: the same grid, toolbar and behaviour, from <code>opinion.cited_authorities</code>."],
+  ["_includes/macros/list_header.njk", "Toolbar, filter menu and column headers."],
+  ["_includes/macros/citing_chart.njk", "The chart above the list."],
+  ["assets/js/alpine/components/treatment_list.js", "<code>citedByFilter</code> and <code>authoritiesFilter</code>."],
+  ["assets/js/alpine/components/opinion_views.js", "The chart's controls."]
+]) }}
+{{ note("The mock fixtures have no Authorities rows (their opinions carry no citation extraction), so the Authorities list renders its empty state in this guide. With real data it lists one row per cited case, numbered as in the text.") }}

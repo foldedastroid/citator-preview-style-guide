@@ -1,0 +1,42 @@
+---
+title: Introduction
+summary: "Every part of the CourtListener citator preview, rendered live from the app's own macros, partials and scripts, with the code to copy beside it."
+group: start
+order: 1
+permalink: /
+kind: Guide
+---
+{% from "guide/macros.njk" import note %}
+
+<h2 class="g-h2" id="what-this-is">What this is</h2>
+<div class="g-prose">
+  <p>The citator preview is a static site: Eleventy renders Nunjucks templates, Tailwind builds the stylesheet from CourtListener's design tokens, and Alpine's CSP build runs the interactive parts. This guide documents that interface one part at a time. Each page shows the part working, the snippet that renders it, its parameters and data, the script it needs, and the files to copy.</p>
+  <p>Nothing here is a reimplementation. The macros, partials, styles and scripts are the app's, copied in by <code>npm run sync</code>, so what you see is what the app ships. The full pages at the end of the sidebar are the app's real pages, built from the same fixtures.</p>
+</div>
+
+<h2 class="g-h2" id="how-to-read-a-page">How to read a page</h2>
+<div class="g-prose">
+  <ul>
+    <li><strong>Example</strong>: the part rendered live. Every example sits on its own; the code under it is the whole snippet, imports and data included, and runs as it is inside the app.</li>
+    <li><strong>Parameters</strong>: the macro's arguments, or the data a partial reads, with their types and defaults.</li>
+    <li><strong>Behaviour</strong>: the script that drives the part, the markup it expects, and the keyboard and focus rules it keeps.</li>
+    <li><strong>Files</strong>: what to bring into another project for the part to work.</li>
+  </ul>
+  <p>Pages read in order: the link at the foot of each page goes to the next. <kbd>⌘K</kbd> finds a page; <kbd>⌘\</kbd> folds the sidebar away.</p>
+</div>
+
+<h2 class="g-h2" id="contents">Contents</h2>
+<ul role="list" class="g-catalogue">
+  {% for g in guide.groups %}{% if g.key != "start" %}
+  {% set members = [] %}{% for p in collections.guide %}{% if p.data.group == g.key %}{% set members = (members.push(p), members) %}{% endif %}{% endfor %}
+  {% if members | length %}
+  <li>
+    <a href="{{ members[0].url }}">{{ g.title }}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+    <p>{% for p in members %}{{ p.data.title }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+    <small>{{ members | length }} page{% if members | length != 1 %}s{% endif %}</small>
+  </li>
+  {% endif %}
+  {% endif %}{% endfor %}
+</ul>
+
+{{ note("The opinions in the examples are the app's mock fixtures. Lists that need more rows than the fixtures hold, such as the citing references chart, use rows labelled <strong>Illustrative</strong>; none of them is a real opinion.") }}

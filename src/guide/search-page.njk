@@ -1,0 +1,35 @@
+---
+title: Search page
+summary: "Every opinion in the preview as a card, newest first, with the Filters panel: anchors only, courts, and the tiers of how later courts and appeals treated it."
+group: pages
+order: 1
+kind: Page
+source: src/index.njk
+keywords: search home index filters court picker pagination
+---
+{% from "guide/macros.njk" import files, table, note %}
+{% set frameSrc = site.home %}{% set frameTitle = "The search page" %}{% set frameHeight = 760 %}{% include "guide/frame.njk" %}
+
+<h2 class="g-h2" id="parts">Parts</h2>
+{{ table(["Part", "Where it is documented"], [
+  ["Search box and suggestions", "<a href=\"/lists/search-suggestions/\">Search suggestions</a>"],
+  ["Each card's status", "<a href=\"/opinion-data/status-rows/\">Status rows</a>, with <code>filled_only</code>"],
+  ["Citations and docket numbers", "<a href=\"/opinion-data/citation-list/\">Citation list</a>"],
+  ["The excerpt", "<a href=\"/controls/expandable-text/\">Expandable text</a>"],
+  ["The sidebar", "<a href=\"/navigation/sidebar-tree/\">Sidebar tree</a>"],
+  ["Page controls", "<a href=\"/lists/pagination/\">Pagination</a>"]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p><code>searchFilter</code> (<code>search_filter.js</code>) filters the cards by the search text, the courts chosen in the picker, the anchors checkbox and the two tier groups (a card shows when any ticked tier matches its appeal or its later treatment), sorts them, and pages ten at a time. The left sidebar and right Filters panel have their own aligned headers and separate collapse controls. Sort keeps its native select width and wraps with the Filters action on narrow screens. The Filters panel has its own header toggle; when closed, a Filters button beside Sort shows the active filter count and reopens it. The whole state is in the URL, so a filtered list can be shared, and mirrored to session storage for the Back button. Court keys in a link that the build does not have are dropped.</p>
+  <p>The court picker is a modal dialog: a tab per jurisdiction and level, courts grouped by state, a filter field that takes focus, Tab kept inside, focus returned to its opener. Its first tab is whichever the data has first.</p>
+</div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["src/index.njk", "The page. Its address is <code>site.home</code> (<code>_data/site.js</code>): <code>/</code> in the app, <code>/search/</code> here."],
+  ["assets/js/alpine/components/search_filter.js", "Filters, picker, sort, pages, URL state."],
+  ["_data/court_picker.json", "The picker's frozen tabs and groups, copied from the app."],
+  ["assets/js/alpine/components/app_shell.js", "Sidebar and Filters headers, responsive drawers and focus." ]
+]) }}

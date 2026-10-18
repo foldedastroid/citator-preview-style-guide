@@ -1,0 +1,31 @@
+---
+title: Motion
+summary: "Three durations and one easing curve. Motion explains a change of state and never holds up reading; with reduced motion every change is instant."
+group: foundations
+order: 4
+kind: Tailwind theme
+source: tailwind.config.js
+keywords: animation duration easing reduced motion transition
+---
+{% from "guide/macros.njk" import table, note, code %}
+{% set t = theme.extend %}
+
+<h2 class="g-h2" id="durations">Durations</h2>
+{{ table(["Utility", "Value", "Used for"], [
+  ["<code>duration-feedback</code>", "<code>" ~ t.transitionDuration.feedback ~ "</code>", "Colour and background changes on hover, press and selection"],
+  ["<code>duration-popover</code>", "<code>" ~ t.transitionDuration.popover ~ "</code>", "Menus, popovers and tooltips appearing"],
+  ["<code>duration-expansion</code>", "<code>" ~ t.transitionDuration.expansion ~ "</code>", "Content growing: Show more, a row opening"]
+]) }}
+<div class="g-prose"><p>Easing is <code>ease-standard</code>, <code>{{ t.transitionTimingFunction.standard }}</code>, and the default for every transition.</p></div>
+
+<h2 class="g-h2" id="distance-scaled">Distance-scaled</h2>
+<div class="g-prose"><p>Two scripts time their own motion. <code>expandable.js</code> gives a full expansion the whole <code>--expand-base</code> duration and a partial reversal a share of it, so stopping half-way does not take as long as the full move. <code>cite_cta.js</code> holds a touch press for <code>--cta-span</code> so a quick tap is still seen. Both are covered by <code>tools/motion.test.cjs</code> in the app.</p></div>
+
+<h2 class="g-h2" id="reduced-motion">Reduced motion</h2>
+<div class="g-prose"><p>Every animation and transition in <code>styles.css</code> sits behind <code>prefers-reduced-motion</code>, and scripted scrolls go through one helper, <code>scrollBehavior()</code> in <code>composables/highlight.js</code>, so they jump instead of gliding:</p></div>
+{{ code("code-scroll", "assets/js/alpine/composables/highlight.js", "function scrollBehavior() {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+}
+
+target.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });") }}
+{{ note("Nothing essential appears only during an animation: a toast's text is in a live region, and a flashed passage stays highlighted long enough to find without the flash.") }}

@@ -1,0 +1,491 @@
+{
+  "cluster_id": 9999001,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/9999001/x/",
+  "case_name": "Callahan v. Millard County Sheriff",
+  "name_missing": false,
+  "docket_number": "2:05-cv-00170",
+  "docket_numbers": [
+    "2:05-cv-00170"
+  ],
+  "citations": [
+    "No. 2:05-cv-00170 (D. Utah 2005)"
+  ],
+  "court": "utd",
+  "court_display": "U.S. District Court (D. Utah)",
+  "is_court_of_last_resort": false,
+  "date_filed": "2005-09-14",
+  "excerpt": "This is a civil-rights action brought under 42 U.S.C. §1983 by plaintiff Afton Callahan against officers of the Central Utah Narcotics Task Force, who entered his residence on March 19, 2002 incident to a controlled drug buy by a confidential informant.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>This is a civil-rights action brought under 42 U.S.C. §1983 by plaintiff Afton Callahan against officers of the Central Utah Narcotics Task Force, who entered his residence on March 19, 2002 incident to a controlled drug buy by a confidential informant. Plaintiff alleges that the officers&#x27; warrantless entry, predicated on the &quot;consent-once-removed&quot; doctrine, violated his Fourth Amendment rights.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>Defendants move for summary judgment on the basis of qualified immunity. The applicable framework is the two-step inquiry set out by the Supreme Court in <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U.S. 194 (2001), governed in this Circuit by the gloss our Court of Appeals applied in earlier cases. Under that framework the Court must first ask whether the facts alleged make out a constitutional violation; only if so does the Court reach the &quot;clearly established&quot; prong.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>For the reasons set forth in our analysis above, the Court concludes that defendants&#x27; warrantless entry, when measured against the contours of the consent-once-removed doctrine as applied in this Circuit, did not violate clearly established law of which a reasonable officer would have been aware. Defendants&#x27; motion for summary judgment is GRANTED. The case is dismissed.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Later D. Utah opinion distinguishes on facts.",
+        "quote": "the district court's analysis in Callahan v. Millard County Sheriff turned on the consent-once-removed posture",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "the district court&#x27;s analysis in <strong class=\"evidence-card__case\">Callahan</strong> v. Millard County Sheriff turned on the consent-once-removed posture"
+      },
+      "has_detail": true,
+      "row_id": "cb-57",
+      "citing_cluster_id": 9920070,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Walker v. Salt Lake City",
+      "citing_docket_numbers": [
+        "08-cv-00567"
+      ],
+      "citing_citations": [
+        "No. 2:08-cv-00567 (D. Utah 2010)"
+      ],
+      "citing_court_display": "U.S. District Court (D. Utah)",
+      "citing_relation": "equal",
+      "citing_court_level": 2,
+      "citing_date_filed": "2010-07-15",
+      "citing_date_short": "07/15/2010",
+      "search_text": "walkervsaltlakecityno208cv00567dutah2010",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the district court's analysis in Callahan v. Millard County Sheriff turned on the consent-once-removed posture",
+            "quote_html": "the district court&#x27;s analysis in <strong class=\"evidence-card__case\">Callahan</strong> v. Millard County Sheriff turned on the consent-once-removed posture",
+            "rationale": "Later D. Utah opinion distinguishes on facts.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Later D. Utah opinion distinguishes on facts.",
+          "quote": "the district court's analysis in Callahan v. Millard County Sheriff turned on the consent-once-removed posture",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "the district court&#x27;s analysis in <strong class=\"evidence-card__case\">Callahan</strong> v. Millard County Sheriff turned on the consent-once-removed posture"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 1,
+      "name_index": 2,
+      "mentions_index": 0,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Affirmed by",
+        "label": "Affirmed by",
+        "severity": "Positive",
+        "rationale": "Direct procedural history: 10th Cir. affirmed lower court's constitutional-violation finding (reversed only on the clearly-established prong).",
+        "quote": "Holding that the district court was correct in its determination that Mr. Callahan's constitutional rights were violated",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "Holding that the district court was correct in its determination that Mr. <strong class=\"evidence-card__case\">Callahan</strong>&#x27;s constitutional rights were violated"
+      },
+      "has_detail": true,
+      "row_id": "cb-0",
+      "citing_cluster_id": 1425860,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Callahan v. Millard County",
+      "citing_docket_numbers": [
+        "06-4135"
+      ],
+      "citing_citations": [
+        "494 F.3d 891"
+      ],
+      "citing_court_display": "Tenth Circuit",
+      "citing_relation": "controlling",
+      "citing_court_level": 1,
+      "citing_date_filed": "2007-07-16",
+      "citing_date_short": "07/16/2007",
+      "search_text": "callahanvmillardcounty494f3d891",
+      "is_scoped": true,
+      "treatment": "Affirmed by",
+      "severity": "Positive",
+      "direction": "Direct History",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Affirmed by",
+          "treatment_past": "Affirmed",
+          "severity": "Positive",
+          "direction": "Direct History",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "Holding that the district court was correct in its determination that Mr. Callahan's constitutional rights were violated",
+            "quote_html": "Holding that the district court was correct in its determination that Mr. <strong class=\"evidence-card__case\">Callahan</strong>&#x27;s constitutional rights were violated",
+            "rationale": "Direct procedural history: 10th Cir. affirmed lower court's constitutional-violation finding (reversed only on the clearly-established prong).",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Affirmed by",
+          "label": "Affirmed by",
+          "severity": "Positive",
+          "rationale": "Direct procedural history: 10th Cir. affirmed lower court's constitutional-violation finding (reversed only on the clearly-established prong).",
+          "quote": "Holding that the district court was correct in its determination that Mr. Callahan's constitutional rights were violated",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "Holding that the district court was correct in its determination that Mr. <strong class=\"evidence-card__case\">Callahan</strong>&#x27;s constitutional rights were violated"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 2,
+      "name_index": 0,
+      "mentions_index": 1,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-court (D. Utah) cites for fact-bound analysis.",
+        "quote": "the consent-once-removed framework outlined in Callahan v. Millard County Sheriff",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "the consent-once-removed framework outlined in <strong class=\"evidence-card__case\">Callahan</strong> v. Millard County Sheriff"
+      },
+      "has_detail": false,
+      "row_id": "cb-58",
+      "citing_cluster_id": 9920071,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Reed v. Cottonwood Heights",
+      "citing_docket_numbers": [
+        "11-cv-00123"
+      ],
+      "citing_citations": [
+        "No. 2:11-cv-00123 (D. Utah 2013)"
+      ],
+      "citing_court_display": "U.S. District Court (D. Utah)",
+      "citing_relation": "equal",
+      "citing_court_level": 2,
+      "citing_date_filed": "2013-02-19",
+      "citing_date_short": "02/19/2013",
+      "search_text": "reedvcottonwoodheightsno211cv00123dutah2013",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the consent-once-removed framework outlined in Callahan v. Millard County Sheriff",
+            "quote_html": "the consent-once-removed framework outlined in <strong class=\"evidence-card__case\">Callahan</strong> v. Millard County Sheriff",
+            "rationale": "Within-court (D. Utah) cites for fact-bound analysis.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 0,
+      "name_index": 1,
+      "mentions_index": 2,
+      "court_index": 1
+    }
+  ],
+  "summary": {
+    "dh_severity": "Positive",
+    "cr_severity": "Caution"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/"
+      },
+      {
+        "role": "above",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reversed",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "above",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chain": [
+      {
+        "role": "self",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/",
+        "index": 0,
+        "row": 5,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "above",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 2,
+        "row": 3,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 4,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      },
+      {
+        "role": "above",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reversed",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 1,
+        "row": 1,
+        "col": 5,
+        "tier": "Highest court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 4,
+            "col_end": 6,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      },
+      {
+        "level": 0,
+        "col": 5,
+        "label": "Highest court"
+      }
+    ],
+    "has_reported": false,
+    "n_opinions": 3
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "treated",
+      "treatment": "Affirmed by",
+      "severity": "Positive",
+      "citing_name": "Callahan v. Millard County",
+      "citing_cluster_id": 1425860,
+      "quote": "Holding that the district court was correct in its determination that Mr. Callahan's constitutional rights were violated",
+      "quote_status": "missing",
+      "authority_n": null
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "citing_name": "Walker v. Salt Lake City",
+      "citing_court": "U.S. District Court (D. Utah)",
+      "citing_cluster_id": 9920070,
+      "n_other_negative": 0,
+      "n_plain": 1,
+      "n_total": 2,
+      "quote": "the district court's analysis in Callahan v. Millard County Sheriff turned on the consent-once-removed posture",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

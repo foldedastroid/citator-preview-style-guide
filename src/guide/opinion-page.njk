@@ -1,0 +1,37 @@
+---
+title: Opinion page
+summary: "One opinion: the case head with Copy citation, the Opinion-only document rail, four tabs (Opinion, Authorities, Later Courts, History) and the right panel with the citator's summary."
+group: pages
+order: 2
+kind: Page
+source: src/opinion.njk
+keywords: opinion page tabs panel summary why reader
+---
+{% from "guide/macros.njk" import files, table, note %}
+{% set frameSrc = "/opinion/1425860/" %}{% set frameTitle = "Callahan v. Millard County" %}{% set frameHeight = 780 %}{% include "guide/frame.njk" %}
+
+<h2 class="g-h2" id="parts">Parts</h2>
+{{ table(["Part", "Where it is documented"], [
+  ["Copy citation", "<a href=\"/controls/menus/\">Menus</a>"],
+  ["The document rail", "<a href=\"/navigation/document-rail/\">Document rail</a>"],
+  ["The opinion text and its reading tools", "<a href=\"/navigation/opinion-text/\">Opinion text</a>"],
+  ["Later Courts and Authorities", "<a href=\"/lists/later-courts-list/\">Later Courts list</a>, <a href=\"/lists/citing-references-chart/\">Citing references chart</a>"],
+  ["History", "<a href=\"/navigation/appellate-history/\">Appellate history</a>"],
+  ["The panel's status and meters", "<a href=\"/opinion-data/status-rows/\">Status rows</a>, <a href=\"/signals/allocation-meter/\">Allocation meter</a>, <a href=\"/lists/narrow-by/\">Narrow by</a>"]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>The tab is in the URL hash. Changing tab adds a history entry, so Back returns to the tab you were on; moving within a tab replaces it. A hash can name a tab, a section, an Authorities or citing row, a footnote, or a quoted passage (<code>#q=…</code>), and the page opens there. The right panel follows the tab: the citator's summary on Opinion, Narrow by on the lists, the signal key on History.</p>
+  <p>The thin document rail appears on Opinion only; the other tabs keep their list or history navigation. <a href="/navigation/document-rail/#search">Find</a> widens the existing search control and reveals matching excerpts below it. Keyboard tab changes keep a visible focus outline; pointer activation does not leave that keyboard outline. The reader keeps a balanced inner gutter beside the right panel.</p>
+  <p>Activating a cited case opens the bottom occurrence panel. It steps through the actual mentions; Open case is a separate action. Available treatment records provide analysis, while plain opinion links report when that analysis is unavailable. See <a href="/navigation/opinion-text/">Opinion text</a> for the markup and input behavior.</p>
+  <p>The panel's <em>Why?</em> card names the treatment that sets the page's signal, its court and passage, with a link to its row.</p>
+</div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["src/opinion.njk", "One page per record in <code>allOpinions</code>."],
+  ["_includes/partials/opinion-page.njk", "The page's markup."],
+  ["assets/js/alpine/components/opinion_tabs.js", "Tabs, hashes, the reading tools."],
+  ["_data/opinions/&lt;id&gt;.json", "The frozen record copied from the app by <code>npm run sync</code>."]
+]) }}

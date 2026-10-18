@@ -1,0 +1,15 @@
+{% from "macros/status.njk" import statusRows %}
+{% set plain = {
+  "scope": "collection",
+  "on_appeal": {"state": "none"},
+  "later_courts": {"state": "plain", "n_total": 4}
+} %}
+{% set unknown = {
+  "scope": "controlling",
+  "on_appeal": {"state": "not_reviewable"},
+  "later_courts": {"state": "unknown"}
+} %}
+<div class="grid gap-6 sm:grid-cols-2">
+  {{ statusRows(plain, {"label": "Affirms", "text": ""}, treatment_definitions, "", false, "#cited-by") }}
+  {{ statusRows(unknown, null, treatment_definitions, "", false, "#cited-by") }}
+</div>

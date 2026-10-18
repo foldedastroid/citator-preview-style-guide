@@ -1,0 +1,48 @@
+---
+title: Status rows
+summary: "Three answers about an opinion, kept apart: how later courts treat it, what happened to it on appeal, and what it decided itself."
+group: opinion-data
+order: 2
+kind: Nunjucks macro
+source: _includes/macros/status.njk
+keywords: statusRows later courts on appeal disposition coverage
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "status-rows" %}{% set exTitle = "Callahan v. Millard County" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="states">States</h2>
+<div class="g-prose"><p>Each row has its own empty states, and their wording is part of the data's meaning: "Not collected yet" is not "Cited by 0 opinions", and "court of last resort" is not "None in this preview".</p></div>
+{% set ex = "status-states" %}{% set exTitle = "Plain citations and a named disposition; nothing collected" %}{% include "guide/example.njk" %}
+{{ table(["Row", "State", "Shows"], [
+  ["Later courts", "<code>negative</code>", "The leading negative treatment, linked to the citing opinion, then how many other negative and plain citations"],
+  ["", "<code>plain</code>", "\"Cited by N opinions …, none negative\""],
+  ["", "<code>unknown</code>", "\"Not collected yet\""],
+  ["", "<code>none</code>", "\"Cited by 0 opinions\" with the scope"],
+  ["On appeal", "<code>treated</code>", "What the higher court did, linked"],
+  ["", "<code>not_reviewable</code>", "\"No appeal found · court of last resort\""],
+  ["", "<code>unknown</code> / <code>none</code>", "\"Not collected yet\" / \"None found\"; \"None in this preview\" for a collection-scope opinion"],
+  ["Disposition", "<code>{label}</code>", "A neutral pill with its definition"],
+  ["", "<code>{text}</code>", "The sentence that disposed of the case, when it has no label"]
+]) }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["st", "object", "", "The opinion's <code>status</code> from <code>build_data.home_status</code>: <code>scope</code>, <code>on_appeal</code>, <code>later_courts</code>."],
+  ["disposition", "{label, text} | null", "", "<code>opinion.disposition</code>. Omitted on the home cards."],
+  ["defs", "object", "", "<code>treatment_definitions</code>, for the pills' tooltips."],
+  ["extra", "string", "\"\"", "Classes added to the <code>&lt;dl&gt;</code>."],
+  ["filled_only", "boolean", "false", "The home cards' mode: drop any row with nothing to say."],
+  ["later_url", "string", "\"\"", "This opinion's Later Courts tab (<code>#cited-by</code> on its own page); also where a status falls back when its citing opinion has no page."],
+  ["pages", "number[] | null", "null", "The cluster ids that have a page. With it, a status whose citing opinion has none links to <code>later_url</code> instead."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>A treated row is one link: to the citing opinion's Authorities row for this case (<code>#authority-N</code>) when the extraction found it, else to the quoted passage (<code>#q=…</code>), else to the opinion. The leading later treatment prefers a controlling or equal court over a persuasive one (<code>build_data._later_lead</code>). The disposition is always grey: what a court did with its own case says nothing about the case's standing.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/status.njk", "<code>statusRows</code>, <code>statusLink</code>, <code>dispositionLabel</code>, <code>scopeText</code>."],
+  ["_includes/macros/treatment.njk", "The pills."],
+  ["assets/css/styles.css", "<code>.home-status</code> and its parts."]
+]) }}

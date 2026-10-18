@@ -1,0 +1,13 @@
+{% from "macros/icons.njk" import icon %}
+<div x-data="helpMenu" class="help-menu" x-on:keydown="onHelpKeydown" x-on:click.outside="helpClickOutside">
+  <button type="button" class="doc-action" x-ref="helpButton" aria-haspopup="menu" aria-controls="guide-help-menu"
+          aria-expanded="false" x-bind:aria-expanded="helpExpanded" x-on:click="toggleHelp">
+    {{ icon("info", "w-3.5 h-3.5") }}Help
+  </button>
+  <div id="guide-help-menu" class="help-menu__panel !left-0 !right-auto" role="menu" aria-label="Help" x-bind:class="helpClass">
+    <p class="help-menu__label" aria-hidden="true">Need help?</p>
+    <a href="/about/" class="help-menu__item" role="menuitem" tabindex="-1">{{ icon("book", "help-menu__icon") }}About this citator</a>
+    <a href="/about/#signals" class="help-menu__item" role="menuitem" tabindex="-1">{{ icon("severity-caution", "help-menu__icon") }}Reading a signal</a>
+    <button type="button" class="help-menu__item" role="menuitem" tabindex="-1" x-on:click="openShortcuts">{{ icon("keyboard", "help-menu__icon") }}Keyboard shortcuts<kbd class="help-menu__kbd">?</kbd></button>
+  </div>
+</div>

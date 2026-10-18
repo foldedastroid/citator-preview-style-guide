@@ -1,0 +1,6 @@
+{% from "macros/treatment.njk" import severityBadge, validationDot %}
+<ul role="list" class="space-y-3 text-sm">
+  <li class="flex items-center gap-2">{{ severityBadge("Caution", "Distinguished by") }}{{ validationDot("agree") }}<span class="text-greyscale-600">An expert agreed</span></li>
+  <li class="flex items-center gap-2">{{ severityBadge("Warning", "Questioned by") }}{{ validationDot("disagree", "Distinguished by") }}<span class="text-greyscale-600">An expert labelled it Distinguished by</span></li>
+  <li class="flex items-center gap-2">{{ severityBadge("Neutral", "Cited by") }}{{ validationDot("unverified") }}<span class="text-greyscale-600">Not reviewed</span></li>
+</ul>

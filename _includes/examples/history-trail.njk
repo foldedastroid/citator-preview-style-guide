@@ -1,0 +1,29 @@
+{% from "macros/treatment.njk" import signal %}
+
+{% set pageIds = [] %}{% for o in allOpinions %}{% set pageIds = (pageIds.push(o.cluster_id), pageIds) %}{% endfor %}
+{% set chain = opinion.appellate_history.chain %}
+<section class="meter trail max-w-[17rem]" aria-labelledby="guide-trail-title">
+  <div class="meter__head">
+    <h2 id="guide-trail-title" class="meter__title">History</h2>
+    {% if chain | length > 1 %}<a href="#history" class="trail__all">Full history</a>{% endif %}
+  </div>
+  {% if chain | length > 1 %}
+  <ol class="trail__list" role="list">
+    {% for step in chain | reverse %}
+    <li class="trail__step{% if step.role == 'self' %} is-self{% elif step.role == 'reported' %} is-reported{% endif %}">
+      <p class="trail__court">{{ step.court }}</p>
+      <p class="trail__meta">
+        <span class="tabular-nums">{{ step.date_filed | usdate if step.date_filed else "Undated" }}</span>
+        {% if step.role == "self" %}<span class="trail__here">This opinion</span>
+        {% elif step.case_name and step.url and step.cluster_id in pageIds %}<a href="{{ step.url }}" class="trail__case" title="{{ step.case_name }}">{{ step.case_name }}</a>{% endif %}
+      </p>
+      {% for act in step.acts %}{% for t in act.treatments %}
+      <p class="trail__act">{{ signal(t.severity, "trail__mark") }}{{ t.text or t.treatment }}</p>
+      {% endfor %}{% endfor %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="meter__empty">No appellate history found</p>
+  {% endif %}
+</section>

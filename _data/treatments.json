@@ -1,0 +1,58 @@
+[
+  {
+    "severity": "Stop",
+    "direct_history": [
+      "Reversed by",
+      "Reversed and remanded by",
+      "Vacated by",
+      "Vacated and remanded by"
+    ],
+    "citing_reference": [
+      "Overruled by",
+      "Abrogated by"
+    ]
+  },
+  {
+    "severity": "Warning",
+    "direct_history": [
+      "Affirmed in part; Reversed in part by",
+      "Affirmed in part; Vacated in part by"
+    ],
+    "citing_reference": [
+      "Questioned by",
+      "Disapproved by",
+      "Limited by"
+    ]
+  },
+  {
+    "severity": "Caution",
+    "direct_history": [
+      "Remanded by",
+      "Cert. granted by"
+    ],
+    "citing_reference": [
+      "Criticized by",
+      "Distinguished by",
+      "Declined to follow by"
+    ]
+  },
+  {
+    "severity": "Positive",
+    "direct_history": [
+      "Affirmed by"
+    ],
+    "citing_reference": [
+      "Followed by"
+    ]
+  },
+  {
+    "severity": "Neutral",
+    "direct_history": [
+      "Dismissed by",
+      "Cert. denied by"
+    ],
+    "citing_reference": [
+      "Cited by"
+    ]
+  }
+]

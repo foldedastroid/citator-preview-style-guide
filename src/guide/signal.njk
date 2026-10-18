@@ -1,0 +1,34 @@
+---
+title: Signal
+summary: "The glyph for a tier on its own: a stop sign, a triangle, a circle, a plus or a dash, in the tier's colour. Used wherever a row or a case needs its worst treatment at a glance."
+group: signals
+order: 1
+kind: Nunjucks macro
+source: _includes/macros/treatment.njk
+keywords: glyph tier severity mark icon
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "signal-glyphs" %}{% set exTitle = "The five tiers" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="usage">Usage</h2>
+<div class="g-prose">
+  <p>Use <code>signal</code> where space is short and a label sits next to it: the sidebar's case list, the home cards' titles, the rows of a Narrow by list. Where the treatment itself is the information, use a <a href="/signals/treatment-badge/">treatment badge</a>, which names it.</p>
+  <p>An index entry's worst tier comes from the <code>worstSignal</code> filter (<code>tools/filters.cjs</code>): <code>{{ "{{ signal(case.summary | worstSignal or \"Neutral\") }}" }}</code>.</p>
+</div>
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["severity", "\"Stop\" | \"Warning\" | \"Caution\" | \"Positive\" | \"Neutral\"", "\"Neutral\"", "The tier. An empty value draws Neutral."],
+  ["cls", "string", "signal-mark", "Classes added to the SVG. The macro always adds <code>signal-mark signal-mark--&lt;tier&gt;</code>, which set the colour."]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The glyph is hidden from assistive technology. Where it stands for the tier, put the tier in text beside it or in a visually hidden span, as the home cards do: <code>&lt;span class="sr-only"&gt;Caution:&lt;/span&gt;</code>.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/treatment.njk", "<code>signal</code>, with the badge and meter macros."],
+  ["_includes/macros/icons.njk", "The <code>severity-*</code> glyphs."],
+  ["assets/css/styles.css", "<code>.signal-mark--*</code> colours."]
+]) }}

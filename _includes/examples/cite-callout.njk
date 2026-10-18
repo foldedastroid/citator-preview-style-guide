@@ -1,0 +1,11 @@
+{% from "macros/icons.njk" import icon %}
+{% set ctaText = "View citing references" %}
+<div class="max-w-[17rem]">
+  <a href="#cited-by" class="cite-cta" data-cite-cta>
+    <span class="cite-cta__label">{{ ctaText }}</span>
+    <span class="cite-cta__veil" aria-hidden="true">
+      <span class="cite-cta__label">{{ ctaText }}</span>
+      <span class="cite-cta__well">{{ icon("arrow-right", "cite-cta__arrow cite-cta__arrow--leaving") }}{{ icon("arrow-right", "cite-cta__arrow cite-cta__arrow--arriving") }}</span>
+    </span>
+  </a>
+</div>

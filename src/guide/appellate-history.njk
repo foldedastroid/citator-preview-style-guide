@@ -1,0 +1,33 @@
+---
+title: Appellate history
+summary: "A case's route through the courts on two axes, courts along the bottom and time up the side, or as a timeline with one band per court level. Each card says what that court did."
+group: navigation
+order: 2
+kind: Partial
+source: _includes/partials/history-tab.njk
+keywords: history timeline appeal chain courts historyViews
+---
+{% from "guide/macros.njk" import files, note, table %}
+
+{% set ex = "history" %}{% set exTitle = "Callahan v. Millard County: district court, Tenth Circuit, Supreme Court" %}{% set exOpinion = 1425860 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="data">Data</h2>
+{{ table(["Field", "Meaning"], [
+  ["<code>appellate_history.chain</code>", "The decisions in date order: court, date, what it did (<code>disposition</code>), its grid cell and the connector from the decision before."],
+  ["<code>appellate_history.levels</code>", "The court columns, lowest first."]
+]) }}
+<div class="g-prose"><p><code>scripts/history.py</code> builds both. An appeal moves right to a higher court, a remand comes back left, a court deciding again stays in its column.</p></div>
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>The Courts / Timeline switch is <code>historyViews</code> (<code>opinion_views.js</code>) and is remembered. On the timeline, each decision is a lettered node; its card opens on hover or focus, and labels are placed only where they do not collide. Either view scrolls sideways in its own frame. Below 768px the courts view becomes one column, newest first, each card carrying its own court and date.</p></div>
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The connecting lines are decorative; the cards are in DOM order newest first, so reading order is the chronology. Each timeline node's name gives the court, date and outcome.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/partials/history-tab.njk", "The tab: switch, courts grid, and the list beneath."],
+  ["_includes/partials/history-timeline.njk", "The timeline view."],
+  ["assets/js/alpine/components/opinion_views.js", "<code>historyViews</code> and timeline placement."],
+  ["assets/css/styles.css, assets/css/components/opinion-views.css", "<code>.history-*</code>, <code>.tl__*</code>."]
+]) }}

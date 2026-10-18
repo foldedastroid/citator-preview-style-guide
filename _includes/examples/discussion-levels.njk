@@ -1,0 +1,11 @@
+{% from "macros/treatment.njk" import discussion %}
+<table class="text-sm">
+  <tbody>
+    {% for n in [0, 1, 3, 6, 12] %}
+    <tr>
+      <td class="pr-6 py-1.5 text-greyscale-600">{{ n }} mention{% if n != 1 %}s{% endif %}</td>
+      <td class="py-1.5">{{ discussion(n, "in this opinion") }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

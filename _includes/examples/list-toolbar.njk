@@ -1,0 +1,35 @@
+{% from "macros/list_header.njk" import listToolbar, listHeader %}
+{% from "macros/treatment.njk" import severityBadge %}
+{% set rows = [
+  {"name": "Illustrative Alpha v. Board", "court": "Ninth Circuit", "date": "2021-03-02", "tier": "Stop", "label": "Overruled by", "rank": 1},
+  {"name": "Illustrative Beta v. County", "court": "Second Circuit", "date": "2019-07-15", "tier": "Caution", "label": "Distinguished by", "rank": 3},
+  {"name": "Illustrative Gamma v. City", "court": "Ninth Circuit", "date": "2023-01-20", "tier": "Positive", "label": "Followed by", "rank": 4},
+  {"name": "Illustrative Delta v. State", "court": "District Court", "date": "2017-11-08", "tier": "Warning", "label": "Questioned by", "rank": 2},
+  {"name": "Illustrative Echo v. Agency", "court": "Second Circuit", "date": "2022-05-30", "tier": "Neutral", "label": "Cited by", "rank": 5}
+] %}
+<section x-data="citedByFilter">
+  {{ listToolbar([
+    {"key": "severity", "label": "Analysis (most negative first)"},
+    {"key": "name", "label": "Case name (A–Z)"},
+    {"key": "recency", "label": "Date (newest first)"}
+  ], "citing opinions", "Applied treatment", "Recognized treatment") }}
+  {{ listHeader([{"label": "Citing opinion"}, {"label": "Date filed", "class": "col-head--pad"}, {"label": ""}]) }}
+  <ol role="list" class="citator-list" x-bind:class="listClass">
+    {% for r in rows %}
+    <li data-row-id="row-{{ loop.index }}"
+        data-search="{{ (r.name ~ r.court) | lower | replace(r/[^a-z0-9]+/g, '') }}"
+        data-severity="{{ r.tier | lower }}" data-applied-severity="{{ r.tier | lower }}" data-rec-severity="none" data-validation="unverified"
+        data-severity-index="{{ r.rank }}" data-name-index="{{ loop.index }}" data-recency-index="{{ 99999999 - (r.date | replace('-', '') | int) }}"
+        data-court-index="0" data-court-label="{{ r.court }}" data-date="{{ r.date }}"
+        x-bind:class="rowClass" x-bind:style="rowStyle"
+        class="sev-rail sev-rail--{{ r.tier | lower }}">
+      <div class="citator-row">
+        <div class="citator-row__treatment"><span>{{ severityBadge(r.tier, r.label, false, treatment_definitions[r.label]) }}</span></div>
+        <div><div class="citator-row__name"><span class="citator-row__title">{{ r.name }}</span></div><p class="citator-row__meta">{{ r.court }}</p></div>
+        <div class="citator-row__date">{{ r.date | usdate }}</div>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

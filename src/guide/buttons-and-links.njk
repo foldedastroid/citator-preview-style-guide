@@ -1,0 +1,29 @@
+---
+title: Buttons and links
+summary: "The primary button, the compact document actions, and links in text. A button changes something on the page; a link goes somewhere."
+group: controls
+order: 1
+kind: CSS classes
+source: assets/css/styles.css
+keywords: button link doc-action start-panel primary action
+---
+{% from "guide/macros.njk" import table, files %}
+
+{% set ex = "buttons" %}{% set exTitle = "Primary, document actions, disabled, links" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="classes">Classes</h2>
+{{ table(["Class", "Use"], [
+  ["<code>.start-panel__button</code>", "The one primary action of a view: Search opinions on the 404 and About pages. Brick red, white label."],
+  ["<code>.doc-action</code>", "Secondary actions beside a document: Copy citation, CourtListener. White with a hairline; <code>disabled</code> dims it."],
+  ["<code>.doc-action--main</code> + <code>.doc-action--caret</code> in <code>.split</code>", "A split button: the main action and a menu of variants (see <a href=\"/controls/menus/\">Menus</a>)."],
+  ["<code>.links</code>", "A link inside prose: underlined, so it is not told apart by colour alone."]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose">
+  <p>Use <code>&lt;button type="button"&gt;</code> for an action and <code>&lt;a href&gt;</code> for navigation; never a link without an <code>href</code>. A button with only an icon needs <code>aria-label</code>. A disabled button leaves the tab order, so say near it why the action is unavailable. A link that opens a new tab says so in its text or icon.</p>
+  <p>Every control keeps the visible focus ring <code>styles.css</code> gives <code>:focus-visible</code>: 2px <code>primary-600</code>, offset 2px.</p>
+</div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/css/styles.css", "<code>.start-panel__button</code>, <code>.doc-action</code>, <code>.split</code>, <code>.links</code>."], ["_includes/macros/icons.njk", "The icons inside them."]]) }}

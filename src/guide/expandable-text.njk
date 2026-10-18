@@ -1,0 +1,25 @@
+---
+title: Expandable text
+summary: "A long excerpt clamped to a few lines, with Show more only when the text overflows. The height animates over a time scaled to the distance."
+group: controls
+order: 6
+kind: Script
+source: assets/js/expandable.js
+keywords: show more clamp excerpt expand collapse
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "expandable" %}{% set exTitle = "A home card's excerpt, two lines" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="markup">Markup</h2>
+{{ table(["Piece", "Needs"], [
+  ["The wrapper", "<code>data-expand</code>; <code>data-lines</code> sets the clamp (default 3)."],
+  ["The body", "<code>.expand__body</code> with an <code>id</code>, holding <code>.expand__inner</code>, the text measured."],
+  ["The button", "<code>aria-controls</code> naming the body, <code>aria-expanded=\"false\"</code>, and <code>hidden</code>: the script shows it only when the text overflows."]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose"><p>The script measures the line height and the full height, re-measures when the text's box changes size or the fonts load, and animates between the two heights. A full expansion takes <code>--expand-base</code> (200ms); reversing part-way takes a share of it. With reduced motion it switches at once. Without script the whole text shows.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/js/expandable.js", "Measuring and animation. Covered by <code>tools/motion.test.cjs</code> in the app."], ["assets/css/styles.css", "<code>.expand__body</code>, <code>.home-snippet</code>, <code>.home-snippet__more</code>."]]) }}

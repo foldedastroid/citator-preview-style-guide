@@ -1,0 +1,9 @@
+{% from "macros/icons.njk" import icon %}
+
+<ul role="list" class="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-4">
+  {% for name in theme.icons %}
+  <li class="flex items-center gap-2 text-xs text-greyscale-700">
+    {{ icon(name, "w-5 h-5 text-greyscale-800") }}<code class="font-mono text-[11px]">{{ name }}</code>
+  </li>
+  {% endfor %}
+</ul>

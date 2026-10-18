@@ -1,0 +1,24 @@
+---
+title: Icons
+summary: "Inline SVG icons from one macro: a name picks the glyph, a class sizes and colours it. Every icon is decorative; the control around it carries the name."
+group: foundations
+order: 6
+kind: Nunjucks macro
+source: _includes/macros/icons.njk
+keywords: svg glyph icon macro
+---
+{% from "guide/macros.njk" import params, files, note %}
+
+{% set ex = "icons-all" %}{% set exTitle = "Every icon, at w-5 h-5" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["name", "string", "", "One of the names above. An unknown name renders nothing."],
+  ["cls", "string", "w-4 h-4", "Classes for the <code>&lt;svg&gt;</code>: size with <code>w-* h-*</code>, colour with <code>text-*</code>."]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>Every icon renders with <code>aria-hidden="true"</code>. A button holding only an icon needs an <code>aria-label</code>; a button with text needs nothing more. The five <code>severity-*</code> glyphs are the signal tiers; render them through the <a href="/signals/signal/">signal</a> macro so the tier's colour comes with them.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["_includes/macros/icons.njk", "The macro and every glyph. Add an icon as another <code>name ==</code> branch."]]) }}

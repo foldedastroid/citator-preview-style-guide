@@ -1,0 +1,262 @@
+---
+layout: layouts/base.njk
+title: About this citator
+permalink: /about/
+articleLayout: true
+scripts:
+  - /assets/js/article-navigation.js
+---
+
+
+{% from "macros/treatment.njk" import severityBadge %}
+{% from "macros/icons.njk" import icon %}
+
+
+<div class="article-page">
+<article class="prose-about" data-article-content>
+
+  <header class="about-hero">
+    <h1 id="article-top" class="m-0 leading-tight">About this citator</h1>
+    <p class="about-lede">
+      A preview of a new
+      <a href="https://github.com/freelawproject" class="links" target="_blank" rel="noopener">open-source</a>
+      citator from
+      <a href="https://free.law/" class="links" target="_blank" rel="noopener">Free Law Project</a>.
+      The citator reads each opinion with care and, for every treatment, shows the passage behind it and the reasoning that led to it, so you can weigh a treatment at a glance.
+    </p>
+    <p class="about-lede">
+      This page explains what the preview covers, how to read it, and
+      <a href="#feedback" class="links">where your feedback helps most</a>.
+    </p>
+    <p class="about-notice">
+      <strong>For the best experience, use a desktop.</strong> The preview is designed for larger screens.
+    </p>
+  </header>
+
+  <section class="about-section" id="what-is">
+    <h2>What is a citator</h2>
+    <p>
+      A citator surfaces how a court opinion has been treated by other opinions — reversed, overruled, criticized, distinguished, or simply cited. A citator is used to determine whether a case is still good law before relying on it.
+    </p>
+    <p class="font-semibold text-greyscale-900">
+      This demo previews the open-source citator that Free Law Project will integrate into
+      <a href="https://www.courtlistener.com/" class="links" target="_blank" rel="noopener">CourtListener</a>.
+    </p>
+  </section>
+
+  <section class="about-section about-section--tinted" id="scope">
+    <h2>What's in this preview</h2>
+    <p>
+      The preview contains {{ scope.anchors }} anchor opinions and the available records of the cases they cite or are cited by.
+    </p>
+    <dl class="m-0 mt-6 grid gap-4 sm:grid-cols-2">
+      <div class="flex min-w-0 flex-col rounded-popover border border-primary-100 bg-primary-50 p-5 sm:p-6">
+        <dt class="text-xs font-medium text-greyscale-600">Opinions</dt>
+        <dd class="m-0 mt-3 font-cooper text-4xl font-medium leading-none tabular-nums text-primary-600">{{ scope.opinions_display }}</dd>
+        <dd class="m-0 mt-4 text-sm leading-relaxed text-greyscale-700">{{ scope.anchors }} anchors, {{ scope.authorities_display }} cited cases and {{ scope.citing_display }} later opinions.</dd>
+      </div>
+      <div class="flex min-w-0 flex-col rounded-popover border border-greyscale-200 bg-white p-5 sm:p-6">
+        <dt class="text-xs font-medium text-greyscale-600">Courts</dt>
+        <dd class="m-0 mt-3 font-cooper text-4xl font-medium leading-none tabular-nums text-primary-600">{{ scope.courts }}</dd>
+        <dd class="m-0 mt-4 text-sm leading-relaxed text-greyscale-700">Federal and state courts, from trial courts to courts of last resort.</dd>
+      </div>
+    </dl>
+    <p class="text-sm">In this preview, citing opinions are limited to courts whose decisions control or equal the anchor.</p>
+  </section>
+
+  <section class="about-section" id="navigating">
+    <h2>Finding your way around</h2>
+
+    <h3>The opinion list</h3>
+    <p>
+      The home page lists every opinion in the preview, newest first. Search by case name <em>or</em> by citation. Filter by court through the court picker, or by severity. <strong>Anchor opinions only</strong> is switched on by default, which narrows the list to the {{ scope.anchors }} anchor opinions the preview is built around — clear it to browse everything.
+    </p>
+
+    <h3>The opinion page</h3>
+    <p>The opinion page presents four tabs.</p>
+    <ul class="about-list">
+      <li><strong>Opinion</strong> — the opinion's text, with its citations and each citation's treatment signals marked.</li>
+      <li><strong>Authorities</strong> — every case the opinion cites, with the most negative treatments first.</li>
+      <li><strong>Later Courts</strong> — every later opinion that cites the opinion, with the most severe treatments first.</li>
+      <li><strong>History</strong> — the case's route through the court systems.</li>
+    </ul>
+
+    <h3>Treatment evidence on the Authorities and Later Courts tabs</h3>
+    <p>
+      Any entry with a treatment other than <em>Cited by</em> expands into a card. Each card provides the treatment, the reasoning behind it, and the supporting passage from the citing opinion. The card's link, <strong>Read in the opinion</strong> or <strong>See it in the citing opinion</strong>, takes you to the supporting passage in context.
+    </p>
+    <p>
+      The citator is automated, and every passage it provides is checked against the opinion's own text.
+    </p>
+  </section>
+
+  <section class="about-section" id="signals">
+    <h2>How to read a treatment</h2>
+
+    <h3>Severity tiers</h3>
+    <p>Every treatment rolls up into one of these tiers, most consequential first.</p>
+    <dl class="tier-list">
+      <dt>{{ severityBadge("Stop", "Stop") }}</dt>
+      <dd>No longer good law for the proposition cited.</dd>
+      <dt>{{ severityBadge("Warning", "Warning") }}</dt>
+      <dd>Partially weakened but not entirely overturned.</dd>
+      <dt>{{ severityBadge("Caution", "Caution") }}</dt>
+      <dd>Intact but applicability is qualified.</dd>
+      <dt>{{ severityBadge("Positive", "Positive") }}</dt>
+      <dd>Followed by a later court, or affirmed on appeal.</dd>
+      <dt>{{ severityBadge("Neutral", "Neutral") }}</dt>
+      <dd>Stands; the citation is informational or procedural.</dd>
+    </dl>
+
+    <h3>Later courts, On appeal and Disposition</h3>
+    <p>
+      For every opinion, the citator identifies how later cases have treated it (<strong>Later courts</strong>), what then happened to the case on appeal (<strong>On appeal</strong>), and what the court itself decided (<strong>Disposition</strong>). <strong>Disposition</strong> is always presented as <em>Neutral</em> because it is informational only: whether a case is still good law is determined by how it was treated on appeal (<strong>On appeal</strong>) and how later controlling or equal courts treated it (<strong>Later courts</strong>).
+    </p>
+    <p>
+      The <strong>Later courts</strong> row, on the opinion page and on the home page cards, leads with the most negative treatment from a court that controls the case's court or sits at its level; only when no such court has treated the case negatively does it fall back to the most negative treatment from any court, and it names the court that did it. The <strong>Later Courts</strong> tab, however, lists every citing opinion and sorts by severity alone, whatever the court, so its first entry can be a more severe treatment from a court whose decisions do not bind.
+    </p>
+
+    <h3>Other things to notice</h3>
+    <div class="about-cards">
+      <div class="about-card">
+        <strong>Both sides of the same treatment</strong>
+        <span>A citation is presented from both perspectives: it appears under <strong>Authorities</strong> on the opinion that applied it, and under <strong>Later Courts</strong> on the opinion it was applied to, with the same treatment, severity, supporting passage and citation count.</span>
+      </div>
+      <div class="about-card">
+        <strong>What a court reports, versus what it does</strong>
+        <span>Under the citing court's own treatment, a pill reading <em>Recognizes to be…</em> on <strong>Authorities</strong> — <em>… as recognized by</em> on <strong>Later Courts</strong> — is a treatment the court is reporting rather than applying.</span>
+      </div>
+    </div>
+
+    <details class="treatment-expand">
+      <summary class="treatment-expand__summary">
+        {{ icon("chevron-right", "w-3.5 h-3.5 expand-chevron") }}
+        <span>See the full treatment list</span>
+      </summary>
+      <p class="mt-3 text-sm text-greyscale-600 leading-relaxed">
+        Hover over any treatment for its definition. Each definition is written from the page you are on: <em>this case</em> is the opinion you are looking at, whether it applied the treatment or received it. The definitions below read as if this case received the treatment.
+      </p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Treatment definitions">
+        <table class="about-table">
+          <thead>
+            <tr><th class="w-1/5">Severity</th><th class="w-2/5">On appeal</th><th class="w-2/5">Later courts</th></tr>
+          </thead>
+          <tbody>
+            {% for row in treatments %}
+            <tr>
+              <td>{{ severityBadge(row.severity, row.severity) }}</td>
+              <td><ul class="about-table__list about-table__list--pills">{% for t in row.direct_history %}<li>{{ severityBadge(row.severity, t, false, treatment_definitions[t]) }}</li>{% endfor %}</ul></td>
+              <td><ul class="about-table__list about-table__list--pills">{% for t in row.citing_reference %}<li>{{ severityBadge(row.severity, t, false, treatment_definitions[t]) }}</li>{% endfor %}</ul></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Each negative treatment also has an <em>as recognized by</em> form (e.g., <em>Limited as recognized by</em>) — used when the citing court isn't doing the action itself, but is acknowledging that some other case has. It keeps the same severity tier as the underlying treatment.
+      </p>
+    </details>
+  </section>
+
+  <section class="about-section about-section--tinted" id="production">
+    <h2>Preview vs. production</h2>
+    <p>
+      The preview is deliberately scoped — running it as a standalone site lets us validate the citator design and user experience, and gather expert feedback on its classifications, before committing to a full CourtListener integration.
+    </p>
+    <p>Several things will look different in production:</p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Preview and production comparison">
+      <table class="about-table">
+        <thead>
+          <tr><th class="w-1/5">Aspect</th><th class="w-2/5">In this preview</th><th class="w-2/5">In production (CourtListener)</th></tr>
+        </thead>
+        <tbody>
+          {% if flags.validation %}
+          <tr>
+            <td class="font-semibold text-greyscale-900">Validation icons</td>
+            <td>
+              <p class="mb-2">All three icons render — demo-only diagnostics for experts auditing the classifications:</p>
+              <ul class="about-table__list about-table__list--icons">
+                <li>{{ icon("check-circle", "w-4 h-4 text-blue-700") }}<span><strong>Validated</strong> — matches the expert.</span></li>
+                <li>{{ icon("x-circle", "w-4 h-4 text-purple-600") }}<span><strong>Invalidated</strong> — the expert found a negative treatment that was missed or labelled differently.</span></li>
+                <li>{{ icon("question-circle", "w-4 h-4 text-greyscale-500") }}<span><strong>Unvalidated</strong> — no expert review.</span></li>
+              </ul>
+            </td>
+            <td>
+              <p class="mb-2">Only the blue Validated check renders. Most cases won't have expert review, so the other two would be noise on everything listed.</p>
+              <ul class="about-table__list about-table__list--icons">
+                <li>{{ icon("check-circle", "w-4 h-4 text-blue-700") }}<span><strong>Validated</strong> only.</span></li>
+              </ul>
+            </td>
+          </tr>
+          {% endif %}
+          <tr>
+            <td class="font-semibold text-greyscale-900">Coverage</td>
+            <td>{{ scope.opinions_display }} opinions around {{ scope.anchors }} anchors. Complete authorities lists for the anchors and for the opinions from controlling courts that cite them.</td>
+            <td>Every opinion CourtListener holds.</td>
+          </tr>
+          <tr>
+            <td class="font-semibold text-greyscale-900">Links between cases</td>
+            <td>A cited case opens its own page only when it is one of the {{ scope.opinions_display }} opinions here; otherwise its name is plain text.</td>
+            <td>Every cited case links to its opinion.</td>
+          </tr>
+          <tr>
+            <td class="font-semibold text-greyscale-900">Search</td>
+            <td>Case name or citation, across the opinions in the preview.</td>
+            <td>Full keyword search across opinion bodies, plus semantic search.</td>
+          </tr>
+          <tr>
+            <td class="font-semibold text-greyscale-900">Filters</td>
+            <td>Court and severity on the opinion list; search by name or citation, sorting and a severity filter over applied and recognized treatments on the <strong>Authorities</strong> and <strong>Later Courts</strong> tabs.</td>
+            <td>All existing CourtListener filters, plus citator severity and treatment filters.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="start-panel" id="start" aria-labelledby="get-started">
+    <div>
+      <h2 id="get-started">Get started</h2>
+      <p class="about-lede">Open an anchor opinion and work through its tabs.</p>
+    </div>
+    <a href="{{ site.home }}" class="start-panel__button">
+      Browse opinions
+      {{ icon("arrow-right", "w-4 h-4") }}
+    </a>
+  </section>
+
+  <section id="feedback" class="feedback-panel">
+    <h2>Share your feedback</h2>
+    <p class="about-lede">
+      We want your honest feedback — what's confusing, what's missing, what's wrong.
+    </p>
+    <p class="mt-3 text-sm text-greyscale-600 leading-relaxed">
+      One short form for everyone. If you are a legal professional, also tell us about the treatments and how this compares with the citators you use today. For the best experience, use the preview on a desktop.
+    </p>
+    <div class="mt-5">
+      <a href="{{ site.feedback }}" target="_blank" rel="noopener" class="feedback-card">
+        <span class="feedback-card__title">Open the feedback form →</span>
+        <span class="feedback-card__text">About ten minutes; fifteen with the legal professional section.</span>
+      </a>
+    </div>
+  </section>
+
+</article>
+{% set articleSections = [{"id":"article-top","label":"About this citator"},{"id":"what-is","label":"What is a citator"},{"id":"scope","label":"What's in this preview"},{"id":"navigating","label":"Finding your way around"},{"id":"signals","label":"How to read a treatment"},{"id":"production","label":"Preview vs. production"},{"id":"start","label":"Get started"},{"id":"feedback","label":"Share your feedback"}] %}
+<div class="article-navigation" data-article-navigation>
+  <div class="article-navigation__wrap">
+    <nav class="article-navigation__contents" data-article-contents id="article-contents" aria-label="Article sections" hidden>
+      <p class="article-navigation__heading">On this page</p>
+      <ol role="list" class="article-navigation__list">
+        {% for section in articleSections %}<li><a href="#{{ section.id }}" class="article-navigation__link"{% if loop.first %} aria-current="location"{% endif %}><span aria-hidden="true">0{{ loop.index }}</span><span data-article-section-label>{{ section.label }}</span></a></li>{% endfor %}
+      </ol>
+    </nav>
+    <nav class="article-navigation__pill" aria-label="Article reading position">
+      <span class="article-navigation__progress" role="progressbar" aria-label="Article reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-article-progress><span class="article-navigation__progress-fill"></span></span>
+      <button type="button" class="article-navigation__step" aria-label="Previous article section" data-article-previous disabled>{{ icon("chevron-left", "w-3.5 h-3.5") }}</button>
+      <button type="button" class="article-navigation__toggle" aria-controls="article-contents" aria-expanded="false" data-article-toggle><span class="article-navigation__number" data-article-number>01 / 08</span><span class="article-navigation__label" data-article-label>About this citator</span><span class="article-navigation__percent" aria-hidden="true" data-article-percent>0%</span>{{ icon("chevron-up", "article-navigation__caret") }}</button>
+      <button type="button" class="article-navigation__step" aria-label="Next article section" data-article-next>{{ icon("chevron-right", "w-3.5 h-3.5") }}</button>
+    </nav>
+  </div>
+</div>
+</div>

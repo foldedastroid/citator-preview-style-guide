@@ -1,0 +1,42 @@
+---
+title: Menus
+summary: "A button that opens a short list of actions: the opinion page's Copy citation menu and the top bar's Help menu. Arrow keys move, Escape closes and returns focus."
+group: controls
+order: 3
+kind: Alpine components
+source: assets/js/alpine/components/case_actions.js
+keywords: menu dropdown caseActions helpMenu copy citation keyboard
+---
+{% from "guide/macros.njk" import table, files, note %}
+
+{% set ex = "menu-copy-citation" %}{% set exTitle = "Copy citation, a split button" %}{% set exStage = "g-example__stage--tint" %}{% include "guide/example.njk" %}
+{% set ex = "menu-help" %}{% set exTitle = "Help" %}{% set exStage = "g-example__stage--tint" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p><code>caseActions</code> and <code>helpMenu</code> share one pattern. Each menu item is a <code>role="menuitem"</code> out of the tab order (<code>tabindex="-1"</code>); the component moves focus among them. A Copy citation item copies its <code>data-copy</code> and reports <code>data-done</code> as a toast, or "Copy failed" with a way out; the clipboard falls back to a hidden textarea where the Clipboard API is unavailable.</p>
+</div>
+{{ table(["Key", "On the button", "In the menu"], [
+  ["↓ / ↑", "Opens at the first / last item", "Next / previous item, wrapping"],
+  ["Home / End", "", "First / last item"],
+  ["Escape", "", "Closes and returns focus to the button"],
+  ["Tab", "", "Closes and moves on"],
+  ["Click outside", "", "Closes without moving focus"]
+]) }}
+
+<h2 class="g-h2" id="markup">Markup</h2>
+{{ table(["Piece", "Needs"], [
+  ["The scope", "<code>x-data=\"caseActions\" x-on:keydown=\"onMenuKeydown\"</code> (or <code>helpMenu</code> / <code>onHelpKeydown</code>)"],
+  ["The button", "<code>x-ref=\"menuButton\"</code> (<code>helpButton</code>), <code>aria-haspopup=\"menu\"</code>, <code>aria-controls</code>, <code>x-bind:aria-expanded</code>"],
+  ["The panel", "<code>role=\"menu\"</code>, <code>x-bind:class=\"menuClass\"</code> (<code>helpClass</code>) to open it"],
+  ["Copy items", "<code>data-copy</code>, <code>data-done</code>, <code>x-on:click=\"copyFormat\"</code>"]
+]) }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["assets/js/alpine/components/case_actions.js", "<code>caseActions</code> and the clipboard helper."],
+  ["assets/js/alpine/components/help_menu.js", "<code>helpMenu</code>; it also dismisses the first-visit hint."],
+  ["assets/js/toast.js", "The copy confirmation."],
+  ["assets/css/styles.css", "<code>.help-menu</code>, <code>.cite-menu</code>, <code>.split</code>."]
+]) }}
+{{ note("The main Copy citation button calls <code>copyCitation</code> on the opinion page's component; in this guide the stage does the same job. Help's <em>Keyboard shortcuts</em> opens the sheet from <a href=\"/controls/keyboard-shortcuts/\">Keyboard shortcuts</a> when the page has one.") }}

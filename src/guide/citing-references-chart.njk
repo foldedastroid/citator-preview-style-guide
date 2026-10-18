@@ -1,0 +1,41 @@
+---
+title: Citing references chart
+summary: "A list's rows counted by tier against court or date, as a matrix. Every count narrows the list below to exactly those rows; empty years stay on the scale."
+group: lists
+order: 3
+kind: Nunjucks macro
+source: _includes/macros/citing_chart.njk
+keywords: chart matrix citingChart chartBreakdown decade century court narrow
+---
+{% from "guide/macros.njk" import params, files, note, table %}
+
+{% set ex = "citing-chart" %}{% set exTitle = "Sparse dates and three undated rows, narrowing a list" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="scale">At scale</h2>
+<div class="g-prose"><p>A span of up to 24 years shows years, up to 240 decades, beyond that centuries; the Date columns menu switches, and a width with more than 250 columns is offered disabled. Long court names keep the tier column fixed while the matrix pans in its own frame, never the page.</p></div>
+{% set ex = "citing-chart-century" %}{% set exTitle = "151 years of rows" %}{% include "guide/example.njk" %}
+{% set ex = "citing-chart-dense" %}{% set exTitle = "64 courts" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="counting">Counting</h2>
+<div class="g-prose"><p>The counts come from <code>chartBreakdown</code> in <code>tools/chart-data.cjs</code>, an Eleventy filter:</p>
+<p><code>{{ '{% set b = opinion.cited_by | chartBreakdown("cited-by", "severity", "citing_court_display", "citing_date_filed") %}' }}</code></p></div>
+{{ table(["Rule", "Why"], [
+  ["Every period from the first dated row to the last is a column, empty or not", "The scale stays honest: a gap of decades looks like a gap."],
+  ["Rows without a valid date get their own column after the calendar", "\"Date not available\" is a fact about the data, not a year."],
+  ["A row whose tier is not one of the five is left out and counted in <code>uncharted</code>", "An unfamiliar treatment label can't break the build; the coverage line says how many."],
+  ["Ranges are inclusive, and each cell's label says so", "1900–1909 includes both years; narrowing matches exactly the counted rows."]
+]) }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([["b", "breakdown", "", "<code>chartBreakdown</code>'s result. <code>b.list</code> names the list it narrows: the cells link to <code>#&lt;list&gt;</code>, and only the list in the <code>[role=tabpanel]</code> whose <code>data-tab</code> matches reacts."]]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The matrix is a real <code>&lt;table&gt;</code> with a caption, row and column headers; zero cells read "0". Each count's label gives its tier, full range and number. The scroll region is focusable and named, with pan buttons for pointer users.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_includes/macros/citing_chart.njk", "<code>citingChart</code> and its table."],
+  ["tools/chart-data.cjs", "The counts. Covered by <code>tools/chart-data.test.cjs</code> in the app."],
+  ["assets/js/alpine/components/opinion_views.js", "<code>citingChart</code>: axis, period, collapse and pan, remembered."],
+  ["assets/css/components/opinion-views.css", "The chart's styles."]
+]) }}

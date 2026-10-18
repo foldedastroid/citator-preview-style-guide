@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: allOpinions
+  size: 1
+  alias: opinion
+permalink: "/opinion/{{ opinion.cluster_id }}/"
+scripts:
+  - /assets/js/alpine/components/opinion_tabs.js
+  - /assets/js/alpine/components/treatment_list.js
+  - /assets/js/alpine/components/opinion_views.js
+  - /assets/js/doc_rail.js
+  - /assets/js/alpine/components/case_actions.js
+panel: Citator
+eleventyComputed:
+  title: "{{ opinion.case_name }}"
+---
+
+{% include "partials/opinion-page.njk" %}

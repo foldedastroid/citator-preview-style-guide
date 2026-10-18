@@ -1,0 +1,37 @@
+---
+title: Opinion text
+summary: "Opinion sections, cited-case links, treatment signals and footnotes. The real reader opens a bottom panel to step through a case's occurrences."
+group: navigation
+order: 3
+kind: Rendered HTML
+source: _data/opinions/145918.json
+keywords: opinion body reading text footnotes citations
+---
+{% from "guide/macros.njk" import files, note, table %}
+
+{% set ex = "opinion-text" %}{% set exTitle = "Pearson v. Callahan" %}{% set exOpinion = 145918 %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="rendering">Rendering</h2>
+<div class="g-prose"><p>The HTML is supplied in each frozen opinion record's <code>document.body_html</code>, copied from the app by <code>npm run sync</code>. The standalone example above renders that body; the real opinion page supplies its reading controls.</p></div>
+{{ table(["Markup", "Means"], [
+  ["<code>a.cited-case-wrap[data-group]</code>", "A cited-case occurrence linked to its Authorities row (<code>#authority-N</code>), with available treatment analysis."],
+  ["<code>span.cited-case-wrap &gt; a.cited-case[href]</code>", "A cited-case occurrence linked directly to an opinion. Repeated occurrences group by their exact opinion URL; this form need not have treatment analysis."],
+  ["<code>.cited-case__severity--&lt;tier&gt;</code>", "The signal after a case with a negative treatment; the \"Treatment beside citations\" switch hides them"],
+  ["<code>sup.fnref</code> / <code>aside.opinion-footnotes</code>", "A footnote mark and the notes, each linking to the other"],
+  ["<code>section[id^=section-]</code>", "A writing or part; the document rail lists them"]
+]) }}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+<div class="g-prose">
+  <p>On the real opinion page, clicking a cited case or pressing Enter / ↓ opens a pinned bottom panel. Previous / next moves through its actual occurrences in the opinion and reports <em>Occurrence N of M</em>, wrapping at either end. A hover preview stays compact and does not replace a pinned selection. Escape or Close returns to the current citation; Open case follows the cited opinion link.</p>
+  <p>Treatment details and Full analysis appear when an Authorities record supplies them. A plain opinion link without that record explicitly reports unavailable analysis; it does not infer a treatment. Try the two Saucier links in <a href="/opinion/145918/">Pearson v. Callahan</a>, or use the complete <a href="/pages/opinion-page/">opinion-page example</a>.</p>
+  <p>The same reader opens footnotes in a popover, offers copy actions for selected text, and searches within the opinion with <kbd>/</kbd>.</p>
+</div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([
+  ["_data/opinions/&lt;id&gt;.json", "Frozen <code>document.body_html</code> and available Authorities records."],
+  ["_includes/partials/opinion-page.njk", "The real reader and bottom occurrence panel."],
+  ["assets/css/styles.css", "<code>.opinion-body</code> and everything inside it."],
+  ["assets/js/alpine/components/opinion_tabs.js", "The reading tools, on the opinion page."]
+]) }}

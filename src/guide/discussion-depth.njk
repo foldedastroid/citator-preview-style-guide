@@ -1,0 +1,27 @@
+---
+title: Discussion depth
+summary: "How often an opinion mentions a case, as four short bars and the count: a sense of how much the opinion engages with it, not of how it treats it."
+group: signals
+order: 4
+kind: Nunjucks macro
+source: _includes/macros/treatment.njk
+keywords: mentions bars meter discussion count
+---
+{% from "guide/macros.njk" import params, files, table %}
+
+{% set ex = "discussion-levels" %}{% set exTitle = "The four levels" %}{% include "guide/example.njk" %}
+
+<h2 class="g-h2" id="levels">Levels</h2>
+{{ table(["Mentions", "Bars"], [["0", "None, and no number"], ["1", "One"], ["2–3", "Two"], ["4–6", "Three"], ["7 or more", "Four"]]) }}
+
+<h2 class="g-h2" id="parameters">Parameters</h2>
+{{ params([
+  ["n", "number", "", "The mention count. Empty or 0 draws no bars."],
+  ["where", "string", "", "Completes the title: \"3 mentions <em>in this opinion</em>\"."]
+]) }}
+
+<h2 class="g-h2" id="accessibility">Accessibility</h2>
+<div class="g-prose"><p>The bars are <code>aria-hidden</code>; the count is text and the exact number is in the title. Give the column a header ("Discussion") so the number has a meaning.</p></div>
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["_includes/macros/treatment.njk", "<code>discussion</code>."], ["assets/css/styles.css", "<code>.discussion</code>, <code>.discussion__bar</code>."]]) }}

@@ -1,0 +1,90 @@
+
+{% from "macros/treatment.njk" import severityBadge %}
+
+
+{% macro dispositionLabel(severity, label, text, definition="", text_class="") %}
+{%- if text %}<span{% if text_class %} class="{{ text_class }}"{% endif %}>{{ text }}</span>
+{%- else %}{{ severityBadge(severity, label, false, definition) }}{% endif %}
+{% endmacro %}
+
+
+{% macro scopeText(scope) -%}
+{%- if scope == "controlling" %}from a controlling or equal court{% else %}in this preview{% endif -%}
+{%- endmacro %}
+
+
+{% macro statusLink(x, label, definition="", shown="", pages=null, fallback="") %}
+{%- set href = "/opinion/" ~ x.citing_cluster_id ~ "/" -%}
+{%- if pages and fallback and x.citing_cluster_id not in pages -%}
+  {%- set href = fallback -%}
+{%- elif x.authority_n -%}
+  {%- set href = href ~ "#authority-" ~ x.authority_n -%}
+{%- elif x.quote and x.quote_status != "missing" -%}
+  {%- set href = href ~ "#q=" ~ (x.quote | urlencode) -%}
+{%- endif -%}
+<a class="home-status__action" href="{{ href }}"{% if shown %} title="{{ x.citing_name }}"{% endif %}>
+  {{ severityBadge(x.severity, label, false, definition) }}
+  <span class="home-status__text"><span class="home-status__name">{{ shown or x.citing_name }}</span></span>
+</a>
+{% endmacro %}
+
+
+{% macro statusRows(st, disposition, defs, extra="", filled_only=false, later_url="", pages=null) %}
+{% set showDisposition = disposition or not filled_only %}
+{% set showAppeal = st.on_appeal.state == "treated" or not filled_only %}
+{% set showLater = st.later_courts.state in ["negative", "plain"] or not filled_only %}
+{% if showDisposition or showAppeal or showLater %}
+<dl class="home-status {{ extra }}">
+  {% if showLater %}
+  <dt>Later courts</dt>
+  <dd>
+    {% if st.later_courts.state == "negative" %}
+      {{ statusLink(st.later_courts, st.later_courts.treatment, defs[st.later_courts.treatment], st.later_courts.citing_court, pages, later_url) }}
+      {%- if st.later_courts.n_other_negative or st.later_courts.n_plain %}
+      <span class="home-status__text">
+        <span class="home-status__sep home-status__sep--lead" aria-hidden="true">·</span>
+        <a class="home-status__link" href="{{ later_url }}">
+          {%- if st.later_courts.n_other_negative %}{{ st.later_courts.n_other_negative }} other negative{% endif -%}
+          {%- if st.later_courts.n_other_negative and st.later_courts.n_plain %}<span class="home-status__sep" aria-hidden="true">·</span>{% endif -%}
+          {%- if st.later_courts.n_plain %}cited by {{ st.later_courts.n_plain }} more{% endif -%}
+        </a>
+      </span>
+      {%- endif %}
+    {% elif st.later_courts.state == "plain" %}
+      <span class="home-status__text"><a class="home-status__link" href="{{ later_url }}">Cited by {{ st.later_courts.n_total }} opinion{% if st.later_courts.n_total != 1 %}s{% endif %} {{ scopeText(st.scope) }}, none negative</a></span>
+    {% elif st.later_courts.state == "unknown" %}
+      <span class="home-status__text">Not collected yet</span>
+    {% else %}
+      <span class="home-status__text">Cited by 0 opinions {{ scopeText(st.scope) }}</span>
+    {% endif %}
+  </dd>
+  {% endif %}
+  {% if showAppeal %}
+  <dt>On appeal</dt>
+  <dd>
+    {% if st.on_appeal.state == "treated" %}
+      {{ statusLink(st.on_appeal, st.on_appeal.treatment, defs[st.on_appeal.treatment], "", pages, later_url | replace("#cited-by", "#history")) }}
+    {% elif st.on_appeal.state == "not_reviewable" %}
+      <span class="home-status__text">No appeal found <span class="home-status__sep" aria-hidden="true">·</span> court of last resort</span>
+    {% elif st.scope == "collection" %}
+      <span class="home-status__text">None in this preview</span>
+    {% elif st.on_appeal.state == "unknown" %}
+      <span class="home-status__text">Not collected yet</span>
+    {% else %}
+      <span class="home-status__text">No appeal found</span>
+    {% endif %}
+  </dd>
+  {% endif %}
+  {% if showDisposition %}
+  <dt>Disposition</dt>
+  <dd>
+    {% if disposition %}
+      {{ dispositionLabel("Neutral", disposition.label, disposition.text, defs[disposition.label], "home-status__text") }}
+    {% else %}
+      <span class="home-status__text">Not identified</span>
+    {% endif %}
+  </dd>
+  {% endif %}
+</dl>
+{% endif %}
+{% endmacro %}

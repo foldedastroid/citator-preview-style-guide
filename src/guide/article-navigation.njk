@@ -1,0 +1,32 @@
+---
+title: Article navigation
+summary: "The About page's reading pill: the current section, how far through you are, previous and next, and a list of every section."
+group: navigation
+order: 5
+kind: Script
+source: assets/js/article-navigation.js
+keywords: reading progress pill sections article about
+---
+{% from "guide/macros.njk" import files, table %}
+{% set frameSrc = "/about/" %}{% set frameTitle = "The About page, with its reading pill at the bottom" %}{% set frameHeight = 680 %}{% include "guide/frame.njk" %}
+
+<h2 class="g-h2" id="behaviour">Behaviour</h2>
+{{ table(["Key", "On the pill", "In the list"], [
+  ["← / →", "Previous / next section", ""],
+  ["Home / End", "First / last section", "First / last item"],
+  ["↑ / ↓", "Opens the list", "Moves between items"],
+  ["Escape", "", "Closes and returns focus to the pill"]
+]) }}
+<div class="g-prose"><p>The current section is the last whose top has passed a fifth of the way down the window, or the last one once the article's end is in view. Choosing a section moves focus to its heading. When the footer enters view, the pill stays 16px above it so its links remain clear.</p></div>
+
+<h2 class="g-h2" id="markup">Markup</h2>
+{{ table(["Attribute", "On"], [
+  ["<code>data-article-content</code>", "The element holding the sections"],
+  ["<code>data-article-navigation</code>", "The pill"],
+  ["<code>data-article-toggle</code>, <code>-contents</code>, <code>-previous</code>, <code>-next</code>", "Its controls"],
+  ["<code>data-article-label</code>, <code>-number</code>, <code>-percent</code>, <code>-progress</code>", "What it shows"],
+  ["<code>data-article-section-label</code>", "Each list link's title"]
+]) }}
+
+<h2 class="g-h2" id="files">Files</h2>
+{{ files([["assets/js/article-navigation.js", "The pill."], ["assets/css/components/article-navigation.css", "Its styles."], ["src/about.njk", "The markup in use."]]) }}

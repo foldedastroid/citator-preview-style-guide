@@ -1,0 +1,7 @@
+{% from "macros/narrow.njk" import narrowView %}
+
+{% set citingBreak = opinion.cited_by | chartBreakdown("cited-by", "severity", "citing_court_display", "citing_date_filed") %}
+<div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_15rem]">
+  <div role="tabpanel" data-tab="cited-by">{% include "partials/cited-by-tab.njk" %}</div>
+  <aside>{{ narrowView(citingBreak, "#cited-by", "citing opinions", "None in this preview") }}</aside>
+</div>

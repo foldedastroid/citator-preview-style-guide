@@ -1,0 +1,42 @@
+---
+title: Spacing and shape
+summary: "The steps added to Tailwind's spacing scale, the radii from a flat row to a dialog, the shadows reserved for things that float, and the minimum target sizes."
+group: foundations
+order: 3
+kind: Tailwind theme
+source: tailwind.config.js
+keywords: spacing radius shadow elevation target size
+---
+{% from "guide/macros.njk" import table, note %}
+{% set t = theme.extend %}
+
+<h2 class="g-h2" id="spacing">Spacing</h2>
+<div class="g-prose"><p>Tailwind's own scale first; these are the extra steps the layout uses (<code>w-53</code>, <code>gap-4.5</code>).</p></div>
+<div class="g-table-wrap">
+  <table class="g-table">
+    <thead><tr><th scope="col">Step</th><th scope="col">Value</th><th scope="col"></th></tr></thead>
+    <tbody>
+      {% for step, value in t.spacing %}
+      <tr><td><code>{{ step }}</code></td><td><code>{{ value }}</code></td><td><span class="g-scale-bar" style="width: {{ value }}"></span></td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<h2 class="g-h2" id="radius">Radius</h2>
+<div class="g-prose"><p>Content is flat and divided by hairlines; controls are slightly rounded; things that float are rounder still.</p></div>
+{% set rows = [] %}
+{% for name, value in t.borderRadius %}{% set rows = (rows.push(["<code>rounded-" ~ name ~ "</code>", "<code>" ~ value ~ "</code>", "<span style=\"display:inline-block;width:56px;height:28px;border:1px solid #d6d0c6;background:#fbfaf8;border-radius:" ~ value ~ "\"></span>"]), rows) %}{% endfor %}
+{{ table(["Utility", "Value", ""], rows) }}
+
+<h2 class="g-h2" id="elevation">Elevation</h2>
+<div class="g-prose"><p>A shadow means the thing floats above the page. Rows and cards in the flow have a hairline and no shadow.</p></div>
+{% set rows = [] %}
+{% for name, value in t.boxShadow %}{% set rows = (rows.push(["<code>shadow-" ~ name ~ "</code>", "<code>" ~ value ~ "</code>", "<span style=\"display:inline-block;width:56px;height:30px;border-radius:6px;background:#fff;box-shadow:" ~ value ~ "\"></span>"]), rows) %}{% endfor %}
+{{ table(["Utility", "Value", ""], rows) }}
+
+<h2 class="g-h2" id="targets">Targets</h2>
+{% set rows = [] %}
+{% for name, value in t.minHeight %}{% set rows = (rows.push(["<code>min-h-" ~ name ~ "</code>", "<code>" ~ value ~ "</code>"]), rows) %}{% endfor %}
+{{ table(["Utility", "Value"], rows) }}
+{{ note("<code>min-h-control</code> is the height of a button or field; <code>min-h-touch</code> is the target size on coarse pointers. Widths for reading (<code>max-w-reading</code>, " ~ t.maxWidth.reading ~ ") and for the page (<code>max-w-content</code>, " ~ t.maxWidth.content ~ ") are in the theme too.") }}

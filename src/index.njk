@@ -1,0 +1,250 @@
+---
+layout: layouts/base.njk
+title: Search
+permalink: "{{ site.home }}"
+panel: Filters
+scripts:
+  - /assets/js/alpine/components/search_filter.js
+  - /assets/js/search_suggest.js
+  - /assets/js/expandable.js
+---
+
+
+{% from "macros/status.njk" import statusRows %}
+{% from "macros/lists.njk" import citeList %}
+{% from "macros/icons.njk" import icon %}
+{% from "macros/treatment.njk" import signal %}
+{% from "macros/pagination.njk" import pagination %}
+
+{% set pageIds = [] %}{% for o in allOpinions %}{% set pageIds = (pageIds.push(o.cluster_id), pageIds) %}{% endfor %}
+{% set anchorCount = scope.anchors or 0 %}
+<div x-data="searchFilter">
+  <div class="page-with-panel">
+
+    <div class="min-w-0">
+      <header class="page-head">
+        <h1 class="page-head__title">Search opinions</h1>
+        <p class="page-head__subtitle">Every opinion in the preview, newest first, with how later courts and appeals have treated it.</p>
+      </header>
+      <div class="suggest mb-5" data-suggest>
+        <label for="home-search" class="sr-only">Search by case name or citation</label>
+        {{ icon("search", "search-box__icon") }}
+        <input type="search" id="home-search" class="search-box" placeholder="Search by case name or citation…" autocomplete="off" spellcheck="false"
+               role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="home-suggest"
+               x-bind:value="query" x-on:input.debounce.150ms="setQuery">
+        <div id="home-suggest" class="suggest__list" role="listbox" aria-label="Suggestions" hidden></div>
+      </div>
+      <div class="list-head">
+        <h2 class="list-head__title">Results</h2>
+        <label class="sort-select list-head__sort">
+          <span>Sort by</span>
+          <select class="sort-select__input" x-bind:value="sortKey" x-on:change="setSort">
+            <option value="newest">Date (newest first)</option>
+            <option value="oldest">Date (oldest first)</option>
+            <option value="name">Case name (A–Z)</option>
+            <option value="court">Court (highest first)</option>
+          </select>
+        </label>
+        <button type="button" id="panel-toggle" class="filter-reopen" aria-controls="app-panel" data-panel="Filters"
+                x-bind:aria-expanded="panelExpanded" x-on:click="togglePanel" x-text="filterButtonLabel">Filters</button>
+        <p role="status" aria-live="polite" class="list-head__count">
+          <span x-text="visibleCount">{{ index | length }}</span> of <span x-text="totalCount">{{ index | length }}</span> opinions
+        </p>
+      </div>
+      <ul role="list" class="home-list">
+      {% for case in index %}
+      <li
+        data-court="{{ case.court }}"
+        data-tier="{{ case.tier }}"
+        data-search="{{ case.search_text }}"
+        data-dh-severity="{{ case.summary.dh_severity | lower if case.summary.dh_severity else 'none' }}"
+        data-cr-severity="{{ case.summary.cr_severity | lower if case.summary.cr_severity else 'none' }}"
+        {%- set lvl = [] %}{% for c in courts %}{% if c.key == case.court %}{% set lvl = (lvl.push(c.level), lvl) %}{% endif %}{% endfor %}
+        data-date="{{ case.date_filed }}"
+        data-name="{{ case.case_name | lower }}"
+        data-court-level="{{ lvl[0] if lvl | length else 9 }}"
+        x-show="rowVisible"
+        class="home-row"
+      >
+
+
+        <div class="home-card">
+          <div class="min-w-0">
+            {% set worst = case.summary | worstSignal %}
+            <h3 class="home-card__title">
+              <span class="home-card__signal" title="{{ worst or 'No treatment found' }}">{{ signal(worst or "Neutral") }}<span class="sr-only">{{ worst or "No treatment found" }}:</span></span>
+              <a href="/opinion/{{ case.cluster_id }}/" class="home-card__link">{{ case.case_name }}</a>
+              {% if case.tier == "anchor" %}<span class="home-card__anchor" title="One of the {{ anchorCount }} opinions the preview is built around">Anchor</span>{% endif %}
+            </h3>
+            <p class="home-card__cite">{{ case | citeTail }}</p>
+            <dl class="meta-list home-meta">
+              <div><dt>Court</dt><dd>{{ case.court_display }}</dd></div>
+              <div><dt>Date filed</dt><dd>{{ case.date_filed | usdate }}</dd></div>
+              {% if case.docket_numbers | length %}<div><dt>Docket No.</dt><dd data-cite-cell>{{ citeList(case.docket_numbers, noun="case number") }}</dd></div>{% endif %}
+              {% if case.citations | length > 1 %}
+              <div><dt>Parallel citations</dt><dd data-cite-cell>{{ citeList(case.citations, dot=true) }}</dd></div>
+              {% endif %}
+            </dl>
+          </div>
+          {{ statusRows(case.status, false, treatment_definitions, "", true, "/opinion/" ~ case.cluster_id ~ "/#cited-by", pageIds) }}
+          {% if case.excerpt %}
+          <div class="home-excerpt" data-expand data-lines="2">
+            <div class="home-snippet">
+              <div class="expand__body" id="excerpt-{{ case.cluster_id }}"><p class="expand__inner">{{ case.excerpt }}</p></div>
+            </div>
+            <button type="button" class="home-snippet__more" aria-expanded="false" aria-controls="excerpt-{{ case.cluster_id }}" hidden>Show more</button>
+          </div>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+      </ul>
+      <div class="empty-state" x-show="noResults" x-cloak role="status">
+        <p class="empty-state__title">No opinions match these filters</p>
+        <p class="empty-state__text">Clear them to see every opinion in the preview.</p>
+        <button type="button" class="doc-action" x-on:click="clearAllFilters">Clear all filters</button>
+      </div>
+      {{ pagination() }}
+    </div>
+
+    <aside id="app-panel" class="app-panel app-panel--filters" aria-labelledby="filters-title">
+      <header class="app-panel__header">
+        <h2 id="filters-title" class="app-panel__title">Filters</h2>
+        <button type="button" id="panel-collapse" class="pane-toggle" aria-controls="app-panel"
+                x-bind:aria-expanded="panelExpanded" x-bind:aria-label="panelLabel" x-bind:title="panelLabel" x-on:click="togglePanel">
+          {{ icon("panel-right", "w-[18px] h-[18px]") }}
+        </button>
+      </header>
+      <div class="app-panel__inner">
+
+      <div class="filter-group filter-group--first">
+        <label class="filter-check">
+          <input type="checkbox" class="checkbox" checked data-filter="filterAnchorsOnly" x-bind:checked="filterChecked" x-on:change="setAnchorsOnly">
+          Anchor opinions only
+        </label>
+        <p class="filter-help">The {{ anchorCount }} opinion{{ "s" if anchorCount != 1 }} the preview is built around; every other opinion here is one they cite or that cites them.</p>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-group__title">Court</span>
+        <button type="button" class="court-open" x-on:click="openPicker">
+          <span x-text="courtSummary">All courts</span>
+          {{ icon("chevron-down-small", "w-4 h-4 text-greyscale-500") }}
+        </button>
+        <div class="court-chips" x-show="hasSelectedCourts" x-cloak>
+          {% for tab in court_picker %}{% for group in tab.groups %}{% for c in group.courts %}
+          <button type="button" class="court-chip" data-court-key="{{ c.key }}" x-show="courtSelected" x-cloak
+                  x-on:click="removeCourt" title="Remove {{ c.display }}">
+            {{ c.display }}<span class="court-chip__x" aria-hidden="true">×</span>
+            <span class="sr-only">Remove {{ c.display }} filter</span>
+          </button>
+          {% endfor %}{% endfor %}{% endfor %}
+          <button type="button" class="court-chips__clear" x-on:click="clearAllCourts">Clear</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-group__title">Severity</span>
+
+
+        <div class="sev-groups">
+        {% for direction in [
+          {"label": "Later courts", "prefix": "filterCr"},
+          {"label": "On appeal", "prefix": "filterDh"}
+        ] %}
+        <div class="sev-group" role="group" aria-label="{{ direction.label }} severity">
+          <p class="sev-group__title">{{ direction.label }}</p>
+          <div class="sev-list">
+            {% for tier in ["Stop", "Warning", "Caution", "Positive", "Neutral"] %}
+            <button type="button" role="checkbox" class="sev-toggle sev-toggle--{{ tier | lower }}" data-filter="{{ direction.prefix }}{{ tier }}"
+                    x-bind:aria-checked="filterOn" x-bind:class="filterClass" x-on:click="toggleFilter">
+              <span class="sev-toggle__dot" aria-hidden="true">{{ icon("severity-" ~ (tier | lower), "sev-toggle__icon") }}</span>
+              <span class="sev-toggle__label">{{ tier }}</span>
+              <span class="sev-toggle__count" aria-hidden="true" x-text="filterCount"></span>
+              <span class="sr-only" x-text="filterCountLabel"></span>
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+        <button type="button" class="severity-clear" x-on:click="clearSeverityFilters" x-show="hasSeverityFilters" x-cloak>Clear severity filters</button>
+      </div>
+
+      </div>
+    </aside>
+  </div>
+
+
+  <div class="court-modal" x-show="pickerOpen" x-cloak x-on:keydown.escape.stop.prevent="closePicker">
+    <div class="court-modal__backdrop" x-on:click="closePicker"></div>
+    <div class="court-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="court-picker-title" x-on:keydown="trapPicker">
+      <div class="court-modal__head">
+        <h2 id="court-picker-title" class="court-modal__title">Select courts</h2>
+        <button type="button" class="court-modal__close" x-on:click="closePicker" aria-label="Close">
+          {{ icon("close", "w-5 h-5") }}
+        </button>
+      </div>
+
+      <div class="court-modal__tools">
+        <label class="flex-1 min-w-0">
+          <span class="sr-only">Filter courts by name</span>
+          <input type="search" class="search-box search-box--plain" placeholder="Filter courts by name…" autocomplete="off"
+                 x-bind:value="pickerQuery" x-on:input="setPickerQuery">
+        </label>
+        <div class="court-modal__btns">
+          <button type="button" class="court-btn" x-on:click="checkAllCourts">Check all</button>
+          <button type="button" class="court-btn" x-on:click="clearAllCourts">Clear all</button>
+          <button type="button" class="court-btn" x-on:click="checkTabCourts">Check tab</button>
+          <button type="button" class="court-btn" x-on:click="clearTabCourts">Clear tab</button>
+        </div>
+      </div>
+
+      <div class="court-modal__tabs" role="tablist" aria-label="Court groups">
+        {% for tab in court_picker %}
+        <button type="button" role="tab" id="court-tab-{{ tab.key }}" aria-controls="court-panel-{{ tab.key }}"
+                data-tab-key="{{ tab.key }}"
+                x-bind:aria-selected="pickerTabSelected" x-bind:class="pickerTabClass" x-on:click="selectPickerTab"
+                class="court-tab">
+          {{ tab.display }}<span class="court-tab__count">{{ tab.n_courts }}</span>
+        </button>
+        {% endfor %}
+      </div>
+
+      <div class="court-modal__body">
+        {% for tab in court_picker %}
+        <div id="court-panel-{{ tab.key }}" role="tabpanel" aria-labelledby="court-tab-{{ tab.key }}"
+             data-tab-key="{{ tab.key }}" x-show="pickerPanelVisible" class="court-cols">
+          {% for group in tab.groups %}
+          <section class="court-group"
+                   data-court-names="{% for c in group.courts %}{{ c.display | lower }} {% endfor %}{{ group.name | lower }}"
+                   x-show="groupVisible">
+            <label class="court-group__head">
+              <input type="checkbox" class="checkbox" data-court-keys="{{ group.keys | join(',') }}"
+                     x-effect="syncGroupBox" x-bind:checked="groupAllSelected" x-on:change="toggleGroup">
+              {{ group.name }}
+            </label>
+            <ul class="court-group__list">
+              {% for c in group.courts %}
+              <li data-court-key="{{ c.key }}" data-court-name="{{ c.display | lower }}" x-show="courtVisible">
+                <label class="court-option court-option--d{{ c.depth }}">
+                  <input type="checkbox" class="checkbox" x-bind:checked="courtSelected" x-on:change="toggleCourt">
+                  {{ c.display }}
+                </label>
+              </li>
+              {% endfor %}
+            </ul>
+          </section>
+          {% endfor %}
+          <p class="court-empty" x-show="pickerTabEmpty" x-cloak>No court matches that name.</p>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="court-modal__foot">
+        <span class="text-sm text-greyscale-500"><span x-text="courtSummary">All courts</span> <span class="cite-list__dot" aria-hidden="true">·</span> <span x-text="visibleCount"></span> opinions</span>
+        <button type="button" class="court-done" x-on:click="closePicker">Done</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,172 @@
+
+{%- set pages = collections.guide -%}
+{%- set near = pages | neighbours(page.url) -%}
+{%- set sections = content | sections -%}
+{%- set groupTitle = "" -%}{%- set groupNumber = 0 -%}
+{%- for g in guide.groups -%}{%- if g.key == group -%}{%- set groupTitle = g.title -%}{%- set groupNumber = loop.index -%}{%- endif -%}{%- endfor -%}
+{%- set position = 0 -%}{%- set inGroup = 0 -%}
+{%- for p in pages -%}{%- if p.data.group == group -%}{%- set inGroup = inGroup + 1 -%}{%- if p.url == page.url -%}{%- set position = inGroup -%}{%- endif -%}{%- endif -%}{%- endfor -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="{{ summary }}">
+    <link rel="icon" href="data:,">
+    <title>{{ title }} · {{ guide.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css?v={{ build.stamp }}">
+    <link rel="stylesheet" href="/assets/guide/guide.css?v={{ build.stamp }}">
+    <link rel="stylesheet" href="/assets/guide/accent.css?v={{ build.stamp }}">
+    <script src="/assets/guide/guide-state.js?v={{ build.stamp }}"></script>
+
+
+    {% for s in [
+      "alpine/composables/highlight.js",
+      "alpine/composables/list_toggle.js",
+      "alpine/components/treatment_list.js",
+      "alpine/components/opinion_views.js",
+      "alpine/components/help_menu.js",
+      "alpine/components/case_actions.js",
+      "toast.js",
+      "tooltips.js",
+      "cite_fit.js",
+      "cite_cta.js",
+      "expandable.js"
+    ] %}
+    <script defer src="/assets/js/{{ s }}?v={{ build.stamp }}"></script>
+    {% endfor %}
+    {% for s in scripts %}
+    <script defer src="{{ s }}?v={{ build.stamp }}"></script>
+    {% endfor %}
+    <script defer src="/assets/guide/guide.js?v={{ build.stamp }}"></script>
+    <script defer src="/assets/js/alpine.min.js?v={{ build.stamp }}"></script>
+  </head>
+  <body class="g-body">
+    <a href="#g-main" class="g-skip">Skip to content</a>
+
+    <header class="g-topbar">
+      <button type="button" id="g-sidebar-show" class="g-icon-button g-sidebar-toggle g-sidebar-reopen" data-sidebar-toggle aria-controls="g-sidebar" aria-expanded="false" aria-label="Show sidebar" title="Show sidebar (⌘\)">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M9.5 4.5v15"/></svg>
+      </button>
+      <a href="/" class="g-brand">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5h9.5L19 9v10.5H5z"/><path d="M14.5 4.5V9H19M8.5 13h7M8.5 16h5"/></svg>
+        <span>CourtListener</span><span class="g-muted">/ Citator guide</span>
+      </a>
+      <nav class="g-areas" aria-label="Sections">
+        <a href="/"{% if page.url != "/search/" %} aria-current="page"{% endif %}>Guide</a>
+        <a href="{{ site.home }}">Live preview</a>
+        <a href="{{ guide.upstream }}" target="_blank" rel="noopener">citator-demo<svg class="g-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8M9 8h7v7"/></svg></a>
+      </nav>
+      <div class="g-actions">
+        <span class="g-local">Built {{ build.date | usdate }}</span>
+        <button type="button" class="g-icon-button" data-focus-filter aria-label="Find a page" title="Find a page (⌘K)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <aside class="g-sidebar" id="g-sidebar" aria-label="Guide pages">
+      <div class="g-side-top">
+        <span>{{ guide.title }}</span>
+        <div class="g-side-actions">
+          <button type="button" class="g-text-button" data-collapse-all>Collapse all</button>
+          <button type="button" id="g-sidebar-hide" class="g-icon-button" data-sidebar-toggle aria-controls="g-sidebar" aria-expanded="true" aria-label="Hide sidebar" title="Hide sidebar (⌘\)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M9.5 4.5v15"/></svg>
+          </button>
+        </div>
+      </div>
+      <label class="g-side-search">
+        <span class="g-sr-only">Find a page</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>
+        <input type="search" placeholder="Find a component…" autocomplete="off" data-guide-filter>
+        <kbd>⌘K</kbd>
+      </label>
+      <nav class="g-tree" aria-label="Guide">
+        {% for g in guide.groups %}
+        {% set members = [] %}{% for p in pages %}{% if p.data.group == g.key %}{% set members = (members.push(p), members) %}{% endif %}{% endfor %}
+        {% if members | length %}
+        <details class="g-group" data-group="{{ g.key }}" open>
+          <summary class="g-group__title">
+            <svg class="g-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+            <span>{{ g.title }}</span>
+            <span class="g-count">{{ members | length }}</span>
+          </summary>
+          <ul role="list" class="g-group__pages">
+            {% for p in members %}
+            <li><a href="{{ p.url }}" class="g-tree-link"{% if p.url == page.url %} aria-current="page"{% endif %} data-keywords="{{ p.data.title | lower }} {{ p.data.keywords | default('') }}">{{ p.data.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+        {% endfor %}
+        <p class="g-tree-empty" data-filter-empty hidden>No page matches.</p>
+      </nav>
+      <div class="g-side-bottom">
+        <a href="{{ site.home }}" class="g-text-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg>Open the live preview
+        </a>
+      </div>
+    </aside>
+    <div class="g-scrim" data-sidebar-scrim></div>
+
+    <main class="g-workspace" id="g-main">
+      <div class="g-reading{% if wide %} g-reading--wide{% endif %}">
+        <article class="g-article">
+          <nav class="g-crumbs" aria-label="Breadcrumb">
+            <a href="/">Guide</a>
+            {% if groupTitle and page.url != "/" %}
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span>{{ groupTitle }}</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg><span aria-current="page">{{ title }}</span>
+            {% endif %}
+          </nav>
+          <p class="g-kicker">
+            <span>{{ groupNumber | pad }}.{{ position | pad }}</span>
+            {% if kind %}<span class="g-sep">/</span><span>{{ kind }}</span>{% endif %}
+            {% if source %}<span class="g-sep">/</span><span class="g-kicker__source">{{ source }}</span>{% endif %}
+          </p>
+          <header class="g-header">
+            <h1>{{ title }}</h1>
+            {% if summary %}<p class="g-summary">{{ summary }}</p>{% endif %}
+          </header>
+
+          {{ content | safe }}
+
+          <nav class="g-prevnext" aria-label="Previous and next page">
+            {% if near.previous %}
+            <a class="g-prevnext__link g-prevnext__link--previous" href="{{ near.previous.url }}" rel="prev">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12H3m6-6-6 6 6 6"/></svg>
+              <span><small>Previous</small>{{ near.previous.data.title }}</span>
+            </a>
+            {% endif %}
+            {% if near.next %}
+            <a class="g-prevnext__link g-prevnext__link--next" href="{{ near.next.url }}" rel="next">
+              <span><small>Next</small>{{ near.next.data.title }}</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18m-6-6 6 6-6 6"/></svg>
+            </a>
+            {% endif %}
+          </nav>
+          <footer class="g-footer">
+            <span>{% if source %}Source: <code>{{ source }}</code> in the Citator app, copied by <code>npm run sync</code>{% else %}Guide page{% endif %}</span>
+            <code class="g-footer__id">{{ page.inputPath | replace("./src/", "src/") }}</code>
+          </footer>
+        </article>
+
+        {% if sections | length and not wide %}
+        <aside class="g-toc" aria-labelledby="g-toc-title">
+          <p class="g-toc__title" id="g-toc-title">On this page</p>
+          <nav>
+            {% for s in sections %}<a href="#{{ s.id }}" data-toc-link>{{ s.title }}</a>{% endfor %}
+          </nav>
+          {% if source %}
+          <div class="g-toc__related">
+            <p class="g-toc__title">Source</p>
+            <code>{{ source }}</code>
+          </div>
+          {% endif %}
+        </aside>
+        {% endif %}
+      </div>
+    </main>
+  </body>
+</html>

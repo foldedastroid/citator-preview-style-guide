@@ -1,0 +1,18 @@
+
+{% macro citeList(items, limit=3, dot=false, noun="citation") %}
+{%- set extra = (items | length) - limit -%}
+{%- if extra < 0 %}{% set extra = 0 %}{% endif -%}
+<span class="cite-list" data-cite-fit>
+{%- for c in items -%}
+  <span class="cite-item{% if loop.index > limit %} cite-extra{% endif %}">
+    {%- if not loop.first %}{% if dot %} <span class="cite-list__dot" aria-hidden="true">·</span> {% else %}, {% endif %}{% endif -%}
+    {{- c -}}
+  </span>
+{%- endfor -%}
+</span>
+{%- if (items | length) > 1 %}
+<button type="button" class="cite-list__more" x-data="listToggle" x-on:click.stop.prevent="toggle"
+        data-more="+{{ extra }}" data-less="less" data-noun="{{ noun }}"
+        aria-expanded="false" aria-label="Show {{ extra }} more {{ noun }}{% if extra != 1 %}s{% endif %}"{% if extra == 0 %} hidden{% endif %}>+{{ extra }}</button>
+{%- endif %}
+{% endmacro %}

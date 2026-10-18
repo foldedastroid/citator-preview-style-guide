@@ -1,0 +1,719 @@
+{
+  "cluster_id": 1425860,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/1425860/x/",
+  "case_name": "Callahan v. Millard County",
+  "name_missing": false,
+  "docket_number": "06-4135",
+  "docket_numbers": [
+    "06-4135"
+  ],
+  "citations": [
+    "494 F.3d 891"
+  ],
+  "court": "ca10",
+  "court_display": "Tenth Circuit",
+  "is_court_of_last_resort": false,
+  "date_filed": "2007-07-16",
+  "excerpt": "In this civil rights action, Plaintiff-Appellant Afton Callahan appeals from the district court's grant of summary judgment in favor of the numerous Defendant-Appellees. The district court held that the individual officers were entitled to qualified immunity because Mr.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-Background\" data-section-id=\"Background\"><h2>Background</h2><p>In this civil rights action, Plaintiff-Appellant Afton Callahan appeals from the district court&#x27;s grant of summary judgment in favor of the numerous Defendant-Appellees. The district court held that the individual officers were entitled to qualified immunity because Mr. Callahan did not establish that the officers violated a clearly established right. Holding that the district court was correct in its determination that Mr. Callahan&#x27;s constitutional rights were violated, but incorrect in its determination that these rights were not clearly established, we reverse in part and remand.<sup class=\"fnref\" id=\"fnref-1-1\"><a href=\"#fn-1-1\">1</a></sup></p>\n<p>This appeal evolves from a police raid of Mr. Callahan&#x27;s home on March 19, 2002. Earlier in the day, a confidential informant — who assisted the Central Utah Narcotics Task Force after being charged with possession of methamphetamine — saw Mr. Callahan and discussed a potential sale of methamphetamine later that day. The confidential informant then informed an officer of the task force of the conversation.</p></section>\n<section id=\"section-Discussion\" data-section-id=\"Discussion\"><h2>Discussion</h2><p>Once a qualified immunity defense is asserted, the burden shifts to the plaintiff. First, the plaintiff must &quot;establish that the defendant violated a constitutional right.&quot; If the plaintiff fails to satisfy this initial requirement, the court&#x27;s inquiry ends. If no constitutional right would have been violated were the allegations established, there is no necessity for further inquiries concerning qualified immunity — quoting <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U.S. 194, 201 (2001). If the plaintiff establishes that a constitutional right was violated, then the plaintiff must also show that the violated right was clearly established.</p>\n<p>Here, the officers knew they had no warrant; Mr. Callahan had not consented to their entry; and his consent to the entry of an informant could not reasonably be interpreted to extend to them. They do not argue on appeal that exigent circumstances justified their entry. The officers are not protected by qualified immunity. AFFIRMED IN PART, REVERSED IN PART, AND REMANDED.</p></section>\n<aside class=\"opinion-footnotes\" aria-label=\"Footnotes\"><h3 class=\"opinion-heading opinion-heading--notes\">Footnotes</h3><ol><li id=\"fn-1-1\"><span class=\"fn-label\"><a class=\"fn-label__link\" href=\"#fnref-1-1\" aria-label=\"Back to reference 1\">1</a></span><div class=\"fn-body\"><p>Because the case comes to us on summary judgment, we view the facts in the light most favorable to Mr. Callahan, the nonmoving party.</p></div></li></ol></aside>",
+    "sections": [
+      {
+        "id": "Background",
+        "title": "Background",
+        "anchor": "section-Background"
+      },
+      {
+        "id": "Discussion",
+        "title": "Discussion",
+        "anchor": "section-Discussion"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Reversed by",
+        "label": "Reversed by",
+        "severity": "Stop",
+        "rationale": "Direct procedural history: SCOTUS reversed 10th Cir. denial of QI.",
+        "quote": "we reverse and remand for further proceedings consistent with this opinion",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "we reverse and remand for further proceedings consistent with this opinion"
+      },
+      "has_detail": true,
+      "row_id": "cb-1",
+      "citing_cluster_id": 145918,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Pearson v. Callahan",
+      "citing_docket_numbers": [
+        "07-751"
+      ],
+      "citing_citations": [
+        "555 U.S. 223",
+        "129 S. Ct. 808",
+        "172 L. Ed. 2d 565"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "controlling",
+      "citing_court_level": 0,
+      "citing_date_filed": "2009-01-21",
+      "citing_date_short": "01/21/2009",
+      "search_text": "pearsonvcallahan555us223129sct808172led2d565",
+      "is_scoped": true,
+      "treatment": "Reversed by",
+      "severity": "Stop",
+      "direction": "Direct History",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Reversed by",
+          "treatment_past": "Reversed",
+          "severity": "Stop",
+          "direction": "Direct History",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "we reverse and remand for further proceedings consistent with this opinion",
+            "quote_html": "we reverse and remand for further proceedings consistent with this opinion",
+            "rationale": "Direct procedural history: SCOTUS reversed 10th Cir. denial of QI.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Reversed by",
+          "label": "Reversed by",
+          "severity": "Stop",
+          "rationale": "Direct procedural history: SCOTUS reversed 10th Cir. denial of QI.",
+          "quote": "we reverse and remand for further proceedings consistent with this opinion",
+          "quote_status": "missing",
+          "quote_names": "",
+          "quote_html": "we reverse and remand for further proceedings consistent with this opinion"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 5,
+      "name_index": 1,
+      "mentions_index": 0,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Limited by",
+        "label": "Limited by",
+        "severity": "Warning",
+        "rationale": "Later 10th Cir. case limits Callahan's scope after Pearson reframed the QI inquiry.",
+        "quote": "the consent-once-removed analysis in Callahan must be read narrowly post-Pearson",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> must be read narrowly post-Pearson"
+      },
+      "has_detail": true,
+      "row_id": "cb-37",
+      "citing_cluster_id": 9920010,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Saavedra v. Murphy",
+      "citing_docket_numbers": [
+        "13-4022"
+      ],
+      "citing_citations": [
+        "739 F.3d 1273"
+      ],
+      "citing_court_display": "Tenth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2014-01-21",
+      "citing_date_short": "01/21/2014",
+      "search_text": "saavedravmurphy739f3d1273",
+      "is_scoped": false,
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Distinguished by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Limited by",
+          "treatment_past": "Limited",
+          "severity": "Warning",
+          "direction": "Citing Reference",
+          "expert_treatment": "Distinguished by",
+          "source": "model",
+          "evidence": {
+            "quote": "the consent-once-removed analysis in Callahan must be read narrowly post-Pearson",
+            "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> must be read narrowly post-Pearson",
+            "rationale": "Later 10th Cir. case limits Callahan's scope after Pearson reframed the QI inquiry.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Limited by",
+          "label": "Limited by",
+          "severity": "Warning",
+          "rationale": "Later 10th Cir. case limits Callahan's scope after Pearson reframed the QI inquiry.",
+          "quote": "the consent-once-removed analysis in Callahan must be read narrowly post-Pearson",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> must be read narrowly post-Pearson"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 2,
+      "name_index": 4,
+      "mentions_index": 1,
+      "court_index": 4
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Recent 10th Cir. case distinguishing — gives Callahan a divergent most-recent vs most-severe.",
+        "quote": "the consent-once-removed analysis in Callahan does not extend to the present facts",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> does not extend to the present facts"
+      },
+      "has_detail": true,
+      "row_id": "cb-41",
+      "citing_cluster_id": 9920014,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Riggs v. Carbon County",
+      "citing_docket_numbers": [
+        "18-4031"
+      ],
+      "citing_citations": [
+        "920 F.3d 752"
+      ],
+      "citing_court_display": "Tenth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2019-03-19",
+      "citing_date_short": "03/19/2019",
+      "search_text": "riggsvcarboncounty920f3d752",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Cited by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": "Cited by",
+          "source": "model",
+          "evidence": {
+            "quote": "the consent-once-removed analysis in Callahan does not extend to the present facts",
+            "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> does not extend to the present facts",
+            "rationale": "Recent 10th Cir. case distinguishing — gives Callahan a divergent most-recent vs most-severe.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Recent 10th Cir. case distinguishing — gives Callahan a divergent most-recent vs most-severe.",
+          "quote": "the consent-once-removed analysis in Callahan does not extend to the present facts",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "the consent-once-removed analysis in <strong class=\"evidence-card__case\">Callahan</strong> does not extend to the present facts"
+        }
+      ],
+      "severity_index": 2,
+      "recency_index": 0,
+      "name_index": 2,
+      "mentions_index": 2,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Sister 10th Cir. panel distinguishes on facts.",
+        "quote": "Callahan addressed a controlled drug-buy posture not present here",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Callahan</strong> addressed a controlled drug-buy posture not present here"
+      },
+      "has_detail": true,
+      "row_id": "cb-38",
+      "citing_cluster_id": 9920011,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Romero v. Story",
+      "citing_docket_numbers": [
+        "11-2157"
+      ],
+      "citing_citations": [
+        "672 F.3d 880"
+      ],
+      "citing_court_display": "Tenth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-03-12",
+      "citing_date_short": "03/12/2012",
+      "search_text": "romerovstory672f3d880",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Callahan addressed a controlled drug-buy posture not present here",
+            "quote_html": "<strong class=\"evidence-card__case\">Callahan</strong> addressed a controlled drug-buy posture not present here",
+            "rationale": "Sister 10th Cir. panel distinguishes on facts.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Sister 10th Cir. panel distinguishes on facts.",
+          "quote": "Callahan addressed a controlled drug-buy posture not present here",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Callahan</strong> addressed a controlled drug-buy posture not present here"
+        }
+      ],
+      "severity_index": 3,
+      "recency_index": 3,
+      "name_index": 3,
+      "mentions_index": 3,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Declined to follow by",
+        "label": "Declined to follow by",
+        "severity": "Caution",
+        "rationale": "Sister-circuit (6th Cir., horizontal_persuasive) declines to follow the 10th Cir. rule.",
+        "quote": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in Callahan",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in <strong class=\"evidence-card__case\">Callahan</strong>"
+      },
+      "has_detail": true,
+      "row_id": "cb-40",
+      "citing_cluster_id": 9920013,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Bishop v. Hackel",
+      "citing_docket_numbers": [
+        "10-1335"
+      ],
+      "citing_citations": [
+        "636 F.3d 757"
+      ],
+      "citing_court_display": "ca6",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2011-03-21",
+      "citing_date_short": "03/21/2011",
+      "search_text": "bishopvhackel636f3d757",
+      "is_scoped": false,
+      "treatment": "Declined to follow by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Declined to follow by",
+          "treatment_past": "Declined to follow",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in Callahan",
+            "quote_html": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in <strong class=\"evidence-card__case\">Callahan</strong>",
+            "rationale": "Sister-circuit (6th Cir., horizontal_persuasive) declines to follow the 10th Cir. rule.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Declined to follow by",
+          "label": "Declined to follow by",
+          "severity": "Caution",
+          "rationale": "Sister-circuit (6th Cir., horizontal_persuasive) declines to follow the 10th Cir. rule.",
+          "quote": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in Callahan",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "we decline to adopt the consent-once-removed expansion endorsed by the Tenth Circuit in <strong class=\"evidence-card__case\">Callahan</strong>"
+        }
+      ],
+      "severity_index": 4,
+      "recency_index": 4,
+      "name_index": 0,
+      "mentions_index": 4,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit district court applies Callahan's framework.",
+        "quote": "we follow the framework laid out in Callahan",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we follow the framework laid out in <strong class=\"evidence-card__case\">Callahan</strong>"
+      },
+      "has_detail": false,
+      "row_id": "cb-39",
+      "citing_cluster_id": 9920012,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Yang v. Boulder Police Dept.",
+      "citing_docket_numbers": [
+        "16-cv-00821"
+      ],
+      "citing_citations": [
+        "No. 16-cv-821 (D. Colo. 2018)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2018-04-30",
+      "citing_date_short": "04/30/2018",
+      "search_text": "yangvboulderpolicedeptno16cv821dcolo2018",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "we follow the framework laid out in Callahan",
+            "quote_html": "we follow the framework laid out in <strong class=\"evidence-card__case\">Callahan</strong>",
+            "rationale": "Within-circuit district court applies Callahan's framework.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 5,
+      "recency_index": 1,
+      "name_index": 5,
+      "mentions_index": 5,
+      "court_index": 5
+    }
+  ],
+  "summary": {
+    "dh_severity": "Stop",
+    "cr_severity": "Warning"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirms",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "above",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reversed",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/"
+      }
+    ],
+    "chain": [
+      {
+        "role": "below",
+        "cluster_id": 9999001,
+        "case_name": "Callahan v. Millard County Sheriff",
+        "court": "U.S. District Court (D. Utah)",
+        "court_id": "utd",
+        "level": 2,
+        "date_filed": "2005-09-14",
+        "docket_number": "2:05-cv-00170",
+        "citations": [
+          "No. 2:05-cv-00170 (D. Utah 2005)"
+        ],
+        "url": "/opinion/9999001/",
+        "index": 2,
+        "row": 5,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "self",
+        "cluster_id": 1425860,
+        "case_name": "Callahan v. Millard County",
+        "court": "Tenth Circuit",
+        "court_id": "ca10",
+        "level": 1,
+        "date_filed": "2007-07-16",
+        "docket_number": "06-4135",
+        "citations": [
+          "494 F.3d 891"
+        ],
+        "url": "/opinion/1425860/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirms",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 0,
+        "row": 3,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 4,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      },
+      {
+        "role": "above",
+        "cluster_id": 145918,
+        "case_name": "Pearson v. Callahan",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2009-01-21",
+        "docket_number": "07-751",
+        "citations": [
+          "555 U.S. 223",
+          "129 S. Ct. 808",
+          "172 L. Ed. 2d 565"
+        ],
+        "url": "/opinion/145918/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reversed",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 1,
+        "row": 1,
+        "col": 5,
+        "tier": "Highest court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 4,
+            "col_end": 6,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      },
+      {
+        "level": 0,
+        "col": 5,
+        "label": "Highest court"
+      }
+    ],
+    "has_reported": false,
+    "n_opinions": 3
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "treated",
+      "treatment": "Reversed by",
+      "severity": "Stop",
+      "citing_name": "Pearson v. Callahan",
+      "citing_cluster_id": 145918,
+      "quote": "we reverse and remand for further proceedings consistent with this opinion",
+      "quote_status": "missing",
+      "authority_n": null
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "citing_name": "Saavedra v. Murphy",
+      "citing_court": "Tenth Circuit",
+      "citing_cluster_id": 9920010,
+      "n_other_negative": 3,
+      "n_plain": 1,
+      "n_total": 5,
+      "quote": "the consent-once-removed analysis in Callahan must be read narrowly post-Pearson",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}

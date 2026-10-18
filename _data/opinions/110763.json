@@ -1,0 +1,486 @@
+{
+  "cluster_id": 110763,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/110763/x/",
+  "case_name": "Harlow v. Fitzgerald",
+  "name_missing": false,
+  "docket_number": "80-945",
+  "docket_numbers": [
+    "80-945"
+  ],
+  "citations": [
+    "457 U.S. 800",
+    "102 S. Ct. 2727",
+    "73 L. Ed. 2d 396"
+  ],
+  "court": "scotus",
+  "court_display": "U.S. Supreme Court",
+  "is_court_of_last_resort": true,
+  "date_filed": "1982-06-24",
+  "excerpt": "The issue in this case is the scope of the immunity available to the senior aides and advisers of the President of the United States in a suit for damages based upon their official acts.",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>The issue in this case is the scope of the immunity available to the senior aides and advisers of the President of the United States in a suit for damages based upon their official acts.</p>\n<p>In this suit for civil damages petitioners Bryce Harlow and Alexander Butterfield are alleged to have participated in a conspiracy to violate the constitutional and statutory rights of the respondent A. Ernest Fitzgerald. Respondent avers that petitioners entered the conspiracy in their capacities as senior White House aides to former President Richard M. Nixon.<sup class=\"fnref\" id=\"fnref-1-1\"><a href=\"#fn-1-1\">1</a></sup></p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>We therefore hold that government officials performing discretionary functions, generally are shielded from liability for civil damages insofar as their conduct does not violate clearly established statutory or constitutional rights of which a reasonable person would have known.</p>\n<p>By defining the limits of qualified immunity essentially in objective terms, we provide no license to lawless conduct. The public interest in deterrence of unlawful conduct and in compensation of victims remains protected by a test that focuses on the objective legal reasonableness of an official&#x27;s acts.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>Reliance on the objective reasonableness of an official&#x27;s conduct, as measured by reference to clearly established law, should avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment. On summary judgment, the judge appropriately may determine, not only the currently applicable law, but whether that law was clearly established at the time an action occurred. If the law at that time was not clearly established, an official could not reasonably be expected to anticipate subsequent legal developments, nor could he fairly be said to &quot;know&quot; that the law forbade conduct not previously identified as unlawful.</p></section>\n<aside class=\"opinion-footnotes\" aria-label=\"Footnotes\"><h3 class=\"opinion-heading opinion-heading--notes\">Footnotes</h3><ol><li id=\"fn-1-1\"><span class=\"fn-label\"><a class=\"fn-label__link\" href=\"#fnref-1-1\" aria-label=\"Back to reference 1\">1</a></span><div class=\"fn-body\"><p>The claims against the former President himself are decided in a companion case announced today.</p></div></li></ol></aside>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Lacey cites Harlow as foundational QI authority.",
+        "quote": "Qualified immunity \"represents the norm\" for government officials",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "Qualified immunity &quot;represents the norm&quot; for government officials"
+      },
+      "has_detail": false,
+      "row_id": "cb-15",
+      "citing_cluster_id": 807646,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Lacey v. Arpaio",
+      "citing_docket_numbers": [
+        "09-15703"
+      ],
+      "citing_citations": [
+        "693 F.3d 896"
+      ],
+      "citing_court_display": "Ninth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2012-08-29",
+      "citing_date_short": "08/29/2012",
+      "search_text": "laceyvarpaio693f3d896",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Qualified immunity \"represents the norm\" for government officials",
+            "quote_html": "Qualified immunity &quot;represents the norm&quot; for government officials",
+            "rationale": "Lacey cites Harlow as foundational QI authority.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 0,
+      "recency_index": 0,
+      "name_index": 2,
+      "mentions_index": 0,
+      "court_index": 5
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Henry cites Harlow's objective-reasonableness articulation.",
+        "quote": "a test that focuses on the objective legal reasonableness",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "a test that focuses on the objective legal reasonableness"
+      },
+      "has_detail": false,
+      "row_id": "cb-10",
+      "citing_cluster_id": 220962,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Henry v. Purnell",
+      "citing_docket_numbers": [
+        "08-7433"
+      ],
+      "citing_citations": [
+        "652 F.3d 524"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "other",
+      "citing_court_level": 1,
+      "citing_date_filed": "2011-07-14",
+      "citing_date_short": "07/14/2011",
+      "search_text": "henryvpurnell652f3d524",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "a test that focuses on the objective legal reasonableness",
+            "quote_html": "a test that focuses on the objective legal reasonableness",
+            "rationale": "Henry cites Harlow's objective-reasonableness articulation.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 1,
+      "recency_index": 1,
+      "name_index": 1,
+      "mentions_index": 1,
+      "court_index": 4
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Pearson cites Harlow for the canonical QI standard.",
+        "quote": "The doctrine of qualified immunity protects government officials",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "The doctrine of qualified immunity protects government officials"
+      },
+      "has_detail": false,
+      "row_id": "cb-4",
+      "citing_cluster_id": 145918,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Pearson v. Callahan",
+      "citing_docket_numbers": [
+        "07-751"
+      ],
+      "citing_citations": [
+        "555 U.S. 223",
+        "129 S. Ct. 808",
+        "172 L. Ed. 2d 565"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2009-01-21",
+      "citing_date_short": "01/21/2009",
+      "search_text": "pearsonvcallahan555us223129sct808172led2d565",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "The doctrine of qualified immunity protects government officials",
+            "quote_html": "The doctrine of qualified immunity protects government officials",
+            "rationale": "Pearson cites Harlow for the canonical QI standard.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 2,
+      "recency_index": 2,
+      "name_index": 3,
+      "mentions_index": 2,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Saucier cites Harlow's policy rationale.",
+        "quote": "avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment"
+      },
+      "has_detail": false,
+      "row_id": "cb-5",
+      "citing_cluster_id": 118449,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Saucier v. Katz",
+      "citing_docket_numbers": [
+        "99-1977"
+      ],
+      "citing_citations": [
+        "533 U.S. 194",
+        "121 S. Ct. 2151",
+        "150 L. Ed. 2d 272"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "2001-06-18",
+      "citing_date_short": "06/18/2001",
+      "search_text": "sauciervkatz533us194121sct2151150led2d272",
+      "is_scoped": true,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment",
+            "quote_html": "avoid excessive disruption of government and permit the resolution of many insubstantial claims on summary judgment",
+            "rationale": "Saucier cites Harlow's policy rationale.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 3,
+      "recency_index": 3,
+      "name_index": 4,
+      "mentions_index": 3,
+      "court_index": 2
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Wilson applies Harlow's clearly-established framework.",
+        "quote": "the clearly-established analysis is conducted by reference to existing precedent",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the clearly-established analysis is conducted by reference to existing precedent"
+      },
+      "has_detail": false,
+      "row_id": "cb-29",
+      "citing_cluster_id": 9100208,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Wilson v. Layne",
+      "citing_docket_numbers": [
+        "98-83"
+      ],
+      "citing_citations": [
+        "526 U.S. 603"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "1999-05-24",
+      "citing_date_short": "05/24/1999",
+      "search_text": "wilsonvlayne526us603",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the clearly-established analysis is conducted by reference to existing precedent",
+            "quote_html": "the clearly-established analysis is conducted by reference to existing precedent",
+            "rationale": "Wilson applies Harlow's clearly-established framework.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 4,
+      "recency_index": 4,
+      "name_index": 5,
+      "mentions_index": 4,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Anderson refines Harlow's clearly-established standard.",
+        "quote": "The contours of the right must be sufficiently clear",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "The contours of the right must be sufficiently clear"
+      },
+      "has_detail": false,
+      "row_id": "cb-28",
+      "citing_cluster_id": 9100207,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Anderson v. Creighton",
+      "citing_docket_numbers": [
+        "85-1520"
+      ],
+      "citing_citations": [
+        "483 U.S. 635"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "equal",
+      "citing_court_level": 0,
+      "citing_date_filed": "1987-06-25",
+      "citing_date_short": "06/25/1987",
+      "search_text": "andersonvcreighton483us635",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "The contours of the right must be sufficiently clear",
+            "quote_html": "The contours of the right must be sufficiently clear",
+            "rationale": "Anderson refines Harlow's clearly-established standard.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 5,
+      "recency_index": 5,
+      "name_index": 0,
+      "mentions_index": 5,
+      "court_index": 0
+    }
+  ],
+  "summary": {
+    "dh_severity": null,
+    "cr_severity": "Neutral"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 110763,
+        "case_name": "Harlow v. Fitzgerald",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "1982-06-24",
+        "docket_number": "80-945",
+        "citations": [
+          "457 U.S. 800",
+          "102 S. Ct. 2727",
+          "73 L. Ed. 2d 396"
+        ],
+        "url": "/opinion/110763/"
+      }
+    ],
+    "chain": [],
+    "levels": [],
+    "n_opinions": 1
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "not_reviewable"
+    },
+    "later_courts": {
+      "state": "plain",
+      "n_total": 6
+    }
+  }
+}

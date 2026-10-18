@@ -1,0 +1,707 @@
+{
+  "cluster_id": 220962,
+  "tier": "anchor",
+  "cl_url": "https://www.courtlistener.com/opinion/220962/x/",
+  "case_name": "Henry v. Purnell",
+  "name_missing": false,
+  "docket_number": "08-7433",
+  "docket_numbers": [
+    "08-7433"
+  ],
+  "citations": [
+    "652 F.3d 524"
+  ],
+  "court": "ca4",
+  "court_display": "Fourth Circuit",
+  "is_court_of_last_resort": false,
+  "date_filed": "2011-07-14",
+  "excerpt": "Without warning, Officer Robert Purnell shot Frederick Henry, an unarmed man wanted for misdemeanor failure to pay child support, when he started running away. In the ensuing §1983 action, the parties stipulated that Purnell had intended to use his Taser rather than his gun and t…",
+  "disposition": null,
+  "document": {
+    "body_html": "<section id=\"section-I\" data-section-id=\"I\"><h2>I</h2><p>Without warning, Officer Robert Purnell shot Frederick Henry, an unarmed man wanted for misdemeanor failure to pay child support, when he started running away. In the ensuing §1983 action, the parties stipulated that Purnell had intended to use his Taser rather than his gun and the district court granted him summary judgment. However, because Tennessee v. Garner prohibits shooting suspects who pose no significant threat of death or serious physical threat, and because Purnell&#x27;s use of force could be viewed by a jury as objectively unreasonable, we reverse and remand.</p>\n<p>Since this case stems from the grant of summary judgment for Purnell, we recount the facts in the light most favorable to the non-movant, Henry. In 2003, a Maryland state court ordered Henry to either pay child support or report to jail on September 8, 2003. When Henry did not comply, a warrant was issued for his arrest on October 9, 2003 for second degree escape.</p></section>\n<section id=\"section-II\" data-section-id=\"II\"><h2>II</h2><p>Qualified immunity protects officers who commit constitutional violations but who, in light of clearly established law, could reasonably believe that their actions were lawful. <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/118449/\">Saucier v. Katz</a></span>, 533 U.S. 194, 206 (2001), overruled in part, <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/145918/\">Pearson v. Callahan</a></span>, 129 S. Ct. 808 (2009). Following the Supreme Court&#x27;s recent decision in Pearson, we exercise our discretion to use the two-step procedure of Saucier, that asks first whether a constitutional violation occurred and second whether the right violated was clearly established.</p></section>\n<section id=\"section-III\" data-section-id=\"III\"><h2>III</h2><p>The second prong is &quot;a test that focuses on the objective legal reasonableness of an official&#x27;s acts.&quot; <span class=\"cited-case-wrap\"><a class=\"cited-case\" href=\"/opinion/110763/\">Harlow v. Fitzgerald</a></span>, 457 U.S. 800, 819 (1982). An official will not be held liable unless the contours of the right he is alleged to have violated were sufficiently clear that a reasonable official would understand that what he is doing violates that right. Purnell&#x27;s use of deadly force against Henry was objectively unreasonable and violated clearly established law.</p></section>",
+    "sections": [
+      {
+        "id": "I",
+        "title": "I",
+        "anchor": "section-I"
+      },
+      {
+        "id": "II",
+        "title": "II",
+        "anchor": "section-II"
+      },
+      {
+        "id": "III",
+        "title": "III",
+        "anchor": "section-III"
+      }
+    ]
+  },
+  "cited_authorities": [],
+  "authorities_populated": false,
+  "cited_by_populated": true,
+  "cited_by_scope": "controlling",
+  "citing_counts": null,
+  "cited_by": [
+    {
+      "evidence": {
+        "treatment": "Limited by",
+        "label": "Limited by",
+        "severity": "Warning",
+        "rationale": "Earlier within-circuit case narrows Henry's reach — gives Henry a divergent most-severe vs most-recent.",
+        "quote": "Henry's holding is limited to the stipulated mistake-of-weapon scenario",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Henry</strong>&#x27;s holding is limited to the stipulated mistake-of-weapon scenario"
+      },
+      "has_detail": true,
+      "row_id": "cb-46",
+      "citing_cluster_id": 9920024,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Mayfield v. Roanoke County",
+      "citing_docket_numbers": [
+        "12-1772"
+      ],
+      "citing_citations": [
+        "723 F.3d 433"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2013-07-15",
+      "citing_date_short": "07/15/2013",
+      "search_text": "mayfieldvroanokecounty723f3d433",
+      "is_scoped": false,
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Limited by",
+          "treatment_past": "Limited",
+          "severity": "Warning",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "Henry's holding is limited to the stipulated mistake-of-weapon scenario",
+            "quote_html": "<strong class=\"evidence-card__case\">Henry</strong>&#x27;s holding is limited to the stipulated mistake-of-weapon scenario",
+            "rationale": "Earlier within-circuit case narrows Henry's reach — gives Henry a divergent most-severe vs most-recent.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Limited by",
+          "label": "Limited by",
+          "severity": "Warning",
+          "rationale": "Earlier within-circuit case narrows Henry's reach — gives Henry a divergent most-severe vs most-recent.",
+          "quote": "Henry's holding is limited to the stipulated mistake-of-weapon scenario",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Henry</strong>&#x27;s holding is limited to the stipulated mistake-of-weapon scenario"
+        }
+      ],
+      "severity_index": 0,
+      "recency_index": 3,
+      "name_index": 2,
+      "mentions_index": 0,
+      "court_index": 3
+    },
+    {
+      "evidence": {
+        "treatment": "Distinguished by",
+        "label": "Distinguished by",
+        "severity": "Caution",
+        "rationale": "Within-circuit panel distinguishes on the stipulated-fact posture.",
+        "quote": "Henry involved a stipulated mistake about the weapon used; here the officer concedes no mistake",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "<strong class=\"evidence-card__case\">Henry</strong> involved a stipulated mistake about the weapon used; here the officer concedes no mistake"
+      },
+      "has_detail": true,
+      "row_id": "cb-43",
+      "citing_cluster_id": 9920021,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Wilson v. Prince George's County",
+      "citing_docket_numbers": [
+        "16-2052"
+      ],
+      "citing_citations": [
+        "893 F.3d 213"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2018-06-21",
+      "citing_date_short": "06/21/2018",
+      "search_text": "wilsonvprincegeorgescounty893f3d213",
+      "is_scoped": false,
+      "treatment": "Distinguished by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": "Cited by",
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Distinguished by",
+          "treatment_past": "Distinguished",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": "Cited by",
+          "source": "model",
+          "evidence": {
+            "quote": "Henry involved a stipulated mistake about the weapon used; here the officer concedes no mistake",
+            "quote_html": "<strong class=\"evidence-card__case\">Henry</strong> involved a stipulated mistake about the weapon used; here the officer concedes no mistake",
+            "rationale": "Within-circuit panel distinguishes on the stipulated-fact posture.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Distinguished by",
+          "label": "Distinguished by",
+          "severity": "Caution",
+          "rationale": "Within-circuit panel distinguishes on the stipulated-fact posture.",
+          "quote": "Henry involved a stipulated mistake about the weapon used; here the officer concedes no mistake",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "<strong class=\"evidence-card__case\">Henry</strong> involved a stipulated mistake about the weapon used; here the officer concedes no mistake"
+        }
+      ],
+      "severity_index": 1,
+      "recency_index": 0,
+      "name_index": 5,
+      "mentions_index": 1,
+      "court_index": 4
+    },
+    {
+      "evidence": {
+        "treatment": "Criticized by",
+        "label": "Criticized by",
+        "severity": "Caution",
+        "rationale": "Sister-circuit (2nd Cir., horizontal_persuasive) criticizes the en banc result.",
+        "quote": "we are unable to reconcile the result in Henry v. Purnell with the Supreme Court's framework",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "we are unable to reconcile the result in <strong class=\"evidence-card__case\">Henry</strong> v. Purnell with the Supreme Court&#x27;s framework"
+      },
+      "has_detail": true,
+      "row_id": "cb-45",
+      "citing_cluster_id": 9920023,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Anderson v. NYC Police Dept.",
+      "citing_docket_numbers": [
+        "12-3450"
+      ],
+      "citing_citations": [
+        "705 F.3d 65"
+      ],
+      "citing_court_display": "Second Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2013-04-22",
+      "citing_date_short": "04/22/2013",
+      "search_text": "andersonvnycpolicedept705f3d65",
+      "is_scoped": false,
+      "treatment": "Criticized by",
+      "severity": "Caution",
+      "direction": "Citing Reference",
+      "source": "expert",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Criticized by",
+          "treatment_past": "Criticized",
+          "severity": "Caution",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "expert",
+          "evidence": {
+            "quote": "we are unable to reconcile the result in Henry v. Purnell with the Supreme Court's framework",
+            "quote_html": "we are unable to reconcile the result in <strong class=\"evidence-card__case\">Henry</strong> v. Purnell with the Supreme Court&#x27;s framework",
+            "rationale": "Sister-circuit (2nd Cir., horizontal_persuasive) criticizes the en banc result.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Criticized by",
+          "label": "Criticized by",
+          "severity": "Caution",
+          "rationale": "Sister-circuit (2nd Cir., horizontal_persuasive) criticizes the en banc result.",
+          "quote": "we are unable to reconcile the result in Henry v. Purnell with the Supreme Court's framework",
+          "quote_status": "missing",
+          "quote_names": "name",
+          "quote_html": "we are unable to reconcile the result in <strong class=\"evidence-card__case\">Henry</strong> v. Purnell with the Supreme Court&#x27;s framework"
+        }
+      ],
+      "severity_index": 2,
+      "recency_index": 4,
+      "name_index": 0,
+      "mentions_index": 2,
+      "court_index": 1
+    },
+    {
+      "evidence": {
+        "treatment": "Affirmed by",
+        "label": "Affirmed by",
+        "severity": "Positive",
+        "rationale": "Direct procedural history: SCOTUS (mock) affirmed 4th Cir. en banc denial of QI.",
+        "quote": "the judgment of the Court of Appeals is affirmed",
+        "quote_status": "missing",
+        "quote_names": "",
+        "quote_html": "the judgment of the Court of Appeals is affirmed"
+      },
+      "has_detail": true,
+      "row_id": "cb-2",
+      "citing_cluster_id": 9999002,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Purnell v. Henry",
+      "citing_docket_numbers": [
+        "12-345"
+      ],
+      "citing_citations": [
+        "568 U.S. 901"
+      ],
+      "citing_court_display": "U.S. Supreme Court",
+      "citing_relation": "controlling",
+      "citing_court_level": 0,
+      "citing_date_filed": "2012-10-15",
+      "citing_date_short": "10/15/2012",
+      "search_text": "purnellvhenry568us901",
+      "is_scoped": false,
+      "treatment": "Affirmed by",
+      "severity": "Positive",
+      "direction": "Direct History",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Affirmed by",
+          "treatment_past": "Affirmed",
+          "severity": "Positive",
+          "direction": "Direct History",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "the judgment of the Court of Appeals is affirmed",
+            "quote_html": "the judgment of the Court of Appeals is affirmed",
+            "rationale": "Direct procedural history: SCOTUS (mock) affirmed 4th Cir. en banc denial of QI.",
+            "quote_status": "missing",
+            "quote_names": ""
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [
+        {
+          "treatment": "Affirmed by",
+          "label": "Affirmed by",
+          "severity": "Positive",
+          "rationale": "Direct procedural history: SCOTUS (mock) affirmed 4th Cir. en banc denial of QI.",
+          "quote": "the judgment of the Court of Appeals is affirmed",
+          "quote_status": "missing",
+          "quote_names": "",
+          "quote_html": "the judgment of the Court of Appeals is affirmed"
+        }
+      ],
+      "severity_index": 3,
+      "recency_index": 5,
+      "name_index": 4,
+      "mentions_index": 3,
+      "court_index": 0
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit district court applies Henry.",
+        "quote": "applying Henry v. Purnell's deadly-force framework",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "applying <strong class=\"evidence-card__case\">Henry</strong> v. Purnell&#x27;s deadly-force framework"
+      },
+      "has_detail": false,
+      "row_id": "cb-44",
+      "citing_cluster_id": 9920022,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Pollard v. Maryland State Police",
+      "citing_docket_numbers": [
+        "14-cv-02314"
+      ],
+      "citing_citations": [
+        "No. JKB-14-2314 (D. Md. 2017)"
+      ],
+      "citing_court_display": "U.S. District Court",
+      "citing_relation": "other",
+      "citing_court_level": 2,
+      "citing_date_filed": "2017-09-12",
+      "citing_date_short": "09/12/2017",
+      "search_text": "pollardvmarylandstatepolicenojkb142314dmd2017",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "applying Henry v. Purnell's deadly-force framework",
+            "quote_html": "applying <strong class=\"evidence-card__case\">Henry</strong> v. Purnell&#x27;s deadly-force framework",
+            "rationale": "Within-circuit district court applies Henry.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 4,
+      "recency_index": 1,
+      "name_index": 3,
+      "mentions_index": 4,
+      "court_index": 5
+    },
+    {
+      "evidence": {
+        "treatment": "Cited by",
+        "label": "Cited by",
+        "severity": "Neutral",
+        "rationale": "Within-circuit follow-on; applies Henry's deadly-force / Garner standard.",
+        "quote": "our en banc decision in Henry v. Purnell",
+        "quote_status": "missing",
+        "quote_names": "name",
+        "quote_html": "our en banc decision in <strong class=\"evidence-card__case\">Henry</strong> v. Purnell"
+      },
+      "has_detail": false,
+      "row_id": "cb-42",
+      "citing_cluster_id": 9920020,
+      "citing_authority_n": null,
+      "citing_n_mentions": 0,
+      "acting_case": "",
+      "citing_case_name": "Estate of Armstrong v. Pinehurst",
+      "citing_docket_numbers": [
+        "15-1191"
+      ],
+      "citing_citations": [
+        "810 F.3d 892"
+      ],
+      "citing_court_display": "Fourth Circuit",
+      "citing_relation": "equal",
+      "citing_court_level": 1,
+      "citing_date_filed": "2016-01-11",
+      "citing_date_short": "01/11/2016",
+      "search_text": "estateofarmstrongvpinehurst810f3d892",
+      "is_scoped": false,
+      "treatment": "Cited by",
+      "severity": "Neutral",
+      "direction": "Citing Reference",
+      "source": "model",
+      "expert_treatment": null,
+      "applied": [
+        {
+          "kind": "applied",
+          "acting_case": "",
+          "treatment": "Cited by",
+          "treatment_past": "Cited",
+          "severity": "Neutral",
+          "direction": "Citing Reference",
+          "expert_treatment": null,
+          "source": "model",
+          "evidence": {
+            "quote": "our en banc decision in Henry v. Purnell",
+            "quote_html": "our en banc decision in <strong class=\"evidence-card__case\">Henry</strong> v. Purnell",
+            "rationale": "Within-circuit follow-on; applies Henry's deadly-force / Garner standard.",
+            "quote_status": "missing",
+            "quote_names": "name"
+          },
+          "validation": "unverified"
+        }
+      ],
+      "recognized": [],
+      "validation": "unverified",
+      "recognized_filter": "none",
+      "evidence_cards": [],
+      "severity_index": 5,
+      "recency_index": 2,
+      "name_index": 1,
+      "mentions_index": 5,
+      "court_index": 2
+    }
+  ],
+  "summary": {
+    "dh_severity": "Positive",
+    "cr_severity": "Warning"
+  },
+  "appellate_history": {
+    "steps": [
+      {
+        "role": "self",
+        "cluster_id": 220962,
+        "case_name": "Henry v. Purnell",
+        "court": "Fourth Circuit",
+        "court_id": "ca4",
+        "level": 1,
+        "date_filed": "2011-07-14",
+        "docket_number": "08-7433",
+        "citations": [
+          "652 F.3d 524"
+        ],
+        "url": "/opinion/220962/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reverses",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "below",
+        "cluster_id": 9100210,
+        "case_name": "Henry v. Purnell (D. Md.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2008-09-23",
+        "docket_number": "04-cv-00342",
+        "citations": [
+          "No. JKB-04-342 (D. Md. 2008)"
+        ],
+        "url": "/opinion/9100210/"
+      },
+      {
+        "role": "above",
+        "cluster_id": 9999002,
+        "case_name": "Purnell v. Henry",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2012-10-15",
+        "docket_number": "12-345",
+        "citations": [
+          "568 U.S. 901"
+        ],
+        "url": "/opinion/9999002/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chain": [
+      {
+        "role": "below",
+        "cluster_id": 9100210,
+        "case_name": "Henry v. Purnell (D. Md.)",
+        "court": "U.S. District Court",
+        "court_id": "dist",
+        "level": 2,
+        "date_filed": "2008-09-23",
+        "docket_number": "04-cv-00342",
+        "citations": [
+          "No. JKB-04-342 (D. Md. 2008)"
+        ],
+        "url": "/opinion/9100210/",
+        "index": 1,
+        "row": 5,
+        "col": 3,
+        "tier": "Trial court",
+        "acts": [],
+        "links": []
+      },
+      {
+        "role": "self",
+        "cluster_id": 220962,
+        "case_name": "Henry v. Purnell",
+        "court": "Fourth Circuit",
+        "court_id": "ca4",
+        "level": 1,
+        "date_filed": "2011-07-14",
+        "docket_number": "08-7433",
+        "citations": [
+          "652 F.3d 524"
+        ],
+        "url": "/opinion/220962/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Reverses",
+                "defined_as": "Reverses",
+                "severity": "Stop",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 0,
+        "row": 3,
+        "col": 4,
+        "tier": "Appellate court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 4,
+            "col_start": 3,
+            "col_end": 5,
+            "span": 2
+          }
+        ]
+      },
+      {
+        "role": "above",
+        "cluster_id": 9999002,
+        "case_name": "Purnell v. Henry",
+        "court": "U.S. Supreme Court",
+        "court_id": "scotus",
+        "level": 0,
+        "date_filed": "2012-10-15",
+        "docket_number": "12-345",
+        "citations": [
+          "568 U.S. 901"
+        ],
+        "url": "/opinion/9999002/",
+        "acts": [
+          {
+            "treatments": [
+              {
+                "treatment": "Affirms",
+                "defined_as": "Affirmed",
+                "severity": "Positive",
+                "text": ""
+              }
+            ]
+          }
+        ],
+        "index": 2,
+        "row": 1,
+        "col": 5,
+        "tier": "Highest court",
+        "links": [
+          {
+            "dir": "up",
+            "row": 2,
+            "col_start": 4,
+            "col_end": 6,
+            "span": 2
+          }
+        ]
+      }
+    ],
+    "levels": [
+      {
+        "level": 2,
+        "col": 3,
+        "label": "Trial court"
+      },
+      {
+        "level": 1,
+        "col": 4,
+        "label": "Appellate court"
+      },
+      {
+        "level": 0,
+        "col": 5,
+        "label": "Highest court"
+      }
+    ],
+    "has_reported": false,
+    "n_opinions": 3
+  },
+  "status": {
+    "scope": "controlling",
+    "on_appeal": {
+      "state": "treated",
+      "treatment": "Affirmed by",
+      "severity": "Positive",
+      "citing_name": "Purnell v. Henry",
+      "citing_cluster_id": 9999002,
+      "quote": "the judgment of the Court of Appeals is affirmed",
+      "quote_status": "missing",
+      "authority_n": null
+    },
+    "later_courts": {
+      "state": "negative",
+      "treatment": "Limited by",
+      "severity": "Warning",
+      "citing_name": "Mayfield v. Roanoke County",
+      "citing_court": "Fourth Circuit",
+      "citing_cluster_id": 9920024,
+      "n_other_negative": 2,
+      "n_plain": 2,
+      "n_total": 5,
+      "quote": "Henry's holding is limited to the stipulated mistake-of-weapon scenario",
+      "quote_status": "missing",
+      "authority_n": null
+    }
+  }
+}
